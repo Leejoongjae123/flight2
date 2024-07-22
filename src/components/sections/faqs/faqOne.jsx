@@ -16,7 +16,7 @@ const FaqOne = () => {
       <div className='max-w-[1350px] mx-auto px-[15px]'>
         <SlideUp>
           <div className='flex flex-col items-center'>
-            <Button variant="secondary">Notifications</Button>
+            <Button variant="secondary">Our Notifications</Button>
             <Title size={"5xl"} className="lg:max-w-[817px] max-w-full pt-6 text-center">공지사항</Title>
             <p className='pt-7.5 pb-10 font-semibold text-center max-w-[679px]'>유앤디글로벌 최신 학사 정보 안내를 확인하세요</p>
           </div>

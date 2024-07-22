@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link';
 import SlotCounter from "react-slot-counter"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 
 import Rating from '../ui/rating';
@@ -37,6 +38,7 @@ const PlatformRating = () => {
                     <div className='overflow-x-hidden pt-10 lg:pt-0 '>
                         <SlideRight>
                             <Swiper
+                                // modules={[Autoplay]}
                                 spaceBetween={10}
                                 autoplay={{
                                   delay: 1000,
