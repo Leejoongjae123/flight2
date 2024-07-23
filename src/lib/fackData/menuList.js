@@ -5,63 +5,64 @@ import home_4_screenshrot from "../../../public/images/home-showcase/home-showca
 import home_5_screenshrot from "../../../public/images/home-showcase/home-showcase-5.jpg"
 import home_6_screenshrot from "../../../public/images/home-showcase/up-coming-showcase.png"
 export const menuList = [
-    {
-        id: 1,
-        path: "#",
-        lable: "Home",
-        megaMenu: [
-            {
-                id: 1,
-                path: "/",
-                singlePath:"/home-single-1",
-                lable: "Default",
-                tag: "",
-                src: home_1_screenshrot
-            },
-            {
-                id: 2,
-                path: "/home-2",
-                singlePath:"/home-single-2",
-                lable: "Home v2",
-                tag: "Popular",
-                src: home_2_screenshrot
-            },
-            {
-                id: 3,
-                path: "/home-3",
-                singlePath:"/home-single-3",
-                lable: "Home v3",
-                tag: "",
-                src: home_3_screenshrot
-            },
-            {
-                id: 4,
-                path: "/home-4",
-                singlePath:"/home-single-4",
-                lable: "Home v4",
-                tag: "",
-                src: home_4_screenshrot
-            },
-            {
-                id: 5,
-                path: "/home-5",
-                singlePath:"/home-single-5",
-                lable: "Home v5",
-                tag: "New",
-                src: home_5_screenshrot
-            },
-            {
-                id: 6,
-                path: "/",
-                singlePath:"/",
-                lable: "Coming soon",
-                tag: "",
-                src: home_6_screenshrot
-            },
+    // {
+    //     id: 1,
+    //     path: "/",
+    //     lable: "Home",
+    //     megaMenu: 
+    //     [
+    //         {
+    //             id: 1,
+    //             path: "/",
+    //             singlePath:"/home-single-1",
+    //             lable: "Default",
+    //             tag: "",
+    //             src: home_1_screenshrot
+    //         },
+    //         {
+    //             id: 2,
+    //             path: "/home-2",
+    //             singlePath:"/home-single-2",
+    //             lable: "Home v2",
+    //             tag: "Popular",
+    //             src: home_2_screenshrot
+    //         },
+    //         {
+    //             id: 3,
+    //             path: "/home-3",
+    //             singlePath:"/home-single-3",
+    //             lable: "Home v3",
+    //             tag: "",
+    //             src: home_3_screenshrot
+    //         },
+    //         {
+    //             id: 4,
+    //             path: "/home-4",
+    //             singlePath:"/home-single-4",
+    //             lable: "Home v4",
+    //             tag: "",
+    //             src: home_4_screenshrot
+    //         },
+    //         {
+    //             id: 5,
+    //             path: "/home-5",
+    //             singlePath:"/home-single-5",
+    //             lable: "Home v5",
+    //             tag: "New",
+    //             src: home_5_screenshrot
+    //         },
+    //         {
+    //             id: 6,
+    //             path: "/",
+    //             singlePath:"/",
+    //             lable: "Coming soon",
+    //             tag: "",
+    //             src: home_6_screenshrot
+    //         },
 
-        ],
-        dropDown: false
-    },
+    //     ],
+    //     dropDown: false
+    // },
     {
         id: 2,
         path: "#",
@@ -69,106 +70,71 @@ export const menuList = [
         dropDown: [
             {
                 id: 1,
-                path: "/about-us",
-                lable: "About Us",
+                path: "/about-us1",
+                lable: "총장인사말",
                 tag: ""
             },
             {
                 id: 2,
-                path: "/contact-us",
-                lable: "Contact Us",
+                path: "/about-us2",
+                lable: "대표원장 인사말",
                 tag: "",
             },
             {
                 id: 3,
-                path: "#",
-                lable: "Our Team",
+                path: "/introduction",
+                lable: "UND 항공대학 소개",
                 tag: "",
-                subDropdonwn: [
-                    {
-                        id: 1,
-                        path: "/team",
-                        lable: "Our Team",
-                        tag: "",
-                    },
-                    {
-                        id: 2,
-                        path: "/team-carousel",
-                        lable: "Team Carousel",
-                        tag: "",
-                    },
-                    {
-                        id: 3,
-                        path: "/team-details",
-                        lable: "Team Details",
-                        tag: "",
-                    },
+                // subDropdonwn: [
+                //     {
+                //         id: 1,
+                //         path: "/team",
+                //         lable: "Our Team",
+                //         tag: "",
+                //     },
+                //     {
+                //         id: 2,
+                //         path: "/team-carousel",
+                //         lable: "Team Carousel",
+                //         tag: "",
+                //     },
+                //     {
+                //         id: 3,
+                //         path: "/team-details",
+                //         lable: "Team Details",
+                //         tag: "",
+                //     },
 
-                ]
+                // ]
             },
             {
                 id: 4,
                 path: "#",
-                lable: "Career",
-                tag: "2 Open Job",
-                subDropdonwn: [
-                    {
-                        id: 1,
-                        path: "/career",
-                        lable: "Career",
-                        tag: "",
-                    },
-                    {
-                        id: 2,
-                        path: "/career-details",
-                        lable: "Career Details",
-                        tag: "",
-                    },
+                lable: "비행교육원",
+                tag: "",
+                // subDropdonwn: [
+                //     {
+                //         id: 1,
+                //         path: "/career",
+                //         lable: "Career",
+                //         tag: "",
+                //     },
+                //     {
+                //         id: 2,
+                //         path: "/career-details",
+                //         lable: "Career Details",
+                //         tag: "",
+                //     },
 
-                ]
+                // ]
             },
             {
                 id: 5,
                 path: "/pricing",
-                lable: "Pricing Plan",
-                tag: "HOT"
-            },
-            {
-                id: 6,
-                path: "/faq",
-                lable: "FAQs",
+                lable: "오시는길",
                 tag: ""
             },
-            {
-                id: 7,
-                path: "/testimonial",
-                lable: "Testimonial",
-                tag: ""
-            },
-            {
-                id: 8,
-                path: "/categories",
-                lable: "Categories",
-                tag: ""
-            },
-            {
-                id: 9,
-                path: "/author",
-                lable: "Author",
-                tag: ""
-            },
-            {
-                id: 10,
-                path: "#",
-                lable: "Coming Soon",
-                tag: ""
-            },
-            {
-                id: 11,
-                path: "/not-found",
-                lable: "404",
-                tag: ""
-            },
+            
 
         ],
         megaMenu: false
@@ -181,15 +147,27 @@ export const menuList = [
             {
                 id: 1,
                 path: "/services",
-                lable: "Services",
+                lable: "교육과정 개요",
                 tag: ""
             },
             {
                 id: 2,
                 path: "/service-details",
-                lable: "Service Details",
+                lable: "입학생 사전교육",
                 tag: "",
             },
+            {
+              id: 3,
+              path: "/service-details",
+              lable: "항공운항학과 커리큘럼",
+              tag: "",
+          },
+          {
+            id: 4,
+            path: "/service-details",
+            lable: "UND 장학금 안내",
+            tag: "",
+        },
 
         ],
         megaMenu: false
@@ -202,13 +180,13 @@ export const menuList = [
             {
                 id: 1,
                 path: "/portfolio",
-                lable: "Portfolio",
+                lable: "졸업 직후 국내항공사 취업",
                 tag: ""
             },
             {
                 id: 2,
                 path: "/portfolio-details",
-                lable: "Portfolio Details",
+                lable: "비행교관 경력 후 취업",
                 tag: "",
             },
 
@@ -223,39 +201,22 @@ export const menuList = [
             {
                 id: 1,
                 path: "/modern-with-sidebar",
-                lable: "Modern With Sidebar",
+                lable: "회전익 항공기 준사관 소개",
                 tag: ""
             },
             {
                 id: 2,
                 path: "/classic-with-sidebar",
-                lable: "Classic With Sidebar",
+                lable: "교과과정",
                 tag: "",
             },
             {
                 id: 3,
                 path: "/blog-list",
-                lable: "Blog List",
+                lable: "준사관 준비반 장점",
                 tag: "",
             },
-            {
-                id: 4,
-                path: "/modern-without-sidebar",
-                lable: "Modern Without Sidebar",
-                tag: "",
-            },
-            {
-                id: 5,
-                path: "/blog-single-sidebar",
-                lable: "Blog Single Sidebar",
-                tag: "",
-            },
-            {
-                id: 6,
-                path: "/blog-single-no-siderbar",
-                lable: "Blog Single No Siderbar",
-                tag: "",
-            },
+            
 
         ],
         megaMenu: false
@@ -268,40 +229,15 @@ export const menuList = [
           {
               id: 1,
               path: "/modern-with-sidebar",
-              lable: "Modern With Sidebar",
+              lable: "입학설명회",
               tag: ""
           },
           {
               id: 2,
               path: "/classic-with-sidebar",
-              lable: "Classic With Sidebar",
+              lable: "설명회 예약",
               tag: "",
-          },
-          {
-              id: 3,
-              path: "/blog-list",
-              lable: "Blog List",
-              tag: "",
-          },
-          {
-              id: 4,
-              path: "/modern-without-sidebar",
-              lable: "Modern Without Sidebar",
-              tag: "",
-          },
-          {
-              id: 5,
-              path: "/blog-single-sidebar",
-              lable: "Blog Single Sidebar",
-              tag: "",
-          },
-          {
-              id: 6,
-              path: "/blog-single-no-siderbar",
-              lable: "Blog Single No Siderbar",
-              tag: "",
-          },
-
+          }
       ],
       megaMenu: false
   },
@@ -313,39 +249,27 @@ export const menuList = [
         {
             id: 1,
             path: "/modern-with-sidebar",
-            lable: "Modern With Sidebar",
+            lable: "공지사항",
             tag: ""
         },
         {
             id: 2,
             path: "/classic-with-sidebar",
-            lable: "Classic With Sidebar",
+            lable: "항공NEWS",
             tag: "",
         },
         {
             id: 3,
             path: "/blog-list",
-            lable: "Blog List",
+            lable: "방문상담신청",
             tag: "",
         },
         {
             id: 4,
             path: "/modern-without-sidebar",
-            lable: "Modern Without Sidebar",
+            lable: "FAQ",
             tag: "",
-        },
-        {
-            id: 5,
-            path: "/blog-single-sidebar",
-            lable: "Blog Single Sidebar",
-            tag: "",
-        },
-        {
-            id: 6,
-            path: "/blog-single-no-siderbar",
-            lable: "Blog Single No Siderbar",
-            tag: "",
-        },
+        }
 
     ],
     megaMenu: false

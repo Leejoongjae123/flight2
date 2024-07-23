@@ -17,11 +17,11 @@ const About = () => {
     <main>
         <PageTitle pageName={"About"} breadcrumbLink={"About us"}/>
         <StoryFive counter={false}/>
-        <Mission/>
+        {/* <Mission/>
         <TeamGrid/>
         <TestimonialTwo/>
         <FaqTwo/>
-        <SubscribeTwo/>
+        <SubscribeTwo/> */}
     </main>
   )
 }
