@@ -15,21 +15,21 @@ const shortInfo = [
     {
         id: 1,
         icon: team_icon,
-        title: "Dynamic Team",
-        desc: "Receive comprehensive reports detailing the impact of our efforts"
+        title: "학력",
+        desc: "고등학교 졸업자"
     },
     {
         id: 2,
         icon: skills_icon,
-        title: "Extraordinary skills",
-        desc: "Receive comprehensive reports detailing the impact of our efforts"
+        title: "영어성적",
+        desc: "TOEFL 71점 이상<br/> IELTS 6.0이상<br/>DUOLINGO 105점 이상<br/>(어학점수 없는 경우 ELS센터를 통해 조건부 입학 가능, ELS112레벨 수료)"
     },
-    {
-        id: 3,
-        icon: content_icon,
-        title: "Customer focused",
-        desc: "Receive comprehensive reports detailing the impact of our efforts"
-    },
+    // {
+    //     id: 3,
+    //     icon: content_icon,
+    //     title: "Customer focused",
+    //     desc: "Receive comprehensive reports detailing the impact of our efforts"
+    // },
 
 ]
 const TeamOne = () => {
@@ -38,9 +38,9 @@ const TeamOne = () => {
             <div className='container'>
                 <SlideUp>
                     <div className='flex flex-col items-center'>
-                        <Button variant="secondary">Team</Button>
-                        <Title size={"5xl"} className={"max-w-[872px] text-center "}>
-                            <Highlight>Creative team</Highlight> who are behind all your success
+                        <Button variant="secondary">Requirements</Button>
+                        <Title size={"5xl"} className={"max-w-[872px] text-center mt-5"}>
+                            과정 <Highlight>입학조건</Highlight> 
                         </Title>
                     </div>
                 </SlideUp>
@@ -48,7 +48,7 @@ const TeamOne = () => {
                     <div className='shadow-[0px_4px_46.9px_0px_rgba(9,25,40,0.1)] rounded-[30px] max-w-[1320px] mx-auto relative mt-7.5 sm:mt-0'>
                         <Image src={'/images/resource/career-team1-1.jpg'} width={1320} height={510} sizes='100vw' alt="dashboard1" className='lg:rounded-[30px] rounded-2xl' />
                     </div>
-                    <div className='lg:pt-[46px] pt-4 flex lg:flex-row flex-col justify-between max-w-[1320px] mx-auto pb-12.5 px-3 lg:px-0'>
+                    <div className='lg:pt-[46px] pt-4 flex lg:flex-row flex-col justify-evenly max-w-[1320px] mx-auto pb-12.5 px-3 lg:px-0 justify-center items-center'>
                         {
                             shortInfo.map(({ desc, icon, id, title }) => <Card key={id} id={id} icon={icon} title={title} desc={desc} />)
                         }
@@ -74,7 +74,7 @@ const Card = ({ id, icon, title, desc }) => {
                     <Title size={"2xl"}>
                         <Link href={"/team-details"} className='relative hover-underline after:bg-muted after:h-[1px] after:bottom-[1px]'>{title}</Link>
                     </Title>
-                    <p>{desc}</p>
+                    <p dangerouslySetInnerHTML={{ __html: desc }}></p>
                 </div>
             </div>
         </SlideRight>

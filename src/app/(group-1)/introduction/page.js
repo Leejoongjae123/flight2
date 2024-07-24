@@ -6,7 +6,7 @@ import PageTitle from '@/components/sections/pageTitle'
 import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
 import TeamGrid from '@/components/sections/teams/teamGrid'
 import TestimonialTwo from '@/components/sections/testimonials/testimonialTwo'
-
+import TeamOne from '@/components/sections/teams/teamOne'
 export const metadata = {
   title: "NextPro | About",
   description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
@@ -18,6 +18,7 @@ const About = () => {
         <PageTitle pageName={"About"} breadcrumbLink={"About us"}/>
         {/* <StoryFive counter={false}/> */}
         <Mission/>
+        <TeamOne />
         {/* <TeamGrid/>
         <TestimonialTwo/>
         <FaqTwo/>

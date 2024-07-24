@@ -109,7 +109,7 @@ export const menuList = [
             },
             {
                 id: 4,
-                path: "#",
+                path: "/academy",
                 lable: "비행교육원",
                 tag: "",
                 // subDropdonwn: [
@@ -130,7 +130,7 @@ export const menuList = [
             },
             {
                 id: 5,
-                path: "/pricing",
+                path: "/way",
                 lable: "오시는길",
                 tag: ""
             },
