@@ -12,6 +12,7 @@ const Setting = dynamic(() => import("@/components/ui/setting"), {
 });
 import HeaderThree from "@/components/sections/headers/headerThree";
 import FooterThree from "@/components/sections/footers/footerThree";
+import { NextUIProvider } from "@nextui-org/system";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,7 +54,7 @@ export default function RootLayout({ children }) {
         >
           <CountryProvider>
             <HeaderThree />
-            {children}
+            <NextUIProvider>{children}</NextUIProvider>
             <FooterThree className={"pt-48"} />
 
             <Setting />
