@@ -16,16 +16,9 @@ const StoryContentFour = () => {
 
     <SlideUp>
       <Title size={"5xl"}>
-        입학/편입과정
+        일반 과정
       </Title>
-      {/* <p className='pt-5'>Since 2012, we've been pioneering innovative solutions, crafting unique narratives, and consistently delivering exceptional results. Join us in shaping the future of digital excellence!</p> */}
-
-      {/* <div className='flex md:flex-row flex-col gap-6 2xl:mt-12.5 xl:mt-14 mt-8'>
-                <Card bgColor={"after:bg-green"} color={"text-green"} icon={<Category />} title={"Innovative Approach"} />
-                <Card bgColor={"after:bg-purple"} color={"text-purple"} icon={<Filter />} title={"Client-Centric Approach"} />
-                <Card bgColor={"after:bg-red"} color={"text-red"} icon={<Shield />} title={"Results-Driven Focus"} />
-            </div> */}
-      <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5 text-lg">
+      <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5">
         <li className="flex gap-x-5 ">
           <span className="flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
             <svg
@@ -45,9 +38,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">학위</h3>
+            <h3 className="font-medium leading-tight">거주</h3>
             <p className="">
-              미국 No.1 명문 항공대학교 4년제 학사 취득
+              미국 영주권 취득 지원
             </p>
           </div>
         </li>
@@ -71,7 +64,7 @@ const StoryContentFour = () => {
           </span>
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">경력</h3>
-            <p className="">항공사 취업을 위한 비행경력 충족</p>
+            <p className="">훈련용 비행기 134대, 비행경력 충족</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -94,7 +87,8 @@ const StoryContentFour = () => {
           </span>
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">취업</h3>
-            <p className="">미국,아시아권 항공사 취업 연계</p>
+            <p className="">비행교관 취업 보장</p>
+            <p className="">미국 항공사(LCC) 취업 지원</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">

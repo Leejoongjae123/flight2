@@ -146,25 +146,25 @@ export const menuList = [
         dropDown: [
             {
                 id: 1,
-                path: "/services",
+                path: "/process",
                 lable: "교육과정 개요",
                 tag: ""
             },
             {
                 id: 2,
-                path: "/service-details",
+                path: "/prestudy",
                 lable: "입학생 사전교육",
                 tag: "",
             },
             {
               id: 3,
-              path: "/service-details",
+              path: "/curriculum",
               lable: "항공운항학과 커리큘럼",
               tag: "",
           },
           {
             id: 4,
-            path: "/service-details",
+            path: "/scholarship",
             lable: "UND 장학금 안내",
             tag: "",
         },
