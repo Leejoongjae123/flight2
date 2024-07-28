@@ -4,34 +4,33 @@ import { Button } from '../ui/button'
 import Title from '../ui/title'
 import SlideUp from '../animations/slideUp'
 import Link from 'next/link'
-
+import SlideLeft from '../animations/slideLeft'
 const Strategy = () => {
-    return (
-        <section className='lg:py-15 py-9'>
-            <div className='max-w-[1350px] mx-auto px-[15px]'>
-                <div className='grid xl:grid-cols-[auto_642px] lg:grid-cols-[auto_530px] grid-cols-1 xl:gap-15 gap-5'>
-                    <div className='relative'>
-                        <div className='flex justify-center pr-12.5 lg:pr-0'>
-                            <Image src="/images/resource/strategy.png" width={626} height={551} alt="bg" className='rounded-[30px] dark:hidden' />
-                            <Image src="/images/resource/strategy-dark.png" width={626} height={551} alt="bg" className='rounded-[30px] hidden dark:block' />
-                        </div>
-                       
-                    </div>
-                    <div className='pt-5 lg:pt-0'>
-                        <SlideUp>
-                            <Button variant="secondary">Our Strategy</Button>
-                            <Title size={"5xl"} className="lg:max-w-[642px] max-w-full pt-6">Scalable marketing for every stage of your funnel.</Title>
-                            <p className='pt-7.5 font-semibold text-muted-foreground'>Discover the power of streamlined operations and enhanced performance through our integration solutions.</p>
-                            <p className='pt-7.5  font-medium'> <strong>NextMarketing</strong> seamlessly integrates with a variety of industry-leading tools, ensuring a cohesive and efficient digital ecosystem for your business.</p>
-                            <Button asChild className="mt-10">
-                                <Link href={"/about-us"}>Get Started</Link>
-                            </Button>
-                        </SlideUp>
-                    </div>
-                </div>
+  return (
+    <section className='lg:py-15 py-9 flex justify-center items-center flex-col'>
+      <Button className="my-10" variant="secondary">Our Strategy</Button>
+      <div className='max-w-[1350px] mx-auto px-[15px]'>
+        <div className='grid xl:grid-cols-[auto_642px] lg:grid-cols-[auto_530px] grid-cols-1 xl:gap-15 gap-5'>
+          <div className='relative'>
+            <div className='flex justify-center pr-12.5 lg:pr-0'>
+              <Image src="/images/curriculum/curriculum2.png" width={626} height={551} alt="bg" className='rounded-[30px] dark:hidden' />
+              <Image src="/images/curriculum/curriculum2.png" width={626} height={551} alt="bg" className='rounded-[30px] hidden dark:block' />
             </div>
-        </section>
-    )
+
+          </div>
+          <div className='pt-5 lg:pt-0'>
+            <SlideLeft>
+
+              <Title size={"5xl"} className="lg:max-w-[642px] max-w-full pt-6">학교 졸업까지 200시간의 타임빌딩을 할 수 있습니다.</Title>
+              <p className='pt-7.5 font-semibold text-muted-foreground'>추가적으로 교관과정을 통해 미국 리저널 항공사 요구사항인 1,000~1,500시간을 충족하실 수 있습니다.</p>
+              <p className='pt-7.5  font-medium'> UND 글로벌 패스웨이 수료생은 1년의 과정을 국내 선행학습을 통해 32학점을 국내에서 취득할 수 있습니다.</p>
+
+            </SlideLeft>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Strategy

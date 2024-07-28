@@ -13,6 +13,8 @@ import Script from 'next/script'
 import CurriculumTable1 from '@/components/sections/testimonials/curriculumtable1';
 import CurriculumTable2 from '@/components/sections/testimonials/curriculumtable2';
 import CurriculumTable3 from '@/components/sections/testimonials/curriculumtable3';
+import Strategy from '@/components/sections/strategy'
+
 const Curriculum = () => {
 
 
@@ -34,6 +36,9 @@ const Curriculum = () => {
         </SlideUp>
         <SlideUp>
           <CurriculumTable3></CurriculumTable3>
+        </SlideUp>
+        <SlideUp>
+          <Strategy></Strategy>
         </SlideUp>
 
       </div>
