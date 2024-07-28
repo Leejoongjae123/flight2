@@ -12,10 +12,11 @@ import LeveRelpy from './leveRelpy'
 import { blogData } from '@/lib/fackData/blogData'
 import CardOne from './cardOne'
 import SlideUp from '@/components/animations/slideUp'
+import { Button } from '@/components/ui/button'
 
 const BlogArtical = ({ sidebarShow }) => {
   return (
-    <section className='lg:py-15 py-9'>
+    <section className=''>
       <SlideUp>
         <div className={`${sidebarShow ? "" : ""} max-w-[1350px] mx-auto px-[15px]`}>
           <div className={`grid  ${sidebarShow ? "xl:grid-cols-[33%_66%] lg:grid-cols-[40%_60%] grid-cols-1" : "grid-cols-1"} gap-12.5`}>
@@ -26,94 +27,60 @@ const BlogArtical = ({ sidebarShow }) => {
               </div>
             }
             <div>
-              <div>
-                <Title size={"5xl"} className={"lg:text-5xl md:text-4.5xl text-3xl text-center"}>입학생 사전교육</Title>
-                {/* <div className='flex md:flex-row flex-col md:items-center justify-between'>
-                  <div className='flex sm:flex-row flex-col sm:items-center sm:gap-7 gap-3 mt-2.5'>
-                    <div className='flex items-center gap-4'>
-                      <Image src={"/images/blog/posts-author-img1-1.png"} alt='author' width={38} height={38} className='rounded-full' />
-                      <Link href={"#"} className='text-base font-semibold hover:text-primary-foreground transition-all duration-500'>Eleanor Pena</Link>
-                    </div>
-                    <Link href={"#"} className='text-base font-semibold relative after:absolute after:-left-[15px] after:top-1/2 after:-translate-y-1/2 after:bg-secondary after:w-[6px] after:h-[6px] after:rounded-full hover:text-primary-foreground transition-all duration-500 ml-4 sm:ml-0'>Social Media Marketing</Link>
-                    <p className='text-base font-semibold relative after:absolute after:-left-[15px] after:top-1/2 after:-translate-y-1/2 after:bg-secondary after:w-[6px] after:h-[6px] after:rounded-full ml-4 sm:ml-0'>25 Feb 2024</p>
-                  </div>
-                  <p className='text-base font-semibold relative mt-3 lg:mt-0'>5 min read</p>
-                </div> */}
+              <div className='flex justify-center items-center'>
+                {/* <Title size={"5xl"} className={"lg:text-5xl md:text-4.5xl text-3xl text-center"}>입학생 사전교육</Title> */}
+                <Button variant="secondary">OJT</Button>
+
               </div>
-              <div className='lg:pt-12.5 pt-6'>
-                {
-                  sidebarShow ?
-                    <Image src={'/images/blog/blog-post1-10.png'} width={872} height={472} alt='thumb' className='rounded-[30px]' />
-                    :
-                    <Image src={'/images/blog/blog-single-feature1-1.jpg'} width={1320} height={568} alt='thumb' className='rounded-[30px]' />
-                }
-              </div>
+
+
               <div>
-                <div className='max-w-[1080px] mx-auto lg:pt-12.5 pt-6 lg:px-12.5'>
-                  <p>In the ever-evolving landscape of social media, platforms constantly vie for users' attention. Instagram, known for its innovation in visual content, recently introduced a new feature called Reels, aiming to compete with popular short-form video platforms like TikTok. A new study sheds light on how Instagram Reels stack up against TikTok and Facebook videos, revealing surprising insights into user engagement and content performance.</p>
-                  <div className='lg:pt-12.5 pt-6'>
-                    <Title size={"4xl"}>Key Findings:</Title>
-                    <p className='pt-[15px]'>The study, conducted by Next Agency in collaboration with industry experts, analyzed thousands of videos across Instagram Reels, TikTok, and Facebook to understand user behavior and content trends. Here are the key findings:</p>
-                  </div>
-                  <div className='lg:pt-12.5 pt-6'>
-                    <Title size={"2xl"}> <span>1.</span> Higher Engagement on Instagram Reels:</Title>
-                    <p className='pt-[15px]'>Contrary to expectations, the study found that Instagram Reels outperformed both TikTok and Facebook videos in terms of user engagement. Reels garnered higher average likes, comments, and shares, indicating a strong preference among users for this new format.</p>
-                  </div>
-                </div>
-                <div className='lg:py-12.5 py-6'>
-                  <blockquote className='bg-[rgba(46,77,254,0.05)] lg:rounded-[30px] rounded-2.5xl'>
-                    <div className='max-w-[1080px] mx-auto lg:p-12.5 p-5 relative'>
-                      <span className='absolute left-10 top-3'><QuoteIcon /></span>
-                      <i className='md:text-1xl text-xl font-medium text-muted-foreground'>Success in the digital age hinges on adaptation and innovation. Our study sheds light on the transformative power of Instagram Reels, paving of the way for brands to thrive in the dynamic landscape of social media.</i>
-                      <p className='text-primary-foreground pt-4 font-bold'>- Elon Musk</p>
-                    </div>
-                  </blockquote>
-                </div>
-
-                <div className='max-w-[1080px] mx-auto lg:px-12.5 px-0'>
-                  <div className='lg:pb-12.5 pb-6'>
-                    <Title size={"2xl"}> <span>2.</span> Quality Over Quantity</Title>
-                    <p className='pt-[15px]'>While TikTok boasts a larger user base and a plethora of content, Instagram Reels' success lies in its emphasis on quality over quantity. The study revealed that Reels with polished production value and compelling storytelling consistently performed better than hastily produced TikTok videos.</p>
-                  </div>
-                  <div>
-                    <Title size={"2xl"}> <span>3.</span>Audience Demographics</Title>
-                    <p className='pt-[15px]'>Interestingly, the study also uncovered differences in audience demographics across the platforms. While TikTok remains popular among Gen Z and younger audiences, Instagram Reels attracted a broader demographic range, including Millennials and older age groups. This suggests that Reels may have a wider appeal beyond just the younger demographic.</p>
-                  </div>
-                </div>
 
 
-                <div className='flex sm:flex-row flex-col justify-between gap-7.5 lg:pt-12.5 pt-6'>
-                  <div className='w-full'>
-                    <Image src={'/images/blog/single-post1-1.jpg'} width={424} height={475} style={{ width: '100%' }} alt='inner-img-1' className='rounded-[30px] w-full' />
+
+                <div className='flex sm:flex-row flex-col justify-center gap-7.5 lg:pt-12.5 pt-6'>
+                  <div className='md:h-auto w-auto'>
+                    <Image src={'/images/blog/staffs1.png'} width={324} height={275} style={{ width: '100%' }} alt='inner-img-1' className='rounded-[30px] w-full' />
                   </div>
-                  <div className='w-full'>
-                    <Image src={'/images/blog/single-post1-2.jpg'} width={424} height={475} style={{ width: '100%' }} alt='inner-img-2' className='rounded-[30px]' />
-                  </div>
+                  {/* <div className='md:h-auto w-auto'>
+                    <Image src={'/images/blog/staffs2.png'} width={324} height={275} style={{ width: '100%' }} alt='inner-img-2' className='rounded-[30px]' />
+                  </div> */}
                 </div>
 
                 <div className='max-w-[1080px] mx-auto lg:px-12.5'>
                   <div className='lg:pt-12.5 pt-6'>
-                    <Title size={"4xl"}>Implications for Marketers:</Title>
-                    <p className='pt-[15px]'>The study, conducted by Next Agency in collaboration with industry experts, analyzed thousands of videos across Instagram Reels, TikTok, and Facebook to understand user behavior and content trends. Here are the key findings:</p>
-                    <ol className='list-decimal list-inside pt-[15px] ml-5'>
-                      <li>Diversify Your Content Strategy</li>
-                      <li>Focus on Quality and Creativity</li>
-                      <li>Know Your Audience</li>
-                      <li>Platform-Specific Content Strategies</li>
-                      <li>Investment in Influencer Marketing</li>
-                      <li>Adaptation of Advertising Strategies</li>
-                      <li>Opportunities for User-Generated Content (UGC)</li>
-                      <li>Continuous Monitoring and Optimization</li>
-                      <li>Integration with Overall Marketing Strategy</li>
-                      <li>Emphasis on Creativity and Authenticity</li>
+                    <Title size={"4xl"}>입학생 사전 교육 개요:</Title>
+                    <p className='pt-[15px]'>신입생 사전 교육은 학생들이 대학 생활과 학업에 대한 기대를 명확히 이해하도록 도와줍니다. 이를 통해 첫 학기부터 성공적인 학업을 시작할 수 있습니다.</p>
+                    <ol className='list-decimal list-inside pt-[15px] ml-5 text-lg gap-y-2 flex flex-col'>
+                      <li>1.항공정의(Aviation Definitions)</li>
+                      <li>2.항공기의 구조(Aircraft Construction)</li>
+                      <li>3.항공기 시스템1(Aircraft Systems 1)</li>
+                      <li>4.항공기 시스템2(Aircraft Systems 2)</li>
+                      <li>5.항공기 시스템3(Aircraft Systems 3)</li>
+                      <li>6.비행 역학1(Aerodynamics of Flight1)</li>
+                      <li>7.비행 역학2(Aerodynamics of Flight2)</li>
+                      <li>8.무게와 균형(Weight and balance)</li>
+                      <li>9.항공 기상 1(Aviation Weather1)</li>
+                      <li>10.항공 기상 2(Aviation Weather2)</li>
+                      <li>11.항공 기상 업무(Aviation Weather Services)</li>
+                      <li>12.비행 성능(Aircraft Performance)</li>
+                      <li>13.공역(Airspace), 항공고시보(NOTAM)</li>
+                      <li>14.항법 1(Navigation 1)</li>
+                      <li>15.항법 2(Navigation 2)</li>
+                      <li>16.무선 통신(Radio Communication)</li>
+                      <li>17.항공 차트(Aeronautical Chart)</li>
+                      <li>18.인적 요소(Human Factors)</li>
+                      <li>19.공항 인프라(Airport Sign, marking, Lightings</li>
+                      <li>20.파일럿 메뉴얼(Pilot Operating Handbook)</li>
                     </ol>
                   </div>
-                  <div className='lg:pt-12.5 pt-6'>
-                    <Title size={"4xl"}>Conclusion:</Title>
-                    <p className='pt-[15px]'>The emergence of Instagram Reels as a formidable competitor to TikTok and Facebook videos underscores the dynamic nature of social media. As brands and marketers navigate this rapidly evolving landscape, insights from studies like this provide valuable guidance for optimizing content strategy and driving engagement on social platforms. By embracing the power of short-form video content and leveraging platforms like Instagram Reels, brands can connect with their audience in new and meaningful ways, driving brand awareness, engagement, and ultimately, business growth.</p>
+                  <hr className='lg:mt-12.5 mt-6 lg:pb-15 pb-6 text-[#B0C2E2]' />
+                  <div className=''>
+                    <Title size={"4xl"}>결론:</Title>
+                    <p className='pt-6'> 신입생 사전 교육은 학생들이 새로운 학문적 여정을 성공적으로 시작하고 대학 생활에 원활히 적응할 수 있도록 돕는 중요한 과정입니다. 이 교육을 통해 학생들은 학업 준비, 사회적 네트워킹, 캠퍼스 리소스 활용 능력을 향상시킬 수 있으며, 자신감을 가지고 대학 생활을 시작할 수 있게 됩니다. 따라서 신입생 사전 교육은 학생들의 성공과 만족도를 높이는 데 필수적인 요소로 자리잡고 있습니다.</p>
                   </div>
                 </div>
-                <div className='lg:pt-12.5 pt-6'>
+                {/* <div className='lg:pt-12.5 pt-6'>
                   <Tags />
                   <NextPrevPost />
                 </div>
@@ -127,7 +94,7 @@ const BlogArtical = ({ sidebarShow }) => {
                 </div>
                 <Comments />
                 <hr className='lg:mt-12.5 mt-6 lg:pb-15 pb-6 text-[#B0C2E2]' />
-                <LeveRelpy />
+                <LeveRelpy /> */}
               </div>
             </div>
           </div>
