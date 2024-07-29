@@ -13,7 +13,9 @@ const StoryFour = () => {
 
   return (
     <section className='justify-center items flex flex-col'>
-      <Selections selection={selection} setSelection={setSelection}></Selections>
+      <div className='block'>
+        <Selections selection={selection} setSelection={setSelection}></Selections>
+      </div>
       <div className={selection === 'TYPE1' ? '' : 'hidden'}>
         <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
           <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
@@ -232,7 +234,7 @@ const StoryFour = () => {
                         입학
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                      UND 항공대학교 글로벌 패스웨이에서 선발 과정에 관한 홍보 및 행정업무 지원
+                        UND 항공대학교 글로벌 패스웨이에서 선발 과정에 관한 홍보 및 행정업무 지원
                       </p>
                     </div>
                   </div>
@@ -240,9 +242,9 @@ const StoryFour = () => {
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
                     <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
                       <svg aria-hidden="true" class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15" />
                       </svg>
-                      
+
 
 
 
@@ -253,10 +255,10 @@ const StoryFour = () => {
                         어학
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                      SAT 성적 제출 면제 (입학생 사전교육 이수 전제)
+                        SAT 성적 제출 면제 (입학생 사전교육 이수 전제)
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                      공인 영어성적 (TOEFL, 듀오링고, IELTS)
+                        공인 영어성적 (TOEFL, 듀오링고, IELTS)
                       </p>
                     </div>
                   </div>
@@ -264,9 +266,9 @@ const StoryFour = () => {
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
                     <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
                       <svg aria-hidden="true" class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2" />
                       </svg>
-                      
+
 
                     </div>
                     <div>
@@ -276,7 +278,7 @@ const StoryFour = () => {
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         장학금 지원
                       </p>
-                      
+
                     </div>
                   </div>
 
@@ -295,7 +297,7 @@ const StoryFour = () => {
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         영수증
                       </p>
-                      
+
 
                     </div>
                   </div>

@@ -29,7 +29,7 @@ const BlogArtical = ({ sidebarShow }) => {
             <div>
               <div className='flex justify-center items-center'>
                 {/* <Title size={"5xl"} className={"lg:text-5xl md:text-4.5xl text-3xl text-center"}>입학생 사전교육</Title> */}
-                <Button variant="secondary">OJT</Button>
+                <Button variant="secondary">Orientation</Button>
 
               </div>
 
@@ -76,25 +76,10 @@ const BlogArtical = ({ sidebarShow }) => {
                   </div>
                   <hr className='lg:mt-12.5 mt-6 lg:pb-15 pb-6 text-[#B0C2E2]' />
                   <div className=''>
-                    <Title size={"4xl"}>결론:</Title>
+                    <Title size={"4xl"}>결과:</Title>
                     <p className='pt-6'> 신입생 사전 교육은 학생들이 새로운 학문적 여정을 성공적으로 시작하고 대학 생활에 원활히 적응할 수 있도록 돕는 중요한 과정입니다. 이 교육을 통해 학생들은 학업 준비, 사회적 네트워킹, 캠퍼스 리소스 활용 능력을 향상시킬 수 있으며, 자신감을 가지고 대학 생활을 시작할 수 있게 됩니다. 따라서 신입생 사전 교육은 학생들의 성공과 만족도를 높이는 데 필수적인 요소로 자리잡고 있습니다.</p>
                   </div>
                 </div>
-                {/* <div className='lg:pt-12.5 pt-6'>
-                  <Tags />
-                  <NextPrevPost />
-                </div>
-                <hr className='lg:my-12.5 my-8 text-[#B0C2E2]' />
-                <Author />
-                <div className='lg:pt-12.5 pt-6'>
-                  <Title size={"4xl"}>Recent Posts</Title>
-                  <div className='grid sm:grid-cols-2 grid-cols-1 gap-7.5 pt-6'>
-                    {blogData.slice(0, 2).map(({ author, category, date, id, thumb, title }) => <CardOne key={id} author={author} category={category} date={date} thumb={thumb} title={title} />)}
-                  </div>
-                </div>
-                <Comments />
-                <hr className='lg:mt-12.5 mt-6 lg:pb-15 pb-6 text-[#B0C2E2]' />
-                <LeveRelpy /> */}
               </div>
             </div>
           </div>
