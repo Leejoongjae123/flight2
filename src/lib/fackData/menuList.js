@@ -200,19 +200,19 @@ export const menuList = [
         dropDown: [
             {
                 id: 1,
-                path: "/modern-with-sidebar",
+                path: "/militaryjobintroduction",
                 lable: "회전익 항공기 준사관 소개",
                 tag: ""
             },
             {
                 id: 2,
-                path: "/classic-with-sidebar",
+                path: "/militaryjobcurriculum",
                 lable: "교과과정",
                 tag: "",
             },
             {
                 id: 3,
-                path: "/blog-list",
+                path: "/militaryjobadvantage",
                 lable: "준사관 준비반 장점",
                 tag: "",
             },
@@ -228,13 +228,13 @@ export const menuList = [
       dropDown: [
           {
               id: 1,
-              path: "/modern-with-sidebar",
+              path: "/meeting",
               lable: "입학설명회",
               tag: ""
           },
           {
               id: 2,
-              path: "/classic-with-sidebar",
+              path: "/requestmeeting",
               lable: "설명회 예약",
               tag: "",
           }
@@ -248,25 +248,25 @@ export const menuList = [
     dropDown: [
         {
             id: 1,
-            path: "/modern-with-sidebar",
+            path: "/notification",
             lable: "공지사항",
             tag: ""
         },
         {
             id: 2,
-            path: "/classic-with-sidebar",
+            path: "/news",
             lable: "항공NEWS",
             tag: "",
         },
         {
             id: 3,
-            path: "/blog-list",
+            path: "/requestconsulting",
             lable: "방문상담신청",
             tag: "",
         },
         {
             id: 4,
-            path: "/modern-without-sidebar",
+            path: "/faq",
             lable: "FAQ",
             tag: "",
         }
