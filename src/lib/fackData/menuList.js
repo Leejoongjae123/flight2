@@ -179,13 +179,13 @@ export const menuList = [
         dropDown: [
             {
                 id: 1,
-                path: "/portfolio",
+                path: "/companyjob1",
                 lable: "졸업 직후 국내항공사 취업",
                 tag: ""
             },
             {
                 id: 2,
-                path: "/portfolio-details",
+                path: "/companyjob2",
                 lable: "비행교관 경력 후 취업",
                 tag: "",
             },
