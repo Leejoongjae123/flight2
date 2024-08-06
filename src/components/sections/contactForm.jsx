@@ -32,10 +32,10 @@ const ContactForm = ({ color, inputColor }) => {
                   <div className={`w-[75px] h-[75px] rounded-lg flex justify-center items-center drop-shadow-3xl bg-white mb-3 gap-y-5`}>
                     <Image src={'/images/shapes/cro-icon.png'} width={45} height={50} alt='map arrwo' />
                   </div>
-                  <Title size={"5xl"} className={`md:leading-[140%] ${color}`}>입학설명회 신청</Title>
-                  <p className={`font-semibold mt-4 ${color}`}>항공유학원에서 입학설명회를 개최합니다. 항공산업에 관심이 있으시다면, 이번 기회를 통해 유학과정, 학습 환경, 진로 전망 등에 대해 자세히 알아보실 수 있는 자리가 될 것입니다.</p>
+                  <Title size={"5xl"} className={`md:leading-[140%] ${color}`}>방문상담 신청</Title>
+                  <p className={`font-semibold mt-4 ${color}`}>전문 상담가와 함께 나만의 맞춤형 유학 플랜을 세워보세요. 꿈꾸던 미래, 더 이상 머나먼 이야기가 아닙니다. 당신의 목표에 딱 맞는 대학, 전공, 유학지 선택부터 비자 신청, 현지 생활 정보까지, 유학의 모든 것을 한 자리에서 해결해드립니다.</p>
                   <div className='flex justify-center items-center my-5'>
-                    <Button variant={"secondary"} className="bg-white border text-blue-800 transition-transform duration-300 hover:scale-105">입학설명회 신청</Button>
+                    <Button variant={"secondary"} className="bg-white border text-blue-800 transition-transform duration-300 hover:scale-105">방문상담 신청</Button>
                   </div>
                 </div>
 
