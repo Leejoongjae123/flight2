@@ -200,19 +200,19 @@ export const menuList = [
         dropDown: [
             {
                 id: 1,
-                path: "/militaryjobintroduction",
+                path: "/militaryintro",
                 lable: "회전익 항공기 준사관 소개",
                 tag: ""
             },
             {
                 id: 2,
-                path: "/militaryjobcurriculum",
+                path: "/militarycurriculum",
                 lable: "교과과정",
                 tag: "",
             },
             {
                 id: 3,
-                path: "/militaryjobadvantage",
+                path: "/militaryad",
                 lable: "준사관 준비반 장점",
                 tag: "",
             },

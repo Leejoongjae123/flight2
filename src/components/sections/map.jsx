@@ -30,7 +30,7 @@ const ContactMap = () => {
                 <div>
                     <div className='flex flex-col items-center'>
                         <Button variant="secondary">Contact Us</Button>
-                        <Title size={"5xl"} className="max-w-[832px] pt-6 text-center"> Discover <Highlight>Our Location</Highlight>and Plan Your Visit</Title>
+                        <Title size={"5xl"} className="max-w-[832px] pt-6 text-center"> <Highlight>Our Location</Highlight>and Plan Your Visit</Title>
                     </div>
                 </div>
                 <div>
