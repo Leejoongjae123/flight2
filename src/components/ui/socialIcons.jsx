@@ -9,18 +9,18 @@ import { cn } from '@/lib/utils';
 const SocialIcons = ({color, prantBorder}) => {
     return (
         <ul className={`flex items-center gap-5 ${color}`}>
-            <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
+            {/* <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
                 <Link href={"https://www.facebook.com/"} aria-label="facebook"><FaFacebook/></Link>
-            </li>
-            <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
+            </li> */}
+            {/* <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
                 <Link href={"https://twitter.com/?lang=en"} aria-label="twitter"><FaXTwitter /></Link>
-            </li>
+            </li> */}
             <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
                 <Link href={"https://www.instagram.com/"} aria-label="instagram"><FaInstagram /></Link>
             </li>
-            <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
+            {/* <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
                 <Link href={"https://bd.linkedin.com/"} aria-label="linkedin"><FaLinkedin /></Link>
-            </li>
+            </li> */}
         </ul>
     )
 }

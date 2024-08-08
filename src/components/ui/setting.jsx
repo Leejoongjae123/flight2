@@ -75,8 +75,8 @@ const Setting = () => {
                             <h3 className='text-2xl font-extrabold text-muted-foreground pb-2'>Connect for more information</h3>
                             <p>I'm here, ready to answer any types of questions</p>
                             <ul className='py-4'>
-                                <li><Link href={"mailto:contact@nextpro.com"} className='multiline-hover'>contact@nextpro.com</Link></li>
-                                <li><Link href={"tel:+17186385000"}><span className='font-semibold'>Call us:</span> <span className='multiline-hover'>+1 718-638-5000 </span> </Link></li>
+                                <li><Link href={"mailto:fuzzily@naver.com"} className='multiline-hover'>fuzzily@naver.com</Link></li>
+                                <li><Link href={"tel:02-6011-3888"}><span className='font-semibold'>Call us:</span> <span className='multiline-hover'>02-6011-3888 </span> </Link></li>
                             </ul>
                             <SocialIcons />
                         </div>

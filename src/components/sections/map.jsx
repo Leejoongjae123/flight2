@@ -52,17 +52,17 @@ const ContactMap = () => {
                                             <h5 className='text-lg font-bold text-muted-foreground'>NextPro USA</h5>
                                             <b className='text-muted-foreground inline-block pt-2'>NextMarketing Inc.</b>
 
-                                            <p>243, Eastern Parkway, Brooklyn, New York, USA</p>
+                                            <p>서울시 강남구 테헤란로 8길 40 (역삼동, 알티넷 빌딩)</p>
                                         </div>
                                     </Popup>
                                 </Marker>
                             </MapContainer>
                         </div>
                         <div className='lg:pt-[46px] pt-4 flex lg:flex-row flex-col justify-between max-w-[1320px] mx-auto pb-12.5 px-3 lg:px-0'>
-                            <Card icon={team_icon} title={'Address'} isIcon={false} desc={'243, Eastern Parkway, Brooklyn, New York, USA'} />
+                            <Card icon={team_icon} title={'Address'} isIcon={false} desc={'서울시 강남구 테헤란로 8길 40 (역삼동, 알티넷 빌딩)'} />
                             <Card icon={skills_icon} title={'Contact'} isIcon={false} desc={`                       
-                             <p> <span class='font-semibold'>Email:</span> <a href={"mailto:info@next.com"} class='relative hover-underline after:h-[1px] after:bg-muted'> info@next.com</a> </p>
-                             <p> <span class='font-semibold'>Call us:</span> <a href={"tal:+17186385000"} class='relative hover-underline after:h-[1px] after:bg-muted'> +1 718-638-5000</Link> </p>
+                             <p> <span class='font-semibold'>Email:</span> <a href={"mailto:fuzzily@naver.com"} class='relative hover-underline after:h-[1px] after:bg-muted'>fuzzily@naver.com</a> </p>
+                             <p> <span class='font-semibold'>Call us:</span> <a href={"tal:02-6011-3888"} class='relative hover-underline after:h-[1px] after:bg-muted'> 02-6011-3888</Link> </p>
                              `} />
                             <Card icon={content_icon} title={'Social'} desc={<SocialIcons prantBorder={"text-2xl mt-[22px]"}/>} isSocalIcon={true} />
                         </div>

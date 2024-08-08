@@ -27,30 +27,20 @@ const TestimonialOne = () => {
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Location</Button>
             <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">유앤디글로벌 캠퍼스 위치 안내</Title>
+            <p className='text-center  my-5'>UND 항공대학교 글로벌 패스웨이는 서울시 강남구 역삼동에 위치하고 있으며 세계적인 수준의 전문 조종사를 양성하노스타코타 항공대학 과정의 입학홍보 및 교육 업무를 담당하고 있습니다.
+            </p>
           </div>
         </SlideUp>
         <SlideUp>
-          <div id="map" className='w-auto h-[50vh] my-5'></div>
-          <p className='text-2xl text-center'>주소 : 서울특별시 강남구 테헤란로8길 40</p>
-          {/* <div className='relative'>
-                        <Swiper
-                            spaceBetween={0}
-                            slidesPerView={1}
-                            pagination={pagination}
-                            loop={true}
-                            // effect={"fade"}
-                            grabCursor= {true}
-                            modules={[Pagination, Navigation, EffectFade]}
-                        >
-                            {
-                                testimonialData.slice(0, 3).map(({ id, name, position, rating, review, src }) => <SwiperSlide key={id}>
-                                    <CardOne name={name} rating={rating} review={review} position={position} src={src} />
-                                </SwiperSlide>
-                                )
-                            }
-                        </Swiper>
-                        <div className='testimonial-pagination flex items-center gap-2 absolute bottom-16 left-20 z-10 [&_.swiper-pagination-bullet-active]:opacity-100'></div>
-                    </div> */}
+          <div id="map" className='w-auto h-[50vh] my-5'>
+
+          </div>
+          <div className='my-5 '>
+            <p className='text-2xl text-center my-5'>주소 : 서울특별시 강남구 테헤란로8길 40</p>
+            <p className='text-2xl text-center my-5'>대중교통 : 2호선 강남역 1, 2번출구 500m 도보 10분 혹은 신분당선 강남역 3,4번 출구 500m 도보 10분</p>
+
+          </div>
+
         </SlideUp>
       </div>
       {/* <Script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5ysfgy3qum" strategy="lazyOnload"></Script>

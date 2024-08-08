@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
           <CountryProvider>
             <HeaderThree />
             <NextUIProvider>{children}</NextUIProvider>
-            <FooterThree className={"pt-48"} />
+            <FooterThree className={"pt-24"} />
 
             <Setting />
             <ScrollCircle />

@@ -33,8 +33,8 @@ const HeaderShortInfo = () => {
             <div className='px-12.5 pb-12.5'>
                 <h5 className='text-muted-foreground font-semibold'>Get In Touch</h5>
                 <div className='text-[#7C848C] mb-[26px]'>
-                    <p>243, Eastern Parkway, Brooklyn, New York</p>
-                    <p> <Link href={"mailto:ask@next.com"}>ask@next.com</Link></p>
+                    <p>서울시 강남구 테헤란로 8길 40 (역삼동, 알티넷 빌딩)</p>
+                    <p> <Link href={"mailto:ask@next.com"}>fuzzily@naver.com</Link></p>
                     <p>Ph:<Link href={"tel:17186385000"}>+1.718.638.5000</Link></p>
                 </div>
                 <SocialIcons/>
