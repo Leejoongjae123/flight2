@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
             <NextUIProvider>{children}</NextUIProvider>
             <FooterThree className={"pt-24"} />
 
-            <Setting />
+            {/* <Setting /> */}
             <ScrollCircle />
             <CustomCursor />
           </CountryProvider>
