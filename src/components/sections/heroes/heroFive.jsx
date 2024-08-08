@@ -11,19 +11,19 @@ const HeroFive = () => {
                 <div className='container'>
                     <div className='max-w-[1350px] mx-auto'>
                         <div className='max-w-[754px]'>
-                            <Title size={"7.5xl"} className={"text-white"}>유앤디 글로벌 </Title>
-                            <p className='font-semibold text-white pt-7.5'>Choose Next as your digital marketing agency and propel ur business to new heights with our award-winning digital marketing services.</p>
+                            <Title size={"7.5xl"} className={"text-white"}>UND 글로벌 항공 패스웨이 </Title>
+                            <p className='font-semibold text-white pt-7.5'>세계 최고의 항공 전문가들과 함께하는 UND 글로벌 항공 패스웨이에서 여러분의 꿈을 현실로 만들어 드립니다. 최고의 비행학교와 파트너십을 맺어, 최적의 교육 환경과 커리큘럼을 제공합니다.</p>
 
                             <div className='flex sm:flex-row flex-col sm:items-center gap-[32px] pt-[55px] pb-[22px]'>
-                                <div>
+                                {/* <div>
                                     <Button asChild className="dark:text-white hover:border-white hover:text-white">
                                         <Link href="/pricing"> Get Started for Free </Link>
                                     </Button>
-                                </div>
-                                <div className='flex items-center gap-2'>
+                                </div> */}
+                                {/* <div className='flex items-center gap-2'>
                                     <PlayIcon playOne={false} color="text-white" />
                                     <p className='font-semibold text-white'>How It works?</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

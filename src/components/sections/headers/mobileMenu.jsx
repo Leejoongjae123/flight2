@@ -79,7 +79,7 @@ const MobileMenu = ({ data }) => {
                                                 </ul>
                                             }
 
-                                            {/* mega menu start */
+                                            {
                                                 megaMenu.length &&
                                                 <ul className={`transition-all duration-500 ${mainDropDownActive === id ? "max-h-[2200px] overflow-auto pt-3 no-scrollbar" : "max-h-0 overflow-hidden"}`}>
                                                     {
@@ -97,14 +97,14 @@ const MobileMenu = ({ data }) => {
                                                         })
                                                     }
                                                 </ul>
-                                                /* mega menu end */
+
                                             }
                                         </li>
                                     )
                                 })
                             }
                         </ul>
-                        <MobileExtraInfo />
+                        {/* <MobileExtraInfo /> */}
                     </div>
                 </SheetContent>
             </Sheet>

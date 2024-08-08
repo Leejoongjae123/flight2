@@ -222,7 +222,7 @@ export const menuList = [
         megaMenu: false
     },
     {
-      id: 5,
+      id: 6,
       path: "#",
       lable: "입학안내",
       dropDown: [
@@ -242,7 +242,7 @@ export const menuList = [
       megaMenu: false
   },
   {
-    id: 5,
+    id: 7,
     path: "#",
     lable: "커뮤니티",
     dropDown: [
