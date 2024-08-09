@@ -16,31 +16,31 @@ import SlideUp from '../animations/slideUp'
 const tabList = [
   {
     id: "development",
-    tab_name: "Strategy Development",
+    tab_name: "새로운 항공기에 대한투자를 승인",
     tab_icon: icon_1,
     tab_content: "/images/resource/approach-image4-1.jpg"
   },
   {
     id: "partnership",
-    tab_name: "Collaborative Partnership",
+    tab_name: "전미 비즈니스 항공협회 행사 개최",
     tab_icon: icon_2,
     tab_content: "/images/resource/approach-image4-2.jpg"
   },
   {
     id: "decisions",
-    tab_name: "Data-Driven Decisions",
+    tab_name: "2022년 가을학기 항공학과 오리엔테이션 진행",
     tab_icon: icon_3,
     tab_content: "/images/resource/approach-image4-1.jpg"
   },
   {
     id: "execution",
-    tab_name: "Agile Execution",
+    tab_name: "항공학과 확장공사 완료",
     tab_icon: icon_4,
     tab_content: "/images/resource/approach-image4-2.jpg"
   },
   {
     id: "communication",
-    tab_name: "Transparent Communication",
+    tab_name: "코로나 백신접종 학생 인센티브 장학금 지급",
     tab_icon: icon_5,
     tab_content: "/images/resource/approach-image4-1.jpg"
   },
@@ -91,7 +91,7 @@ const Approach = () => {
                           <Title size={"4xl"}>Strategic Planning Tailored to Your Vision</Title>
                           <p className='pt-5 pb-7.5'>Our strategic planning process begins with a deep dive into your business objectives, target audience, and competitive landscape. We meticulously analyze market trends and consumer insights to craft customized strategies.</p>
                           <Button asChild variant='outline'>
-                            <Link href={"/services"}> Discover more </Link>
+                            <Link href={"/services"}> 더보기 </Link>
                           </Button>
 
                         </div>

@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import SlideUp from '@/components/animations/slideUp'
+import Link from 'next/link'
 
 const FaqOne = () => {
   return (
@@ -27,11 +28,21 @@ const FaqOne = () => {
               faqData.map(({ ans, id, question }) => {
                 return (
                   <SlideUp key={id} id={id}>
-                    <AccordionItem  value={id} className='mb-2.5 bg-gray rounded-[15px] border-none'>
+                    <AccordionItem value={id} className='mb-2.5 bg-gray rounded-[15px] border-none'>
                       <AccordionTrigger className="font-semibold border-none lg:px-7.5 px-4 lg:py-7.5 py-4 text-left [&[data-state=open]]:text-primary-foreground [&[data-state=closed]]:text-muted-foreground">{question}</AccordionTrigger>
                       <AccordionContent className="lg:px-7.5 px-4 text-muted-foreground">
+                        <div>
                         {ans}
+                        </div>
+                        
+                        <div className='w-full flex justify-center items-center my-5'>
+                          <Button size='small' variant='outline'>
+                            <Link href={"/services"}> <p className='text-sm p-2'>더보기</p> </Link>
+                          </Button>
+                        </div>
                       </AccordionContent>
+
+
                     </AccordionItem>
                   </SlideUp>
                 )
