@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqTwo from '@/components/sections/faqs/faqTwo'
-import Mission from '@/components/sections/mission'
+import Mission2 from '@/components/sections/mission2'
 import StoryFive from '@/components/sections/ourStories/storyFive'
 import PageTitle from '@/components/sections/pageTitle'
 import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
@@ -17,8 +17,8 @@ const About = () => {
     <main>
         <PageTitle pageName={"About"} breadcrumbLink={"About us"}/>
         {/* <StoryFive counter={false}/> */}
-        <Mission/>
-        <TeamOne />
+        <Mission2/>
+        {/* <TeamOne /> */}
         {/* <TeamGrid/>
         <TestimonialTwo/>
         <FaqTwo/>

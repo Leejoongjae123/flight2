@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqOne2 from '@/components/sections/faqs/faqOne2'
+import FaqOne3 from '@/components/sections/faqs/faqOne3'
 import FaqTwo from '@/components/sections/faqs/faqTwo'
 import PageTitle from '@/components/sections/pageTitle'
 import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
@@ -13,7 +13,8 @@ const Faq = () => {
     return (
         <main>
             <PageTitle pageName={"Faq"} breadcrumbLink={"Faq"} />
-            <FaqOne2 />
+            {/* <FaqOne2 /> */}
+            <FaqOne3 />
             {/* <FaqTwo /> */}
             {/* <SubscribeTwo /> */}
         </main>
