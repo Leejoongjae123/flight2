@@ -58,21 +58,22 @@ const Mission = () => {
               </p>
             </SlideLeft>
           </div>
-          <div className='pt-3 lg:pt-0 w-[60vw]'>
+          <div className='pt-3 lg:pt-0 w-[90vw] md:w-[60vw]'>
 
 
-            <div class="max-w-[1350px] mx-auto overflow-x-auto shadow-md sm:rounded-lg">
-              <table class="w-full text-medium text-left rtl:text-right text-gray-500 ">
-                <thead class="font-bold text-medium text-muted-foreground uppercase bg-[rgba(46,77,254,0.05)] dark:bg-gray-700 dark:text-gray-400">
+
+            <div className="max-w-[1350px] sm:rounded-lg overflow-x-auto shadow-md ">
+              <table className="w-[600px] md:w-full text-medium text-left rtl:text-right text-gray-500 ">
+                <thead className=" font-bold text-medium text-muted-foreground uppercase bg-[rgba(46,77,254,0.05)] dark:bg-gray-700 dark:text-gray-400">
                   <tr>
-                    <th scope="col" class="px-6 py-3 w-1/3 text-center">
+                    <th scope="col" className="px-6 py-3 w-1/3 text-center">
                       구분
                     </th>
-                    <th scope="col" class="px-6 py-3 w-1/3 text-center">
+                    <th scope="col" className="px-6 py-3 w-1/3 text-center">
 
                       배점
                     </th>
-                    <th scope="col" class="px-6 py-3 w-1/3 text-center">
+                    <th scope="col" className="px-6 py-3 w-1/3 text-center">
 
 
                       종목
@@ -80,14 +81,14 @@ const Mission = () => {
                   </tr>
                 </thead>
                 <tbody className='text-center text-muted-foreground'>
-                  <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="px-6 py-4 font-medium  whitespace-nowrap ">
                       기술사, 기능장
                     </th>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       5
                     </td>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       <ul>
                         <li>조종사 면장</li>
                         <li>항공기관기술사</li>
@@ -97,14 +98,14 @@ const Mission = () => {
 
                     </td>
                   </tr>
-                  <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap ">
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="px-6 py-4 font-medium  whitespace-nowrap ">
                       기사
                     </th>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       4.25
                     </td>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       <ul>
                         <li>항공기사</li>
                         <li>항공정비사</li>
@@ -114,28 +115,28 @@ const Mission = () => {
 
                     </td>
                   </tr>
-                  <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       산업기사
                     </th>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       3.5
                     </td>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       <ul>
                         <li>항공산업기사</li>
                         <li>헬기정비사2급</li>
                       </ul>
                     </td>
                   </tr>
-                  <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       기능사
                     </th>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       2.75
                     </td>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       <ul>
                         <li>항공장비정비</li>
                         <li>항공기관정비</li>
@@ -146,14 +147,14 @@ const Mission = () => {
                       </ul>
                     </td>
                   </tr>
-                  <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <tr className="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                       없음
                     </th>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
                       1.2
                     </td>
-                    <td class="px-6 py-4">
+                    <td className="px-6 py-4">
 
                     </td>
                   </tr>
