@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import CheckoutForm from "@/app/(group-1)/requestmeeting/components/checkout-form";
+import CheckoutForm from "@/app/(home)/requestmeeting/components/checkout-form";
 
 
 
