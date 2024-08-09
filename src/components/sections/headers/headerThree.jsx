@@ -50,7 +50,7 @@ const HeaderThree = () => {
                       <Image src={"/images/logo-next.png"} width={179} height={53} alt='logo-original' unoptimized="true" className='w-full h-full dark:block hidden' />
                     </Link>
                   </div>
-                  <div className='flex items-center mx-5'>
+                  <div className='flex items-center mx-5 gap-x-10'>
                     <nav className='xl:block hidden'>
                       <ul className='flex items-center 2xl:gap-12.5 gap-7'>
                         {
@@ -75,7 +75,7 @@ const HeaderThree = () => {
                     </nav>
                     <div className='hidden xl:flex items-center gap-5 mx-5'>
                       <Button asChild size="xl" className="dark:text-white hover:text-white hover:border-white">
-                        <Link href={"/contact-us"}>Login</Link>
+                        <Link href={"/login"}>Login</Link>
                       </Button>
                     </div>
                     <MobileMenu data={menuList} />
