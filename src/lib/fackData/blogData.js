@@ -1,7 +1,7 @@
 export const blogData = [
     {
         id: 1,
-        title: "플로리다텍 4년제 학사학위",
+        title: "UND 항공대학 4년제 학사학위",
         date: "25 January 2024",
         author: {
             author_img: "/images/blog/posts-author-img1-1.png",
@@ -14,7 +14,7 @@ export const blogData = [
     },
     {
         id: 2,
-        title: "이론과 실무능력을 갖춘 FAA계기 사업용 조종사",
+        title: "이론과 실무 능력을 간춘 사업용 조종사 양성",
         date: "26 January 2024",
         author: {
             author_img: "/images/blog/posts-author-img1-2.png",
@@ -27,7 +27,7 @@ export const blogData = [
     },
     {
         id: 3,
-        title: "장학금 지급 (연간 US$8,000~US$16,000)",
+        title: "SAT 면제, ELS 조건부 입학가능",
         date: "27 January 2024",
         author: {
             author_img: "/images/blog/posts-author-img1-1.png",

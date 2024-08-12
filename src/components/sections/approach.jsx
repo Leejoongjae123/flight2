@@ -57,7 +57,7 @@ const Approach = () => {
       <div className='max-w-[1350px] mx-auto px-[15px]'>
         <SlideUp>
           <div className='flex flex-col items-center'>
-            <Button variant="secondary">Our News</Button>
+            <Button variant="secondary">항공 News</Button>
             <Title size={"5xl"} className="max-w-[872px] pt-6 text-center">유앤디글로벌 <Highlight>주요 뉴스</Highlight></Title>
           </div>
         </SlideUp>

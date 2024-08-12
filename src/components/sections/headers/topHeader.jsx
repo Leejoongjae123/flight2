@@ -33,11 +33,11 @@ const TopHeader = ({ color, bgColor, darkBg }) => {
         <div className='flex justify-between items-center'>
           {/*  left side Start */}
           <div className='flex items-center gap-7.5'>
-            <p className={cn(`flex items-center gap-4 ${color}`)}>
+            {/* <p className={cn(`flex items-center gap-4 ${color}`)}>
               <Email />
               <Link href={"mailto:fuzzily@naver.com"} className='multiline-hover'>fuzzily@naver.com</Link>
-            </p>
-            <p className='h-7.5 w-[1px] bg-accent dark:bg-[#717A83]'></p>
+            </p> */}
+            {/* <p className='h-7.5 w-[1px] bg-accent dark:bg-[#717A83]'></p> */}
             <p className={cn(`flex items-center gap-4 ${color}`)}>
               <Call />
               <Link href={"tel:02-6011-3888"}><span className='font-semibold'>Call us:</span> <span className='multiline-hover'>02-6011-3888</span> </Link>

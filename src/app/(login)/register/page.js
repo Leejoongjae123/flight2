@@ -1,15 +1,8 @@
-"use client";
-
 import React from "react";
 import {Button, Input, Checkbox, Link, Divider} from "@nextui-org/react";
 import {Icon} from "@iconify/react";
 
 export default function Component() {
-  const [isVisible, setIsVisible] = React.useState(false);
-  const [isConfirmVisible, setIsConfirmVisible] = React.useState(false);
-
-  const toggleVisibility = () => setIsVisible(!isVisible);
-  const toggleConfirmVisibility = () => setIsConfirmVisible(!isConfirmVisible);
 
   return (
 <section class="flex justify-center items-center bg-[url('/images/aircraft/login.png')] bg-no-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply bg-opacity-60 h-screen">
