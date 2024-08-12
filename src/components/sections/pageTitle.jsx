@@ -10,19 +10,7 @@ const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) =
             <div className='pb-[130px] pt-25 px-[15px]'>
                 <div className='flex flex-col items-center'>
                     <Title size={"5xl"} className={"text-white"}>{pageName}</Title>
-                    <div className='flex items-center flex-wrap gap-[15px] pt-6'>
-                        <Link href={"/"} className='text-1xl font-semibold text-white'>Home</Link>
-                        <span className='text-white'><FaChevronRight /></span>
-                        {breadcrumbCurrent ?
-                            <>
-                                <Link href={`/${breadcrumbLink}`} className='text-1xl font-semibold text-white capitalize'>{breadcrumbLink}</Link>
-                                <span className='text-white'><FaChevronRight /></span>
-                            </>
-                            :
-                            <p className='text-1xl font-semibold text-[#C0C0C0] capitalize'>{breadcrumbLink}</p>
-                        }
-                        <p className='text-1xl font-semibold text-[#C0C0C0]'>{breadcrumbCurrent}</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>

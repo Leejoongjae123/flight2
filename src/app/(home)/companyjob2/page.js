@@ -15,7 +15,7 @@ export const metadata = {
 const Testimonial = () => {
     return (
         <main>
-            <PageTitle pageName={"Testimonials"} breadcrumbLink={"Testimonials"} />
+            <PageTitle pageName={"비행교관 경력 후 취업"} breadcrumbLink={"Testimonials"} />
             {/* <JobsPost></JobsPost> */}
             <ServiceFive></ServiceFive>
             {/* <TestimonialOne />

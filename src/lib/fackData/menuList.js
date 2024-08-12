@@ -71,13 +71,13 @@ export const menuList = [
             {
                 id: 1,
                 path: "/about-us1",
-                lable: "총장인사말",
+                lable: "이사장 인사말",
                 tag: ""
             },
             {
                 id: 2,
                 path: "/about-us2",
-                lable: "대표원장 인사말",
+                lable: "원장 인사말",
                 tag: "",
             },
             {

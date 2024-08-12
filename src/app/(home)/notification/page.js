@@ -16,7 +16,7 @@ import { Pagination } from "@nextui-org/react";
 const Author = () => {
   return (
     <main>
-      <PageTitle pageName={"Author"} breadcrumbLink={"Author"} />
+      <PageTitle pageName={"공지사항"} breadcrumbLink={"Author"} />
       <div className="lg:py-15 py-10">
         <div className="max-w-[1350px] mx-auto px-[15px]">
           <SlideUp>

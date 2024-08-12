@@ -15,7 +15,7 @@ export const metadata = {
 const About = () => {
   return (
     <main>
-        <PageTitle pageName={"About"} breadcrumbLink={"About us"}/>
+        <PageTitle pageName={"교과과정"} breadcrumbLink={"About us"}/>
         {/* <StoryFive counter={false}/> */}
         <Mission2/>
         {/* <TeamOne /> */}

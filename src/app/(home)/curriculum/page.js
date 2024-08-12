@@ -16,7 +16,7 @@ export const metadata = {
 const Services = () => {
     return (
         <main>
-            <PageTitle pageName={"Services"} breadcrumbLink={"Services"}/>
+            <PageTitle pageName={"항공운항학과 커리큘럼"} breadcrumbLink={"Services"}/>
             <Curriculum></Curriculum>
 
             {/* <StoryFour/>

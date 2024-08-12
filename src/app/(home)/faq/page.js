@@ -12,7 +12,7 @@ export const metadata = {
 const Faq = () => {
     return (
         <main>
-            <PageTitle pageName={"Faq"} breadcrumbLink={"Faq"} />
+            <PageTitle pageName={"FAQ"} breadcrumbLink={"Faq"} />
             {/* <FaqOne2 /> */}
             <FaqOne3 />
             {/* <FaqTwo /> */}

@@ -12,7 +12,7 @@ export const metadata = {
 const Testimonial = () => {
     return (
         <main>
-            <PageTitle pageName={"Testimonials"} breadcrumbLink={"Testimonials"} />
+            <PageTitle pageName={"오시는 길"} breadcrumbLink={"Testimonials"} />
             <TestimonialOne />
 
             {/* <TestimonialTwo /> */}
