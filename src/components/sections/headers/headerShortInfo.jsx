@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import { headerExtraInfo } from '@/lib/fackData/headerExtraInfo'
-import SocialIcons from '@/components/ui/socialIcons'
-import Logo from '@/components/ui/logo'
+import { headerExtraInfo } from '@/src/lib/fackData/headerExtraInfo'
+import SocialIcons from '@/src/components/ui/socialIcons'
+import Logo from '@/src/components/ui/logo'
 
 
 const HeaderShortInfo = () => {

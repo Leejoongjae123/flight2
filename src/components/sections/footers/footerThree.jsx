@@ -1,9 +1,9 @@
 import React from 'react'
-import SocialIcons from '@/components/ui/socialIcons'
+import SocialIcons from '@/src/components/ui/socialIcons'
 import ImportanceLinks from './importanceLinks'
 import CopyRight from './copyRight'
 import FooterContact from './footerContact'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 
 const FooterThree = ({ className }) => {
     return (

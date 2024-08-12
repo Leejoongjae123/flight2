@@ -9,7 +9,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/src/components/ui/sheet"
 import { MdMenu } from 'react-icons/md';
 import MobileExtraInfo from './mobileExtraInfo';
 import { usePathname } from 'next/navigation';

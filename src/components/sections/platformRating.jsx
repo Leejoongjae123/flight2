@@ -8,9 +8,9 @@ import 'swiper/css';
 
 import Rating from '../ui/rating';
 import SlideRight from '../animations/slideRight';
-import { ratingData } from '@/lib/fackData/ratingData';
-import ScrollingBanner from "@/components/sections/scrollingbanner/scrolling-banner";
-import { Logo1, Logo10, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9 } from "@/components/sections/scrollingbanner/logos";
+import { ratingData } from '@/src/lib/fackData/ratingData';
+import ScrollingBanner from "@/src/components/sections/scrollingbanner/scrolling-banner";
+import { Logo1, Logo10, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9 } from "@/src/components/sections/scrollingbanner/logos";
 const logos = [{
   key: "logo-1",
   logo: Logo1,
@@ -52,8 +52,8 @@ const logos = [{
   logo: Logo10,
 },
 ];
-import { teamData } from '@/lib/fackData/teamData'
-import TeamCard from '@/components/sections/teams/teamCard'
+import { teamData } from '@/src/lib/fackData/teamData'
+import TeamCard from '@/src/components/sections/teams/teamCard'
 
 
 const PlatformRating = () => {

@@ -9,17 +9,17 @@ import { useTheme } from 'next-themes'
 
 import Email from '../../../../public/icons/email'
 import Call from '../../../../public/icons/call'
-import SocialIcons from '@/components//ui/socialIcons'
+import SocialIcons from '@/src/components//ui/socialIcons'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { cn } from '@/lib/utils';
-import { countriesList } from '@/lib/fackData/countriesList';
-import { CountryContext } from '@/contextApi/countryProvider';
+} from "@/src/components/ui/select"
+import { cn } from '@/src/lib/utils';
+import { countriesList } from '@/src/lib/fackData/countriesList';
+import { CountryContext } from '@/src/contextApi/countryProvider';
 
 
 const TopHeader = ({ color, bgColor, darkBg }) => {

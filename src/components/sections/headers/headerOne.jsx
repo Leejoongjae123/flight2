@@ -2,13 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { menuList } from '@/lib/fackData/menuList'
+import { menuList } from '@/src/lib/fackData/menuList'
 import { IoIosArrowDown } from "react-icons/io";
 import MobileMenu from './mobileMenu';
 import MegaMenu from "./megaMenu"
 import DropDownMenu from "./dropDownMenu"
-import Logo from '@/components/ui/logo'
-import StickyHeader from '@/components/ui/stickyHeader'
+import Logo from '@/src/components/ui/logo'
+import StickyHeader from '@/src/components/ui/stickyHeader'
 
 const HeaderOne = () => {
 

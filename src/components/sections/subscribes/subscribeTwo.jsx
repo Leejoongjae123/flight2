@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
 import {
     Dialog,
     DialogContent,
     DialogTitle,
     DialogTrigger,
     DialogClose
-} from "@/components/ui/dialog"
-import Input from '@/components/ui/input'
-import SlideUp from '@/components/animations/slideUp'
+} from "@/src/components/ui/dialog"
+import Input from '@/src/components/ui/input'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const SubscribeTwo = () => {
     return (

@@ -6,7 +6,7 @@ import StoryContentOne from './storyContentOne'
 import StoryContentTwo from './storyContentTwo'
 
 import Image from 'next/image'
-import SlideLeft from '@/components/animations/slideLeft'
+import SlideLeft from '@/src/components/animations/slideLeft'
 
 const StoryFive = ({ counter }) => {
   const pathname = usePathname()

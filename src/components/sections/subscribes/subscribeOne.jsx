@@ -1,7 +1,7 @@
 import React from 'react'
 import RightArrow from '../../../../public/icons/rightArrow'
-import Title from '@/components/ui/title'
-import { cn } from '@/lib/utils'
+import Title from '@/src/components/ui/title'
+import { cn } from '@/src/lib/utils'
 
 const SubscribeOne = ({className}) => {
     return (

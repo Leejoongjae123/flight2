@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 import React from 'react'
 
 const Input = ({ type, placeholder, className, props }) => {

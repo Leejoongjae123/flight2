@@ -1,8 +1,8 @@
 "use client"
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { pricingData } from '@/lib/fackData/pricingData'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { pricingData } from '@/src/lib/fackData/pricingData'
 import React, { useState } from 'react'
 import PriceCardTwo from './priceCardTwo'
 import SwipeButton from './swipeButton'

@@ -1,5 +1,5 @@
-import Logo from '@/components/ui/logo'
-import { cn } from '@/lib/utils'
+import Logo from '@/src/components/ui/logo'
+import { cn } from '@/src/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

@@ -2,7 +2,7 @@
 import React, { useContext } from 'react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 import Image from 'next/image'
 
 import { BsMoonStars, BsQuestionLg } from 'react-icons/bs'
@@ -16,11 +16,11 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
+} from "@/src/components/ui/select"
 
-import { countriesList } from '@/lib/fackData/countriesList'
-import { Offcanvas, OffcanvasClose, OffcanvasContent, OffcanvasTrigger } from '@/components/ui/offcanvas'
-import { CountryContext } from '@/contextApi/countryProvider'
+import { countriesList } from '@/src/lib/fackData/countriesList'
+import { Offcanvas, OffcanvasClose, OffcanvasContent, OffcanvasTrigger } from '@/src/components/ui/offcanvas'
+import { CountryContext } from '@/src/contextApi/countryProvider'
 
 
 const Setting = () => {

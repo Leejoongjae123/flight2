@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 
 const MegaMenu = ({ data, bgColor, color }) => {
     // The color and bgcolor props are inherited from the header three

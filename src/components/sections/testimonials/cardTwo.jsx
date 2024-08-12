@@ -1,4 +1,4 @@
-import Rating from '@/components/ui/rating'
+import Rating from '@/src/components/ui/rating'
 import Image from 'next/image'
 import React from 'react'
 

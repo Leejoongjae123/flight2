@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import { Button } from '@/components/ui/button'
-import PlayIcon from '@/components/ui/playIcon'
-import Title from '@/components/ui/title'
-import Highlight from '@/components/ui/highlight'
+import { Button } from '@/src/components/ui/button'
+import PlayIcon from '@/src/components/ui/playIcon'
+import Title from '@/src/components/ui/title'
+import Highlight from '@/src/components/ui/highlight'
 const HeroFive = () => {
     return (
         <section className='lg:pb-15 pb-9'>

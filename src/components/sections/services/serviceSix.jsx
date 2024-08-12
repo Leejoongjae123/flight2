@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { servicesDataSix } from '@/lib/fackData/servicesDataSix'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { servicesDataSix } from '@/src/lib/fackData/servicesDataSix'
 
 
 const ServiceSix = () => {

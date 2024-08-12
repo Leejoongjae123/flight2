@@ -2,14 +2,14 @@
 import React from 'react'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
 import CardTwo from './cardTwo'
-import { testimonialData } from '@/lib/fackData/testimonialData';
+import { testimonialData } from '@/src/lib/fackData/testimonialData';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SlideUp from '@/components/animations/slideUp';
+import SlideUp from '@/src/components/animations/slideUp';
 
 const TestimonialTwo = () => {
     const settings = {

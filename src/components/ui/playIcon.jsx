@@ -4,7 +4,7 @@ import Image from 'next/image'
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
 import { IoIosPlay } from 'react-icons/io';
-import { cn } from '@/lib/utils';
+import { cn } from '@/src/lib/utils';
 import Play from '../../../public/icons/play';
 
 const PlayIcon = ({ playOne, color }) => {

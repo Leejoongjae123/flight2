@@ -1,5 +1,5 @@
 
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 import React from 'react'
 import { motion } from "framer-motion"
 

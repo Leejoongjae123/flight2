@@ -4,7 +4,7 @@ import Input from '../ui/input'
 import Link from 'next/link'
 import { FiSearch } from "react-icons/fi";
 import Image from 'next/image';
-import { blogData } from '@/lib/fackData/blogData';
+import { blogData } from '@/src/lib/fackData/blogData';
 
 
 const SideBar = ({ search, blog }) => {

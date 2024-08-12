@@ -1,17 +1,17 @@
 import { DM_Sans, Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
-import { ThemeProvider } from "@/contextApi/themeProvider";
-import CountryProvider from "@/contextApi/countryProvider";
-import ScrollCircle from "@/components/ui/scrollCircle";
-const CustomCursor = dynamic(() => import("@/components/ui/customCursor"), {
+import { ThemeProvider } from "@/src/contextApi/themeProvider";
+import CountryProvider from "@/src/contextApi/countryProvider";
+import ScrollCircle from "@/src/components/ui/scrollCircle";
+const CustomCursor = dynamic(() => import("@/src/components/ui/customCursor"), {
   ssr: false,
 });
-const Setting = dynamic(() => import("@/components/ui/setting"), {
+const Setting = dynamic(() => import("@/src/components/ui/setting"), {
   ssr: false,
 });
-import HeaderThree from "@/components/sections/headers/headerThree";
-import FooterThree from "@/components/sections/footers/footerThree";
+import HeaderThree from "@/src/components/sections/headers/headerThree";
+import FooterThree from "@/src/components/sections/footers/footerThree";
 import { NextUIProvider } from "@nextui-org/system";
 
 const inter = Inter({

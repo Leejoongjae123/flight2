@@ -1,5 +1,5 @@
 "use client"
-import { cn } from '@/lib/utils';
+import { cn } from '@/src/lib/utils';
 import { cva } from 'class-variance-authority';
 import React, { createContext, useContext, useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi';

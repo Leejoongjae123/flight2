@@ -1,14 +1,14 @@
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { faqData } from '@/lib/fackData/faqData'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { faqData } from '@/src/lib/fackData/faqData'
 import React from 'react'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
-import SlideUp from '@/components/animations/slideUp'
+} from "@/src/components/ui/accordion"
+import SlideUp from '@/src/components/animations/slideUp'
 import Link from 'next/link'
 
 const FaqOne = () => {

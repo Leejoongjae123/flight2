@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { headerExtraInfo } from '@/lib/fackData/headerExtraInfo'
+import { headerExtraInfo } from '@/src/lib/fackData/headerExtraInfo'
 import { FaRegEnvelope, FaPhoneFlip } from "react-icons/fa6";
 import SocialIcons from '../../ui/socialIcons';
 const MobileExtraInfo = () => {

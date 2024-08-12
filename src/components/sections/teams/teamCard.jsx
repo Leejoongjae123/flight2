@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import Title from '@/components/ui/title'
+import Title from '@/src/components/ui/title'
 import Link from 'next/link'
-import SlideUp from '@/components/animations/slideUp'
-import { cn } from '@/lib/utils'
+import SlideUp from '@/src/components/animations/slideUp'
+import { cn } from '@/src/lib/utils'
 const TeamCard = ({ id, name, position, src, bgColor, link }) => {
   return (
     <SlideUp id={id}>

@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import Link from 'next/link'
-import { cn } from '@/lib/utils';
+import { cn } from '@/src/lib/utils';
 
 const SocialIcons = ({color, prantBorder}) => {
     return (

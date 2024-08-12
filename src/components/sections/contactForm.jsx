@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 import Title from '../ui/title'
 import Textarea from '../ui/textarea'
 import Image from 'next/image'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 import SlideUp from '../animations/slideUp'
 import {
   Select,
@@ -12,8 +12,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import CheckoutForm from "@/app/(home)/requestmeeting/components/checkout-form";
+} from "@/src/components/ui/select"
+import CheckoutForm from "@/src/app/(home)/requestmeeting/components/checkout-form";
 
 
 

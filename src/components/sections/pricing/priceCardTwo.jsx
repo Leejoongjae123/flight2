@@ -2,8 +2,8 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 import RightArrow from "../../../../public/icons/rightArrow"
-import { Button } from '@/components/ui/button'
-import SlideUp from '@/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const PriceCardTwo = ({ id, plan_name, isTag, price, link, services, info, isChecked, cardThree, isAnimating }) => {
     return (

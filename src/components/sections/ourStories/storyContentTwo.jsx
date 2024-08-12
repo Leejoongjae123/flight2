@@ -1,8 +1,8 @@
-import SlideRight from '@/components/animations/slideRight'
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import PlayIcon from '@/components/ui/playIcon'
-import Title from '@/components/ui/title'
+import SlideRight from '@/src/components/animations/slideRight'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import PlayIcon from '@/src/components/ui/playIcon'
+import Title from '@/src/components/ui/title'
 import Link from 'next/link'
 import React from 'react'
 

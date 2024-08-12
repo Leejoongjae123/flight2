@@ -2,16 +2,16 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Logo from '@/components/ui/logo'
-import { menuList } from '@/lib/fackData/menuList'
+import Logo from '@/src/components/ui/logo'
+import { menuList } from '@/src/lib/fackData/menuList'
 import MegaMenu from './megaMenu'
 import DropDownMenu from './dropDownMenu'
 import { IoIosArrowDown } from 'react-icons/io'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/src/components/ui/button'
 import HeaderShortInfo from './headerShortInfo'
 import MobileMenu from './mobileMenu'
-import { Offcanvas, OffcanvasContent, OffcanvasOverlay, OffcanvasTrigger, OffcanvasClose } from '@/components/ui/offcanvas';
-import StickyHeader from '@/components/ui/stickyHeader'
+import { Offcanvas, OffcanvasContent, OffcanvasOverlay, OffcanvasTrigger, OffcanvasClose } from '@/src/components/ui/offcanvas';
+import StickyHeader from '@/src/components/ui/stickyHeader'
 import TopHeader from './topHeader'
 
 

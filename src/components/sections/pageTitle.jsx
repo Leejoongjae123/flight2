@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaChevronRight } from "react-icons/fa";
 import Title from '../ui/title'
-import { cn } from '@/lib/utils';
+import { cn } from '@/src/lib/utils';
 
 const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) => {
     return (

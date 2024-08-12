@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import Highlight from '@/components/ui/highlight'
-import Title from '@/components/ui/title'
-import SlideRight from '@/components/animations/slideRight'
+import { Button } from '@/src/components/ui/button'
+import Highlight from '@/src/components/ui/highlight'
+import Title from '@/src/components/ui/title'
+import SlideRight from '@/src/components/animations/slideRight'
 import RightArrow from '../../../../public/icons/rightArrow'
 import LogoSlide from './logoSlide'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const ProvideTwo = ({ order_1, order_0 }) => {
     // order props from home page 5
