@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 
 const PartnersSlider = ({ className, data }) => {
     return (

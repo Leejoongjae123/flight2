@@ -1,7 +1,7 @@
-import CardTwo from '@/components/sections/blogs/cardTwo'
-import PageTitle from '@/components/sections/pageTitle'
-import SideBar from '@/components/sections/sideBar'
-import { blogData } from '@/lib/fackData/blogData'
+import CardTwo from '@/src/components/sections/blogs/cardTwo'
+import PageTitle from '@/src/components/sections/pageTitle'
+import SideBar from '@/src/components/sections/sideBar'
+import { blogData } from '@/src/lib/fackData/blogData'
 import React from 'react'
 
 const Categories = () => {

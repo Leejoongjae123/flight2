@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { servicesDataTwo } from '@/lib/fackData/servicesDataTwo'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { servicesDataTwo } from '@/src/lib/fackData/servicesDataTwo'
 
 const ServiceTwo = () => {
     return (

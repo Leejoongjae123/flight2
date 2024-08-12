@@ -1,13 +1,13 @@
 import React from 'react'
-import Approach from '@/components/sections/approach'
-import ContactForm from '@/components/sections/contactForm'
-import CountDown from '@/components/sections/countDown'
-import StoryFour from '@/components/sections/ourStories/storyFour'
-import PageTitle from '@/components/sections/pageTitle'
-import PriceThree from '@/components/sections/pricing/priceThree'
-import ProvideOne from '@/components/sections/provides/provideOne'
-import ServiceTwo from '@/components/sections/services/serviceTwo'
-import Solutions from '@/components/sections/solutions'
+import Approach from '@/src/components/sections/approach'
+import ContactForm from '@/src/components/sections/contactForm'
+import CountDown from '@/src/components/sections/countDown'
+import StoryFour from '@/src/components/sections/ourStories/storyFour'
+import PageTitle from '@/src/components/sections/pageTitle'
+import PriceThree from '@/src/components/sections/pricing/priceThree'
+import ProvideOne from '@/src/components/sections/provides/provideOne'
+import ServiceTwo from '@/src/components/sections/services/serviceTwo'
+import Solutions from '@/src/components/sections/solutions'
 
 export const metadata = {
     title: "NextPro | Services",

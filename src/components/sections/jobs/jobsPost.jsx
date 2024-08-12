@@ -1,9 +1,9 @@
 import React from 'react'
 import Title from '../../ui/title'
-import { jobsData } from '@/lib/fackData/jobsData'
+import { jobsData } from '@/src/lib/fackData/jobsData'
 import { Button } from '../../ui/button'
 import Link from 'next/link'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const JobsPost = () => {
   return (

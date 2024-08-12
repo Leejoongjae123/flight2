@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Title from '@/components/ui/title'
-import ZoomIn from '@/components/animations/zoomIn'
+import Title from '@/src/components/ui/title'
+import ZoomIn from '@/src/components/animations/zoomIn'
 const CardOne = ({ id, title, date, thumb, author, category }) => {
     return (
         <div className='group'>

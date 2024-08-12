@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaStar } from 'react-icons/fa6'
 import StroyContentOne from './storyContentOne'
-import UserList from '@/components/ui/userList'
-import SlideLeft from '@/components/animations/slideLeft'
-import SlideUp from '@/components/animations/slideUp'
+import UserList from '@/src/components/ui/userList'
+import SlideLeft from '@/src/components/animations/slideLeft'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const userList = [
     {

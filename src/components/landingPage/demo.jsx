@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Title from '@/components/ui/title'
-import SlideUp from '../animations/slideUp'
+import Title from '@/src/components/ui/title'
+import SlideUp from '@/src/components/animations/slideUp'
 
 
 const demoList = [

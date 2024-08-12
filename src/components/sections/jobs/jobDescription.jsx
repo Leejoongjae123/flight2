@@ -1,8 +1,8 @@
 import React from 'react'
 import JobOverview from './jobOverview'
 import Benefits from './benefits'
-import Title from '@/components/ui/title'
-import SlideUp from '@/components/animations/slideUp'
+import Title from '@/src/components/ui/title'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const JobDescription = () => {
     return (

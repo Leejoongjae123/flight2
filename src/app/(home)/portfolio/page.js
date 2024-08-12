@@ -1,6 +1,6 @@
 import React from 'react'
-import PageTitle from '@/components/sections/pageTitle'
-import ProjectsTab from '@/components/sections/projectsTab'
+import PageTitle from '@/src/components/sections/pageTitle'
+import ProjectsTab from '@/src/components/sections/projectsTab'
 
 export const metadata = {
     title: "NextPro | Portfolio",

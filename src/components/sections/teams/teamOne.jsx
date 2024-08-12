@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import Highlight from '@/components/ui/highlight'
-import Title from '@/components/ui/title'
+import { Button } from '@/src/components/ui/button'
+import Highlight from '@/src/components/ui/highlight'
+import Title from '@/src/components/ui/title'
 
 import team_icon from "../../../../public/images/shapes/dynamic-team-icon.png"
 import skills_icon from "../../../../public/images/shapes/skills-icon.png"
 import content_icon from "../../../../public/images/shapes/content-writing-icon.png"
-import SlideUp from '@/components/animations/slideUp'
-import SlideRight from '@/components/animations/slideRight'
+import SlideUp from '@/src/components/animations/slideUp'
+import SlideRight from '@/src/components/animations/slideRight'
 
 const shortInfo = [
     {

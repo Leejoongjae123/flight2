@@ -1,6 +1,6 @@
 import React from 'react'
-import JobDescription from '@/components/sections/jobs/jobDescription'
-import PageTitle from '@/components/sections/pageTitle'
+import JobDescription from '@/src/components/sections/jobs/jobDescription'
+import PageTitle from '@/src/components/sections/pageTitle'
 
 export const metadata = {
   title: "NextPro | Career-Details",

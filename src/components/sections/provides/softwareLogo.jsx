@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import useMoveMentAnimation from '@/hooks/useMoveMentAnimation'
-import SlideUp from '@/components/animations/slideUp'
+import useMoveMentAnimation from '@/src/hooks/useMoveMentAnimation'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const SoftwareLogo = () => {
     const [mousPositionX, mousPositionY] = useMoveMentAnimation()

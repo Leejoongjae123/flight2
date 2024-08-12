@@ -1,10 +1,10 @@
 
 import React from 'react'
 import dynamic from 'next/dynamic'
-import ContactForm from '@/components/sections/contactForm'
-import PageTitle from '@/components/sections/pageTitle'
-import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
-const ContactMap = dynamic(() => import('@/components/sections/map'), { ssr: false })
+import ContactForm from '@/src/components/sections/contactForm'
+import PageTitle from '@/src/components/sections/pageTitle'
+import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
+const ContactMap = dynamic(() => import('@/src/components/sections/map'), { ssr: false })
 
 export const metadata = {
   title: "NextPro | Contact-Us",

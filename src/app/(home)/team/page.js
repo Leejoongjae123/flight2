@@ -1,9 +1,9 @@
 import React from 'react'
-import PageTitle from '@/components/sections/pageTitle'
-import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
-import TeamGrid from '@/components/sections/teams/teamGrid'
-import TeamPersonalCard from '@/components/sections/teams/teamPersonalCard'
-import TestimonialTwo from '@/components/sections/testimonials/testimonialTwo'
+import PageTitle from '@/src/components/sections/pageTitle'
+import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
+import TeamGrid from '@/src/components/sections/teams/teamGrid'
+import TeamPersonalCard from '@/src/components/sections/teams/teamPersonalCard'
+import TestimonialTwo from '@/src/components/sections/testimonials/testimonialTwo'
 
 export const metadata = {
     title: "NextPro | Team",

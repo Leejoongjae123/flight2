@@ -4,15 +4,15 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import { IoIosArrowDown } from 'react-icons/io'
 
-import Logo from '@/components/ui/logo'
-import { Button } from '@/components/ui/button'
-import { menuList } from '@/lib/fackData/menuList'
+import Logo from '@/src/components/ui/logo'
+import { Button } from '@/src/components/ui/button'
+import { menuList } from '@/src/lib/fackData/menuList'
 import MegaMenu from './megaMenu'
 import DropDownMenu from './dropDownMenu'
 import MobileMenu from './mobileMenu'
 import HeaderShortInfo from './headerShortInfo'
-import { Offcanvas, OffcanvasContent, OffcanvasOverlay, OffcanvasTrigger, OffcanvasClose } from '@/components/ui/offcanvas';
-import StickyHeader from '@/components/ui/stickyHeader';
+import { Offcanvas, OffcanvasContent, OffcanvasOverlay, OffcanvasTrigger, OffcanvasClose } from '@/src/components/ui/offcanvas';
+import StickyHeader from '@/src/components/ui/stickyHeader';
 import TopHeader from './topHeader';
 
 const HeaderTwo = ({ haveOvcanvsIcon, haveShadow }) => {

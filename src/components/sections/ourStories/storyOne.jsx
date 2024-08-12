@@ -3,8 +3,8 @@ import Image from 'next/image'
 import StoryContentOne from './storyContentOne'
 import Work from '../../../../public/icons/work'
 import Notification from '../../../../public/icons/notification'
-import { cn } from '@/lib/utils'
-import SlideUp from '@/components/animations/slideUp'
+import { cn } from '@/src/lib/utils'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const StoryOne = () => {
     return (

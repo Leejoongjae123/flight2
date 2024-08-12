@@ -1,7 +1,7 @@
 import React from 'react'
-import CardTwo from '@/components/sections/blogs/cardTwo'
-import PageTitle from '@/components/sections/pageTitle'
-import { blogData } from '@/lib/fackData/blogData'
+import CardTwo from '@/src/components/sections/blogs/cardTwo'
+import PageTitle from '@/src/components/sections/pageTitle'
+import { blogData } from '@/src/lib/fackData/blogData'
 
 export const metadata = {
     title: "NextPro | Blog-Grid",

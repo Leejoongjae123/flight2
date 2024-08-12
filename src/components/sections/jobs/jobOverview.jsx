@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
 import Link from 'next/link'
 import React from 'react'
 

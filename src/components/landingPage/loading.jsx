@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../ui/title'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 
 const Loading = () => {
     return (

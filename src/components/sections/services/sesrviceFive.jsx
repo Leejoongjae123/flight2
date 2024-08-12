@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { servicesDataFive } from '@/lib/fackData/servicesDataFive'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { servicesDataFive } from '@/src/lib/fackData/servicesDataFive'
 import { FaCheck } from "react-icons/fa";
-import Solutions from '@/components/sections/solutions'
+import Solutions from '@/src/components/sections/solutions'
 
 const ServiceFive = () => {
   return (

@@ -1,12 +1,12 @@
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Edit from '../../../../public/icons/edit'
 import Discount from '../../../../public/icons/discount'
 import RightArrow from '../../../../public/icons/rightArrow'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const ServiceOne = () => {
     return (

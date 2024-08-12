@@ -4,15 +4,15 @@ import { Button } from '../ui/button'
 import Title from '../ui/title'
 import Textarea from '../ui/textarea'
 import Image from 'next/image'
-import { cn } from '@/lib/utils'
-import SlideUp from '../animations/slideUp'
+import { cn } from '@/src/lib/utils'
+import SlideUp from '@/src/components/animations/slideUp'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select"
+} from "@/src/components/ui/select"
 
 
 const ContactFormTwo = () => {

@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectFade } from "swiper/modules"
 import 'swiper/css';
 import "swiper/css/effect-fade"
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { testimonialData } from '@/lib/fackData/testimonialData';
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { testimonialData } from '@/src/lib/fackData/testimonialData';
 import CardOne from './cardOne';
-import SlideUp from '@/components/animations/slideUp';
+import SlideUp from '@/src/components/animations/slideUp';
 import Script from 'next/script'
 
 const TestimonialOne = () => {

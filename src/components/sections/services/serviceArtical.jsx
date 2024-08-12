@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 // import Title from '@//ui/title'
-import Title from '@/components/ui/title'
-import Highlight from '@/components/ui/highlight'
-import SlideUp from '@/components/animations/slideUp'
+import Title from '@/src/components/ui/title'
+import Highlight from '@/src/components/ui/highlight'
+import SlideUp from '@/src/components/animations/slideUp'
 import SideBar from '../sideBar'
-import { faqData } from '@/lib/fackData/faqData'
+import { faqData } from '@/src/lib/fackData/faqData'
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/src/components/ui/accordion"
 import Document from '../../../../public/icons/document'
 import Shield from '../../../../public/icons/shield'
 import Discount from '../../../../public/icons/discount'

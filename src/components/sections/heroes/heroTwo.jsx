@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import SlotCounter from "react-slot-counter"
 import PartnersSlider from '../partnersSlider'
-import { partnersData } from '@/lib/fackData/partnersData'
-import Title from '@/components/ui/title'
-import PlayIcon from '@/components/ui/playIcon'
+import { partnersData } from '@/src/lib/fackData/partnersData'
+import Title from '@/src/components/ui/title'
+import PlayIcon from '@/src/components/ui/playIcon'
 
 const HeroTwo = () => {
     return (

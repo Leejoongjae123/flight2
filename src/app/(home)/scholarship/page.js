@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogArtical2 from '@/components/sections/blogs/blogArtical2'
-import PageTitle from '@/components/sections/pageTitle'
+import BlogArtical2 from '@/src/components/sections/blogs/blogArtical2'
+import PageTitle from '@/src/components/sections/pageTitle'
 
 export const metadata = {
     title: "NextPro | Blog-Single-2",

@@ -1,7 +1,7 @@
 import React from 'react' 
-import ContactForm from '@/components/sections/contactForm'
-import PageTitle from '@/components/sections/pageTitle'
-import ServiceArtical from '@/components/sections/services/serviceArtical'
+import ContactForm from '@/src/components/sections/contactForm'
+import PageTitle from '@/src/components/sections/pageTitle'
+import ServiceArtical from '@/src/components/sections/services/serviceArtical'
 
 export const metadata = {
   title: "NextPro | Service-Details",

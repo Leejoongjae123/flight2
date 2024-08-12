@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import Highlight from '@/components/ui/highlight'
-import Title from '@/components/ui/title'
+import Highlight from '@/src/components/ui/highlight'
+import Title from '@/src/components/ui/title'
 import Category from '../../../../public/icons/category'
 import Filter from '../../../../public/icons/filter'
 import Shield from '../../../../public/icons/shield'
-import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
+import { cn } from '@/src/lib/utils'
+import { Button } from '@/src/components/ui/button'
 import ProgressBar from '../../ui/progressBar'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const StoryContentFour = () => {
 

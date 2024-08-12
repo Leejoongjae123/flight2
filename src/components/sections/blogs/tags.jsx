@@ -1,4 +1,4 @@
-import SocialIcons from '@/components/ui/socialIcons'
+import SocialIcons from '@/src/components/ui/socialIcons'
 import Link from 'next/link'
 import React from 'react'
 

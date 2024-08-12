@@ -1,5 +1,5 @@
-import SlideUp from '@/components/animations/slideUp'
-import Title from '@/components/ui/title'
+import SlideUp from '@/src/components/animations/slideUp'
+import Title from '@/src/components/ui/title'
 import Image from 'next/image'
 import React from 'react'
 

@@ -2,8 +2,8 @@ import React from 'react'
 import StoryContentThree from './storyContentThree'
 import ExperienceCounter from './experienceCounter'
 import Image from 'next/image'
-import SlideLeft from '@/components/animations/slideLeft'
-import SlideUp from '@/components/animations/slideUp'
+import SlideLeft from '@/src/components/animations/slideLeft'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const StoryThree = () => {
     return (

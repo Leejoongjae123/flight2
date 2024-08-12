@@ -1,6 +1,6 @@
 import React from 'react'
-import PageTitle from '@/components/sections/pageTitle'
-import TeamPersonalCard from '@/components/sections/teams/teamPersonalCard'
+import PageTitle from '@/src/components/sections/pageTitle'
+import TeamPersonalCard from '@/src/components/sections/teams/teamPersonalCard'
 
 export const metadata = {
     title: "NextPro | Team-Details",

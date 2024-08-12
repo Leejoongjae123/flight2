@@ -4,16 +4,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectFade } from "swiper/modules"
 import 'swiper/css';
 import "swiper/css/effect-fade"
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { testimonialData } from '@/lib/fackData/testimonialData';
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { testimonialData } from '@/src/lib/fackData/testimonialData';
 import CardOne from './cardOne';
-import SlideUp from '@/components/animations/slideUp';
+import SlideUp from '@/src/components/animations/slideUp';
 import Script from 'next/script'
-import CurriculumTable1 from '@/components/sections/testimonials/curriculumtable1';
-import CurriculumTable2 from '@/components/sections/testimonials/curriculumtable2';
-import CurriculumTable3 from '@/components/sections/testimonials/curriculumtable3';
-import Strategy from '@/components/sections/strategy'
+import CurriculumTable1 from '@/src/components/sections/testimonials/curriculumtable1';
+import CurriculumTable2 from '@/src/components/sections/testimonials/curriculumtable2';
+import CurriculumTable3 from '@/src/components/sections/testimonials/curriculumtable3';
+import Strategy from '@/src/components/sections/strategy'
 
 const Curriculum = () => {
 

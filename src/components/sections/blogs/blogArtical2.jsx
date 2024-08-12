@@ -9,10 +9,10 @@ import Tags from './tags'
 import Author from './author'
 import Comments from './comments'
 import LeveRelpy from './leveRelpy'
-import { blogData } from '@/lib/fackData/blogData'
+import { blogData } from '@/src/lib/fackData/blogData'
 import CardOne from './cardOne'
-import { Button } from '@/components/ui/button'
-import SlideUp from '@/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import SlideUp from '@/src/components/animations/slideUp'
 
 
 const BlogArtical = ({ sidebarShow }) => {

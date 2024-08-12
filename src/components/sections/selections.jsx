@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import Highlight from '../ui/highlight'
 import Title from '../ui/title'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/src/components/ui/tabs"
 import Image from 'next/image'
 import Link from 'next/link'
 import icon_1 from "../../../public/images/shapes/approach-icon4-1.png"

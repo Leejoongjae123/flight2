@@ -1,7 +1,7 @@
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { blogData2 } from '@/lib/fackData/blogData2'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { blogData2 } from '@/src/lib/fackData/blogData2'
 import React from 'react'
 import CardTwo from './cardTwo'
 

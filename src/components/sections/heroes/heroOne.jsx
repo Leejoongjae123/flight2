@@ -2,12 +2,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import UserList from '@/components/ui/userList'
-import Input from '@/components/ui/input'
-import useMoveMentAnimation from '@/hooks/useMoveMentAnimation'
-import Title from '@/components/ui/title'
-import useParticlesAnimation from '@/hooks/useParticlesAnimation'
+import { Button } from '@/src/components/ui/button'
+import UserList from '@/src/components/ui/userList'
+import Input from '@/src/components/ui/input'
+import useMoveMentAnimation from '@/src/hooks/useMoveMentAnimation'
+import Title from '@/src/components/ui/title'
+import useParticlesAnimation from '@/src/hooks/useParticlesAnimation'
 
 const userList = [
   {

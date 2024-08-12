@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import PartnersSlider from '../partnersSlider'
-import PlayIcon from '@/components/ui/playIcon'
-import { partnersData } from '@/lib/fackData/partnersData'
+import PlayIcon from '@/src/components/ui/playIcon'
+import { partnersData } from '@/src/lib/fackData/partnersData'
 
 const HeroThree = () => {
     return (

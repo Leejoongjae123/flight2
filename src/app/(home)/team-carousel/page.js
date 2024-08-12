@@ -1,8 +1,8 @@
 import React from 'react'
-import PageTitle from '@/components/sections/pageTitle'
-import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
-import TeamGrid from '@/components/sections/teams/teamGrid'
-import TeamSlider from '@/components/sections/teams/teamSlider'
+import PageTitle from '@/src/components/sections/pageTitle'
+import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
+import TeamGrid from '@/src/components/sections/teams/teamGrid'
+import TeamSlider from '@/src/components/sections/teams/teamSlider'
 
 export const metadata = {
   title: "NextPro | Team-Carousel",

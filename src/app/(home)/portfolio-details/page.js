@@ -1,7 +1,7 @@
 import React from 'react'
-import PageTitle from '@/components/sections/pageTitle'
-import ProjectArtical from '@/components/sections/projectArtical'
-import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
+import PageTitle from '@/src/components/sections/pageTitle'
+import ProjectArtical from '@/src/components/sections/projectArtical'
+import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
 
 export const metadata = {
   title: "NextPro | Portfolio-Details",

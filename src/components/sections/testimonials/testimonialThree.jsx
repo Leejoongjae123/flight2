@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link';
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import SlideUp from '@/components/animations/slideUp';
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import SlideUp from '@/src/components/animations/slideUp';
 import CardThree from './cardThree'
 import RightArrow from '../../../../public/icons/rightArrow';
-import { testimonialDataThree } from '@/lib/fackData/testimonialDataTwo'
+import { testimonialDataThree } from '@/src/lib/fackData/testimonialDataTwo'
 
 const TestimonialThree = () => {
     return (

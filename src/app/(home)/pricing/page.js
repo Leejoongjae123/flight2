@@ -1,9 +1,9 @@
 import React from 'react'
-import FaqTwo from '@/components/sections/faqs/faqTwo'
-import PageTitle from '@/components/sections/pageTitle'
-import PriceOne from '@/components/sections/pricing/priceOne'
-import PriceThree from '@/components/sections/pricing/priceThree'
-import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo'
+import FaqTwo from '@/src/components/sections/faqs/faqTwo'
+import PageTitle from '@/src/components/sections/pageTitle'
+import PriceOne from '@/src/components/sections/pricing/priceOne'
+import PriceThree from '@/src/components/sections/pricing/priceThree'
+import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
 
 export const metadata = {
     title: "NextPro | Pricing",

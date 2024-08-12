@@ -1,5 +1,5 @@
-import Title from '@/components/ui/title'
-import { cn } from '@/lib/utils'
+import Title from '@/src/components/ui/title'
+import { cn } from '@/src/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
-import PlayIcon from '@/components/ui/playIcon'
-import Rating from '@/components/ui/rating'
-import Title from '@/components/ui/title'
+import PlayIcon from '@/src/components/ui/playIcon'
+import Rating from '@/src/components/ui/rating'
+import Title from '@/src/components/ui/title'
 
 const CardOne = ({rating, name, position, src, review}) => {
     return (

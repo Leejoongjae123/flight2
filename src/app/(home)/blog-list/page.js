@@ -1,8 +1,8 @@
 import React from 'react'
-import CardThree from '@/components/sections/blogs/cardThree'
-import PageTitle from '@/components/sections/pageTitle'
-import SideBar from '@/components/sections/sideBar'
-import { blogData } from '@/lib/fackData/blogData'
+import CardThree from '@/src/components/sections/blogs/cardThree'
+import PageTitle from '@/src/components/sections/pageTitle'
+import SideBar from '@/src/components/sections/sideBar'
+import { blogData } from '@/src/lib/fackData/blogData'
 
 export const metadata = {
     title: "NextPro | Blog-List",

@@ -5,10 +5,10 @@ import Title from '../../ui/title'
 import Category from '../../../../public/icons/category'
 import Filter from '../../../../public/icons/filter'
 import Shield from '../../../../public/icons/shield'
-import { cn } from '@/lib/utils'
+import { cn } from '@/src/lib/utils'
 import RightArrow from '../../../../public/icons/rightArrow'
 import SoftwareLogo from './softwareLogo'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 import { GrTarget } from "react-icons/gr";
 import { GoGoal } from "react-icons/go";
 import { FaPeopleGroup } from "react-icons/fa6";

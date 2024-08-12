@@ -1,5 +1,5 @@
-import SlideUp from "@/components/animations/slideUp"
-import { Button } from "@/components/ui/button"
+import SlideUp from "@/src/components/animations/slideUp"
+import { Button } from "@/src/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import RightArrow from "../../../../public/icons/rightArrow"

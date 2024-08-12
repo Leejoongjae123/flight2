@@ -4,8 +4,8 @@ import StoryContentFour from './storyContentFour'
 import StoryContentFour2 from './storyContentFour2'
 import Image from 'next/image'
 import ExperienceCounter from './experienceCounter'
-import SlideUp from '@/components/animations/slideUp'
-import Selections from '@/components/sections/selections'
+import SlideUp from '@/src/components/animations/slideUp'
+import Selections from '@/src/components/sections/selections'
 
 
 const StoryFour = () => {

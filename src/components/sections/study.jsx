@@ -4,7 +4,7 @@ import Title from '../ui/title'
 import { Button } from '../ui/button'
 import TeamCard from './teams/teamCard'
 import SlideUp from '../animations/slideUp'
-import { projectsData } from '@/lib/fackData/projectsData'
+import { projectsData } from '@/src/lib/fackData/projectsData'
 
 
 const Study = () => {

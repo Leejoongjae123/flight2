@@ -2,10 +2,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import useMoveMentAnimation from '@/hooks/useMoveMentAnimation';
-import PlayIcon from '@/components/ui/playIcon';
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import useMoveMentAnimation from '@/src/hooks/useMoveMentAnimation';
+import PlayIcon from '@/src/components/ui/playIcon';
 
 const HeroFour = () => {
     const [mousPositionX, mousPositionY] = useMoveMentAnimation()

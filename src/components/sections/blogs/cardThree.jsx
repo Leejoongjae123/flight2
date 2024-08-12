@@ -1,5 +1,5 @@
-import ZoomIn from '@/components/animations/zoomIn'
-import Title from '@/components/ui/title'
+import ZoomIn from '@/src/components/animations/zoomIn'
+import Title from '@/src/components/ui/title'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

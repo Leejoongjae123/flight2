@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from "swiper/modules"
 import 'swiper/css';
 
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { teamData } from '@/lib/fackData/teamData'
+import SlideUp from '@/src/components/animations/slideUp'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { teamData } from '@/src/lib/fackData/teamData'
 import TeamCard from './teamCard'
 
 const TeamSlider = () => {

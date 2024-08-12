@@ -1,5 +1,5 @@
-import Logo from '@/components/ui/logo'
-import SocialIcons from '@/components/ui/socialIcons'
+import Logo from '@/src/components/ui/logo'
+import SocialIcons from '@/src/components/ui/socialIcons'
 import React from 'react'
 import ImportanceLinks from './importanceLinks'
 import CopyRight from './copyRight'

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import FooterContact from './footerContact'
-import SocialIcons from '@/components/ui/socialIcons'
+import SocialIcons from '@/src/components/ui/socialIcons'
 import ImportanceLinks from './importanceLinks'
 
 const FooterFour = () => {

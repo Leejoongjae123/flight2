@@ -1,13 +1,13 @@
-import Highlight from '@/components/ui/highlight'
-import ProgressBar from '@/components/ui/progressBar'
-import SocialIcons from '@/components/ui/socialIcons'
-import Title from '@/components/ui/title'
+import Highlight from '@/src/components/ui/highlight'
+import ProgressBar from '@/src/components/ui/progressBar'
+import SocialIcons from '@/src/components/ui/socialIcons'
+import Title from '@/src/components/ui/title'
 import Image from 'next/image'
 import React from 'react'
 import TeamCard from './teamCard'
-import { projectsData } from '@/lib/fackData/projectsData'
-import SlideUp from '@/components/animations/slideUp'
-import { cn } from '@/lib/utils'
+import { projectsData } from '@/src/lib/fackData/projectsData'
+import SlideUp from '@/src/components/animations/slideUp'
+import { cn } from '@/src/lib/utils'
 
 const TeamPersonalCard = ({ isDetails }) => {
     // isDetails props come from team and team details page

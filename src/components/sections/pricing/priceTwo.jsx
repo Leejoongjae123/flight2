@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { Button } from '@/components/ui/button'
-import Title from '@/components/ui/title'
-import { Switch } from "@/components/ui/switch"
-import { pricingData } from '@/lib/fackData/pricingData'
+import { Button } from '@/src/components/ui/button'
+import Title from '@/src/components/ui/title'
+import { Switch } from "@/src/components/ui/switch"
+import { pricingData } from '@/src/lib/fackData/pricingData'
 import PriceCardTwo from './priceCardTwo'
-import SlideUp from '@/components/animations/slideUp'
+import SlideUp from '@/src/components/animations/slideUp'
 
 const PriceTwo = () => {
     const [isChecked, setChecked] = useState(false)
