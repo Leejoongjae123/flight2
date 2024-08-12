@@ -24,7 +24,8 @@ const HeaderThree = () => {
             <TopHeader bgColor={"bg-white"} color={"text-white"} darkBg={'dark:bg-[rgba(242,244,251,0.2)]'} />
           </div>
 
-          <div className={`[.header-pinned_&]:bg-[rgba(0,31,63,0.9)] transition-all duration-300`}>
+          {/* <div className={`[.header-pinned_&]:bg-[rgba(0,31,63,0.9)] transition-all duration-300`}> */}
+          <div className={`[.header-pinned_&]:bg-white transition-all duration-300`}>
             <div className='container mx-auto'>
               <div className='relative'>
                 <span className='border-t border-[#FFFFFF26] block [.header-pinned_&]:hidden'></span>
@@ -46,7 +47,7 @@ const HeaderThree = () => {
                     </Offcanvas> */}
 
                     <Link href={"/"}>
-                      <Image src={"/images/logo-light2.png"} width={300} height={150} alt='logo-white' unoptimized="true" className={`w-[20vw] h-full block dark:hidden`} />
+                      <Image src={"/images/logo-light2.png"} width={300} height={150} alt='logo-white' unoptimized="true" className={`w-[50vw] md:w-[20vw] h-full block dark:hidden`} />
                       <Image src={"/images/logo-next.png"} width={179} height={53} alt='logo-original' unoptimized="true" className='w-full h-full dark:block hidden' />
                     </Link>
                   </div>
@@ -57,9 +58,9 @@ const HeaderThree = () => {
                           menuList.map(({ id, lable, path, dropDown, megaMenu }) => {
                             return (
                               <li className='pt-[43px] pb-[42px] group' key={id}>
-                                <Link href={path} className='font-semibold leading-[22px] flex items-center gap-1 text-white relative transition-all duration-500 group-hover:text-[#E2E7FF]'>
+                                <Link href={path} className='font-semibold leading-[22px] flex items-center gap-1 text-black relative transition-all duration-500 group-hover:text-[#E2E7FF]'>
                                   {lable}
-                                  <span className='group-hover:rotate-180 group-hover:text-[#E2E7FF] transition-all duration-500'><IoIosArrowDown /></span>
+                                  <span className='group-hover:rotate-180 transition-all duration-500'><IoIosArrowDown /></span>
                                 </Link>
                                 {/* {
                                                                     megaMenu.length && <MegaMenu data={megaMenu} bgColor="bg-white" color="text-foreground" />
