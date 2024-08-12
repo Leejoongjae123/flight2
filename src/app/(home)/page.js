@@ -17,15 +17,15 @@ import HeaderOne from '@/components/sections/headers/headerOne'
 import FooterOne from '@/components/sections/footers/footerOne'
 import FaqTwo from '@/components/sections/faqs/faqTwo'
 import FaqOne from '@/components/sections/faqs/faqOne'
-
+import Open from '@/components/sections/Open'
 const Home = () => {
   return (
     <>
       
       <main>
+        <Open></Open>
         <HeroFive />
         <PlatformRating />
-        
         <BlogTwo />
         <ServiceSix />
         <Approach />

@@ -14,7 +14,6 @@ const HeroFive = () => {
                             <Title size={"7.5xl"} className={"text-white"}><Highlight>UND 항공대학</Highlight></Title>
                             <Title size={"7.5xl"} className={"text-white"}>글로벌 패스웨이 </Title>
                             <p className='font-semibold text-white pt-7.5'>세계 최고의 항공 전문가들과 함께하는 UND 항공대학글로벌 패스웨이에서 여러분의 꿈을 현실로 만들어 드립니다. 최고의 비행학교와 파트너십을 맺어, 최적의 교육 환경과 커리큘럼을 제공합니다.</p>
-
                             <div className='flex sm:flex-row flex-col sm:items-center gap-[32px] pt-[55px] pb-[22px]'>
                                 {/* <div>
                                     <Button asChild className="dark:text-white hover:border-white hover:text-white">
