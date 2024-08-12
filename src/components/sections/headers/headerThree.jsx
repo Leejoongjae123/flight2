@@ -46,7 +46,7 @@ const HeaderThree = () => {
                     </Offcanvas> */}
 
                     <Link href={"/"}>
-                      <Image src={"/images/logo-light2.png"} width={500} height={200} alt='logo-white' unoptimized="true" className={`w-full h-full block dark:hidden`} />
+                      <Image src={"/images/logo-light2.png"} width={300} height={150} alt='logo-white' unoptimized="true" className={`w-[20vw] h-full block dark:hidden`} />
                       <Image src={"/images/logo-next.png"} width={179} height={53} alt='logo-original' unoptimized="true" className='w-full h-full dark:block hidden' />
                     </Link>
                   </div>

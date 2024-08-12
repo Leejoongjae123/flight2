@@ -59,9 +59,6 @@ const Mission = () => {
             </SlideLeft>
           </div>
           <div className='pt-3 lg:pt-0 w-[90vw] md:w-[60vw]'>
-
-
-
             <div className="max-w-[1350px] sm:rounded-lg overflow-x-auto shadow-md ">
               <table className="w-[600px] md:w-full text-medium text-left rtl:text-right text-gray-500 ">
                 <thead className=" font-bold text-medium text-muted-foreground uppercase bg-[rgba(46,77,254,0.05)] dark:bg-gray-700 dark:text-gray-400">
