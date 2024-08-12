@@ -18,29 +18,10 @@ function NotificationWrite() {
   };
 
   const handleUploadToSupabase = async () => {
-    if (!selectedImage) return;
-
-    // let { error: uploadError } = await supabase.storage
-    //   .from("images")
-    //   .upload("images/test.png", selectedImage);
-
-    // if (error) {
-    //   console.error("Error uploading image:", error);
-    //   return;
-    // }
+    // if (!selectedImage) return;
     const { data, error } = await supabase.storage
-      .from("images")
-      .list("folder", {
-        limit: 100,
-        offset: 0,
-      });
-
-    console.log(data,error)
-    console.log("Image uploaded successfully:", data);
-    // 업로드가 완료되면 미리보기 URL 업데이트 (필요에 따라)
-    const publicUrl = supabase.storage.from("images").getPublicUrl(data.path)
-      .data.publicUrl;
-    setImagePreviewUrl(publicUrl);
+      .from("avatars")
+      .download("1234.jpg");
   };
   return (
     <div className="flex flex-col items-center gap-4">
