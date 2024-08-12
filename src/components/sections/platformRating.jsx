@@ -3,15 +3,15 @@ import React from 'react'
 import Link from 'next/link';
 import SlotCounter from "react-slot-counter"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 import Rating from '../ui/rating';
 import SlideRight from '../animations/slideRight';
 import { ratingData } from '@/lib/fackData/ratingData';
 import ScrollingBanner from "@/components/sections/scrollingbanner/scrolling-banner";
-import {Logo1, Logo10, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9} from "@/components/sections/scrollingbanner/logos";
-const logos = [  {
+import { Logo1, Logo10, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9 } from "@/components/sections/scrollingbanner/logos";
+const logos = [{
   key: "logo-1",
   logo: Logo1,
 },
@@ -52,12 +52,22 @@ const logos = [  {
   logo: Logo10,
 },
 ];
+import { teamData } from '@/lib/fackData/teamData'
+import TeamCard from '@/components/sections/teams/teamCard'
+
 
 const PlatformRating = () => {
+  const pagination = {
+    clickable: true,
+    el: ".team-pagination",
+    renderBullet: function (index, className) {
+      return `<span class='${className} w-2 h-2 bg-muted rounded-full'></span>`;
+    },
+  };
   return (
     <div className='container lg:pt-15 pt-9 overflow-x-hidden'>
       <div className='lg:py-12.5 py-6 xl:pl-12 pl-4 lg:pr-0 pr-4 bg-destructive dark:bg-accent border border-[#B0C2E2] dark:border-[#3f4652] rounded-[30px] relative after:absolute after:right-0 after:top-0 after:h-full after:w-16 after:rounded-tr-[30px] after:rounded-br-[30px] after:z-10 lg:after:bg-[linear-gradient(270deg,_#F2F4FB_2.14%,_rgba(242,_244,_251,_0.00)_191.43%)] dark:lg:after:bg-[linear-gradient(270deg,_#202932_2.14%,_rgba(242,_244,_251,_0.00)_191.43%)]'>
-        <div className=' md:grid md:grid-cols-3 justify-between lg:items-center gap-5'>
+        <div className=' md:grid md:grid-cols-4 justify-between lg:items-center gap-5'>
           <div className='lg:flex grid sm:grid-cols-1 grid-cols-1 xl:gap-12.5 gap-6'>
             {/* <div className='bg-primary rounded-2xl xl:px-7.5  px-5 xl:pt-7.5 xl:pb-[22px] py-4 flex justify-between gap-7 rating-platform'>
               <div className='w-[20vw]'>
@@ -75,40 +85,45 @@ const PlatformRating = () => {
               </div>
             </div> */}
             <div className='self-center'>
-              <p className='font-semibold text-muted-foreground '>2012년 이래로 다양한 제휴사들과 함께 글로벌 파일럿의 꿈을 키워가고 있습니다.</p>
+              <p className='font-semibold text-muted-foreground '>2012년 이래로 다양한 제휴사들과 함께 <br/>글로벌 파일럿의 꿈을 키워가고 있습니다.</p>
             </div>
           </div>
-          <div className='col-span-2 overflow-x-hidden pt-10 lg:pt-0 '>
+          <div className='col-span-3 overflow-x-hidden pt-10 lg:pt-0 '>
             <SlideRight>
-              <Swiper
-                // modules={[Autoplay]}
-                spaceBetween={10}
-                autoplay={{
-                  delay: 1000,
-                  disableOnInteraction: false,
-                }}
-                loop={true}
-                breakpoints={{
-                  0: { slidesPerView: 1 },
-                  640: { slidesPerView: 2 },
-                  1400: { slidesPerView: 2.5 },
-                  1550: { slidesPerView: 3.2 },
-                }}
-              >
-                {
-                  ratingData.map(({ id, icon, link, platformName, rating }) => {
-                    return (
-                      <SwiperSlide key={id} className='h-full'>
-                        <div className='flex flex-col items-center justify-center sm:justify-start gap-x-10'>
-                          <div className='icon__container w-[8vw] h-[10vh]'>
-                            {icon}
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                    )
-                  })
-                }
-              </Swiper>
+              <div className='relative'>
+                <Swiper
+                  autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  }}
+                  speed={1000}
+                  spaceBetween={10}
+                  // slidesPerView={3}
+                  breakpoints={{
+                    100: {
+                      slidesPerView: 2,
+                    },
+                    640: {
+                      slidesPerView: 4,
+                    },
+                    997: {
+                      slidesPerView: 4,
+                    },
+                  }}
+
+                  slidesPerGroup={2}
+                  pagination={pagination}
+                  loop={true}
+                  effect={"fade"}
+                  modules={[Pagination, Navigation, Autoplay]}
+                >
+                  {teamData.map(({ id, name, position, src }) => {
+                    return <SwiperSlide> <TeamCard key={id} id={id} name={name} position={position} src={src} bgColor={"bg-[rgba(0,31,63,0.35)]"} link={"/team-details"} /> </SwiperSlide>
+                  })}
+                </Swiper>
+                {/* <div className='team-pagination flex items-center gap-2 absolute -bottom-6 left-1/2 -translate-x-1/2 z-10 [&_.swiper-pagination-bullet-active]:bg-primary'></div> */}
+              </div>
+              
             </SlideRight>
           </div>
 

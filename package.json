@@ -22,6 +22,8 @@
     "@tiptap/react": "^2.5.9",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "embla-carousel-auto-scroll": "^8.1.8",
+    "embla-carousel-react": "^8.1.8",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.358.0",
     "next": "14.1.3",
