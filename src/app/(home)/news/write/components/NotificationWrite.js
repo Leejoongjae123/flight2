@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { createClient } from "@/utils/supabase/client";
-import TextEditor from "./textEditor";
+import TextEditor from "./TextEditor";
 function NotificationWrite() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState(null);

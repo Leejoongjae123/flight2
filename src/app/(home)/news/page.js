@@ -20,7 +20,35 @@ import Link from "next/link";
 const Author = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [news, setNews] = useState([]);
+  const [totalNews, setTotalNews] = useState(0);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [perPage, setPerPage] = useState(5);
+  const [search, setSearch] = useState("");
+
   const supabase = createClient();
+
+  const fetchNotifications = async () => {
+    let query = supabase
+      .from("news")
+      .select("*", { count: "exact" })
+      .range((page - 1) * perPage, page * perPage - 1);
+
+    if (search) {
+      query = query.or(`title.ilike.%${search}%,description.ilike.%${search}%`);
+    }
+
+    const { data, error, count } = await query;
+
+    if (error) {
+      console.error("Error fetching notifications:", error);
+    } else {
+      setNews(data);
+      setTotalNews(count);
+      setTotalPages(count > 0 ? Math.ceil(count / perPage) : 1);
+    }
+  };
   useEffect(() => {
     const getUser = async () => {
       const {
@@ -31,7 +59,13 @@ const Author = () => {
     };
 
     getUser();
-  }, [supabase]);
+    fetchNotifications();
+  }, [supabase, page, perPage, search]);
+
+  const handleInputChange = (e) => {
+    console.log("123434");
+    setSearch(e.target.value);
+  };
 
   if (loading) {
     return (
@@ -56,13 +90,22 @@ const Author = () => {
                   >
                     항공 뉴스
                   </Title>
-                  <p className="pt-7.5 pb-10 font-semibold text-center w-full">
-                    급변하는 항공 산업, 최신 트렌드를 따라가지 못하면 뒤처질 수
-                    있습니다. 저희 유학원이 제공하는 항공 교육 최신 소식을 통해
-                    전 세계에서 가장 앞서가는 교육을 받을 수 있습니다. 지금 바로
-                    유학원에 문의하시고, 글로벌 파일럿으로 성장할 기회를 놓치지
-                    마세요!
-                  </p>
+                  <div className="flex items-center justify-center gap-x-10">
+                    <p className="pt-7.5 pb-10 font-semibold text-center w-full">
+                      급변하는 항공 산업, 최신 트렌드를 따라가지 못하면 뒤처질
+                      수 있습니다. 저희 유학원이 제공하는 항공 교육 최신 소식을
+                      통해 전 세계에서 가장 앞서가는 교육을 받을 수 있습니다.
+                      지금 바로 유학원에 문의하시고, 글로벌 파일럿으로 성장할
+                      기회를 놓치지 마세요!
+                    </p>
+                    {user?.email === "fuzzily@naver.com" ? (
+                      <Button>
+                        <Link href={"/news/write"}>글쓰기</Link>
+                      </Button>
+                    ) : (
+                      <></>
+                    )}
+                  </div>
                 </div>
                 <div className="relative">
                   <Input
@@ -79,134 +122,33 @@ const Author = () => {
               </SlideUp>
               <SlideLeft>
                 <div className="flex flex-col gap-y-10 mt-10">
-                  <div className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]">
-                    <div className="grid grid-cols-[18%_1fr] items-center">
-                      <div>
-                        <Image
-                          src={"/images/blog/author-bg.jpg"}
-                          width={150}
-                          height={150}
-                          alt="author"
-                          className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
-                        />
-                      </div>
-                      <div>
-                        <Title size={"4xl"} className={"pb-3"}>
-                          Agatha Christie
-                        </Title>
-                        <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                        <p className="mt-3">
-                          Hello, Agatha Christie, a passionate travel author
-                          with a heart full of wanderlust. Armed with a camera
-                          and a curiosity for the unknown, I traverse the globe,
-                          seeking out hidden gems and sharing the stories they
-                          hold. From remote landscapes to bustling cityscapes,
-                          my goal is to inspire others to embark on their own
-                          adventures and embrace the beauty of diverse cultures.
-                          Join me as I explore the world one destination at a
-                          time, capturing moments and weaving tales that ignite
-                          the spirit of exploration. Let's wander together
-                          through the pages of my travel chronicles!
-                        </p>
+                  {news.map((news, index) => (
+                    <div
+                      key={index}
+                      className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]"
+                    >
+                      <div className="grid grid-cols-[18%_1fr] items-center">
+                        <div>
+                          <Image
+                            src={"/images/blog/author-bg.jpg"}
+                            width={150}
+                            height={150}
+                            alt="author"
+                            className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
+                          />
+                        </div>
+                        <div>
+                          <Title size={"4xl"} className={"pb-3"}>
+                            {news.title}
+                          </Title>
+                          <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
+                          <p className="mt-3">
+                            {news.description.replace(/<[^>]+>/g, "")}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]">
-                    <div className="grid grid-cols-[18%_1fr] items-center">
-                      <div>
-                        <Image
-                          src={"/images/blog/author-bg.jpg"}
-                          width={150}
-                          height={150}
-                          alt="author"
-                          className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
-                        />
-                      </div>
-                      <div>
-                        <Title size={"4xl"} className={"pb-3"}>
-                          Agatha Christie
-                        </Title>
-                        <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                        <p className="mt-3">
-                          Hello, Agatha Christie, a passionate travel author
-                          with a heart full of wanderlust. Armed with a camera
-                          and a curiosity for the unknown, I traverse the globe,
-                          seeking out hidden gems and sharing the stories they
-                          hold. From remote landscapes to bustling cityscapes,
-                          my goal is to inspire others to embark on their own
-                          adventures and embrace the beauty of diverse cultures.
-                          Join me as I explore the world one destination at a
-                          time, capturing moments and weaving tales that ignite
-                          the spirit of exploration. Let's wander together
-                          through the pages of my travel chronicles!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]">
-                    <div className="grid grid-cols-[18%_1fr] items-center">
-                      <div>
-                        <Image
-                          src={"/images/blog/author-bg.jpg"}
-                          width={150}
-                          height={150}
-                          alt="author"
-                          className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
-                        />
-                      </div>
-                      <div>
-                        <Title size={"4xl"} className={"pb-3"}>
-                          Agatha Christie
-                        </Title>
-                        <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                        <p className="mt-3">
-                          Hello, Agatha Christie, a passionate travel author
-                          with a heart full of wanderlust. Armed with a camera
-                          and a curiosity for the unknown, I traverse the globe,
-                          seeking out hidden gems and sharing the stories they
-                          hold. From remote landscapes to bustling cityscapes,
-                          my goal is to inspire others to embark on their own
-                          adventures and embrace the beauty of diverse cultures.
-                          Join me as I explore the world one destination at a
-                          time, capturing moments and weaving tales that ignite
-                          the spirit of exploration. Let's wander together
-                          through the pages of my travel chronicles!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]">
-                    <div className="grid grid-cols-[18%_1fr] items-center">
-                      <div>
-                        <Image
-                          src={"/images/blog/author-bg.jpg"}
-                          width={150}
-                          height={150}
-                          alt="author"
-                          className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
-                        />
-                      </div>
-                      <div>
-                        <Title size={"4xl"} className={"pb-3"}>
-                          Agatha Christie
-                        </Title>
-                        <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                        <p className="mt-3">
-                          Hello, Agatha Christie, a passionate travel author
-                          with a heart full of wanderlust. Armed with a camera
-                          and a curiosity for the unknown, I traverse the globe,
-                          seeking out hidden gems and sharing the stories they
-                          hold. From remote landscapes to bustling cityscapes,
-                          my goal is to inspire others to embark on their own
-                          adventures and embrace the beauty of diverse cultures.
-                          Join me as I explore the world one destination at a
-                          time, capturing moments and weaving tales that ignite
-                          the spirit of exploration. Let's wander together
-                          through the pages of my travel chronicles!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
                 <div className="flex justify-center items-center my-10">
                   <Pagination
@@ -217,8 +159,9 @@ const Author = () => {
                       cursor:
                         " bg-blue-700 w-12 h-12 shadow-lg from-default-500 to-default-800 dark:from-default-300 dark:to-default-100 text-white font-bold ",
                     }}
-                    total={10}
+                    total={totalPages}
                     initialPage={1}
+                    onChange={(page) => setPage(page)}
                   />
                 </div>
               </SlideLeft>

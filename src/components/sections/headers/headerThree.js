@@ -151,7 +151,7 @@ const HeaderThree = () => {
                           className=""
                           onClick={signOut}
                         >
-                          <p>LogOut</p>
+                          <p>로그아웃</p>
                         </Button>
                       ) : (
                         <Button
@@ -159,7 +159,7 @@ const HeaderThree = () => {
                           size="xl"
                           className=""
                         >
-                          <Link href={"/login"}>Login</Link>
+                          <Link href={"/login"}>로그인</Link>
                         </Button>
                       )}
                     </div>
