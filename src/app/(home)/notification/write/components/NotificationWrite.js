@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { createClient } from "@/utils/supabase/client";
-import TextEditor from "./textEditor";
+import dynamic from 'next/dynamic';
+
+const TextEditor = dynamic(() => import('./TextEditor'), { ssr: false });
 function NotificationWrite() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
@@ -62,12 +64,6 @@ function NotificationWrite() {
         >
           내용
         </label>
-        {/* <textarea
-          id="message"
-          rows="4"
-          class="block p-2.5 w-full h-[30vh] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder=""
-        ></textarea> */}
         <TextEditor />
       </div>
 

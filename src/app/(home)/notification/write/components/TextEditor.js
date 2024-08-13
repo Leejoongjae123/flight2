@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useMemo, useRef } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
