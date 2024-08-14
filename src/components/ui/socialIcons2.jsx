@@ -18,7 +18,7 @@ const SocialIcons = ({color, prantBorder}) => {
                 <Link href={"https://twitter.com/?lang=en"} aria-label="twitter"><FaXTwitter /></Link>
             </li> */}
             <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
-                <Link href={"https://www.instagram.com/"} aria-label="instagram"><FaInstagram /></Link>
+                <Link target='_blank' href="https://blog.naver.com/undglobal" aria-label="instagram"><SiNaver /></Link>
             </li>
             {/* <li className={cn(`hover:text-primary-foreground transition-all duration-300 ${prantBorder}`)}>
                 <Link href={"https://bd.linkedin.com/"} aria-label="linkedin"><FaLinkedin /></Link>

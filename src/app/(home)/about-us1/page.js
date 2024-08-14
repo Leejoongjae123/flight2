@@ -15,7 +15,7 @@ export const metadata = {
 const About = () => {
   return (
     <main>
-        <PageTitle pageName={"이사장 인사말"} />
+        <PageTitle pageName={"UND 재단 이사장 인사말"} />
         <StoryFive counter={false}/>
         {/* <Mission/>
         <TeamGrid/>

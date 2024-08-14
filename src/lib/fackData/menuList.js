@@ -142,7 +142,7 @@ export const menuList = [
     {
         id: 3,
         path: "#",
-        lable: "교육과정",
+        lable: "UND과정",
         dropDown: [
             {
                 id: 1,
@@ -175,7 +175,7 @@ export const menuList = [
     {
         id: 4,
         path: "#",
-        lable: "항공사취업",
+        lable: "졸업 후 진로",
         dropDown: [
             {
                 id: 1,
@@ -196,7 +196,7 @@ export const menuList = [
     {
         id: 5,
         path: "#",
-        lable: "준사관취업",
+        lable: "항공 준사관 진출",
         dropDown: [
             {
                 id: 1,

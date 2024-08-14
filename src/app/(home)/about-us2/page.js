@@ -15,7 +15,7 @@ export const metadata = {
 const About = () => {
   return (
     <main>
-        <PageTitle pageName={"원장 인사말"} breadcrumbLink={"About us"}/>
+        <PageTitle pageName={"UND 항공대학교 대표원장 인사말"} breadcrumbLink={"About us"}/>
         <StoryFive counter={false}/>
         {/* <Mission/>
         <TeamGrid/>

@@ -10,6 +10,8 @@ import { useTheme } from 'next-themes'
 import Email from '../../../../public/icons/email'
 import Call from '../../../../public/icons/call'
 import SocialIcons from '@/src/components//ui/socialIcons'
+import SocialIcons2 from '@/src/components//ui/socialIcons2'
+
 import {
   Select,
   SelectContent,
@@ -48,24 +50,13 @@ const TopHeader = ({ color, bgColor, darkBg }) => {
 
           <div className='flex items-center gap-7.5'>
             <div className='flex items-center gap-7.5'>
-              <div className='hidden xl:block'>
+              <div className='hidden  md:flex md:gap-x-3 md:items-center '>
+                
+                <SocialIcons2 color={color} />
                 <SocialIcons color={color} />
+                <Link className='text-white' href="https://airlinepilot.training"><span className='multiline-hover'>UND재단 홈페이지</span> </Link>
               </div>
-              {/* dark and light btn */}
-              {/* <div className='flex items-center gap-2'>
-                <div className={cn(`flex gap-3 bg-[#ccd2d9] dark:bg-[#2d343b] rounded-[29px] px-1 py-1`, darkBg)}>
-                  <div onClick={() => setTheme("light")} className='w-[26px] h-[26px] rounded-full flex justify-center items-center p-1 bg-background dark:bg-transparent text-muted-foreground cursor-pointer'>
-                    <IoSunnyOutline />
-                  </div>
-                  <div onClick={() => setTheme("dark")} className='w-[26px] h-[26px] rounded-full flex justify-center items-center p-1 dark:bg-[#001F3F] text-muted-foreground cursor-pointer'>
-                    <BsMoonStars />
-                  </div>
-                </div>
-                {
-                  theme === "dark" ? <span className={cn(`font-semibold ${color}`)}>Dark</span> : <span className={cn(`font-semibold ${color}`)}>Light</span>
-                }
-              </div> */}
-              {/* dark and light btn */}
+
             </div>
             {/* <p className='h-7.5 w-[1px] bg-accent dark:bg-[#717A83]'></p> */}
             {/* language select option */}
