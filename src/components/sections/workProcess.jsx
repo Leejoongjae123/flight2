@@ -14,7 +14,7 @@ import SlideUp from '../animations/slideUp'
 const processData = [
   {
     id: 1,
-    title: "학교 (1961)",
+    title: "학교설립 (1961)",
     desc: "UND 항공대학교은 1961년에 설립되어, 당시부터 항공 교육의 중심지로 자리 잡았습니다.",
     Icon: Category
   },
