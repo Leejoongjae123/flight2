@@ -11,11 +11,11 @@ const StoryContentOne = () => {
     <div className='h-full'>
       <SlideUp>
         <Title size={"5xl"} className={"xl:leading-[140%] lg:max-w-[645px]"}>
-          UND 재단 이사장 환영 인사
+          UND 항공대학교 재단 이사장
         </Title>
 
         <div className='lg:max-w-[645px]'>
-          <p className='font-bold text-muted-foreground mt-6'>
+          <p className='text-muted-foreground mt-6 font-bold'>
             학생, 교수진 및 직원 여러분께<br></br><br></br>
             노스다코타 대학교(UND)에 오신 것을 환영합니다! 또 한 번의 흥미로운 학기를 함께 시작하게 되어 매우 기쁩니다. UND는 혁신, 학문, 그리고 개인적 성장이 번성하는 활기찬 공동체를 조성하는 데 자부심을 가지고 있습니다.
             <br></br><br></br>
@@ -31,7 +31,7 @@ const StoryContentOne = () => {
             <br></br><br></br>
             따뜻한 안부를 전하며,
             <br></br><br></br>
-            로버트 J. 크라우스 박사, PfMP 학장 노스다코타 대학교 총장
+            척 피니오, UND 항공대학교 재단 이사장
           </p>
         </div>
 

@@ -1,17 +1,17 @@
 export const faqData = [
     {
         id: "one",
-        question: "플로리다텍 한국사무소 여름방학 휴무 안내",
+        question: "한국사무소 여름방학 휴무 안내",
         ans: "We offer flexible pricing plans tailored to different business needs. Our pricing is transparent, with no hidden fees. Explore our detailed pricing section for more information."
     },
     {
         id: "two",
-        question: "플로리다텍 관계자 한국 방문 설명회 개최 안내",
+        question: "관계자 한국 방문 설명회 개최 안내",
         ans: "We offer flexible pricing plans tailored to different business needs. Our pricing is transparent, with no hidden fees. Explore our detailed pricing section for more information."
     },
     {
         id: "three",
-        question: "플로리다텍 한국사무소 추석 휴무 안내",
+        question: "한국사무소 추석 휴무 안내",
         ans: "We offer flexible pricing plans tailored to different business needs. Our pricing is transparent, with no hidden fees. Explore our detailed pricing section for more information."
     },
     {
@@ -21,7 +21,7 @@ export const faqData = [
     },
     {
         id: "five",
-        question: "플로리다텍 한국사무소 추석 휴무 안내",
+        question: "한국사무소 추석 휴무 안내",
         ans: "We offer flexible pricing plans tailored to different business needs. Our pricing is transparent, with no hidden fees. Explore our detailed pricing section for more information."
     }
 ]
