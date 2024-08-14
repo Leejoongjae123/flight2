@@ -46,7 +46,7 @@ const Mission = () => {
             <SlideLeft>
               <div className='flex flex-col lg:pb-10 pb-5 justify-center items-center'>
                 <Button variant="secondary">Curriculum</Button>
-                <Title size={"5xl"} className="pt-6">육군 항공기 준사관 PPL 취득과정</Title>
+                <Title size={"5xl"} className="pt-6">육군 항공 준사관 헬기 자가용 면장 취득과정</Title>
               </div>
               <p className='font-semibold text-muted-foreground text-center'>
                 본인에게 유리한 1개 자격증만 적용(외국취득 자격증은 미인정)

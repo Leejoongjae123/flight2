@@ -32,7 +32,7 @@ const BlogArtical = ({ sidebarShow }) => {
               }
               <div>
                 <div>
-                  <Title size={"5xl"} className={"text-center lg:text-5xl md:text-4.5xl text-3xl "}>UND Aerospace Foundation</Title>
+                  <Title size={"5xl"} className={"text-center lg:text-5xl md:text-4.5xl text-3xl "}>UNDAF Scholarship</Title>
                 </div>
                 <div className='lg:pt-12.5 pt-6'>
                   {
@@ -44,8 +44,6 @@ const BlogArtical = ({ sidebarShow }) => {
                 </div>
                 <div>
                   <div className='max-w-[1080px] mx-auto lg:pt-12.5 pt-6 lg:px-12.5'>
-                    <p>UND Aerospace Foundation은 Ray Foundation과 협력하여 특별한 개인에게 비범한 장학 기회를 제공하게 되어 기쁩니다.
-                      이 장학금은 자격이 있는 퇴역 군인이나 승인된 부양 가족(훈련 시작 전에 만 17세 이상이어야 함)에게 최대 $12,000의 사설 비행사 훈련 비용을 지원합니다. 훈련 시작 날짜는 지속적으로 업데이트되며 여기에서 확인할 수 있습니다.<br></br> https://airlinepilot.training/upcoming-classes/.</p>
                     <div className='lg:pt-12.5 py-6'>
                       <Title size={"2xl"}> <span>1.</span>배경</Title>
                       <p className='pt-[15px]'>GI 법안®은 직업 훈련을 위한 항공 훈련에 사용할 수 있습니다. 그러나, 사설 비행사 자격증은 필수 조건입니다(www.va.gov). 이 장학금은 UND Aerospace Phoenix Flight Training Center(UND Phoenix FTC)에서 사설 비행사 자격증을 취득하는 데 필요한 비용의 큰 부분을 충당하기 위해 설계되었습니다. 사설 비행사 과정이 완료된 후, GI 법안® 교육 혜택은 도구 항공기, 상업 비행사, 다중 엔진 비행사, 궁극적으로는 인증된 비행 강사 자격증을 취득하는 지속적인 학업에 사용될 수 있습니다.</p>

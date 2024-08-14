@@ -85,7 +85,7 @@ const PlatformRating = () => {
               </div>
             </div> */}
             <div className='self-center'>
-              <p className='font-semibold text-muted-foreground '>2012년 이래로 UND 제휴 글로벌 항공사와 함께 파일럿의 꿈을 키워가고 있습니다.</p>
+              <p className='font-semibold text-muted-foreground '>2012년 이래로 UND 항공대학교는 전미 글로벌 항공사와 함께 수준 높은 조종사를 양성하고 있습니다.</p>
             </div>
           </div>
           <div className='col-span-3 overflow-x-hidden pt-10 lg:pt-0 '>

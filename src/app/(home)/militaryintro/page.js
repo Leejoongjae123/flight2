@@ -12,7 +12,7 @@ export const metadata = {
 const Faq = () => {
     return (
         <main>
-            <PageTitle pageName={"회전익 항공기 준사관 소개"} breadcrumbLink={"Faq"} />
+            <PageTitle pageName={"육군 항공 준사관 소개"} breadcrumbLink={"Faq"} />
             <ProvideOne />
             {/* <FaqTwo /> */}
             {/* <SubscribeTwo /> */}

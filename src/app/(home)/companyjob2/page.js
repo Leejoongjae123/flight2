@@ -15,13 +15,8 @@ export const metadata = {
 const Testimonial = () => {
     return (
         <main>
-            <PageTitle pageName={"비행교관 경력 후 취업"} breadcrumbLink={"Testimonials"} />
-            {/* <JobsPost></JobsPost> */}
+            <PageTitle pageName={"UNDAF 비행교관(CFI) 취업"} breadcrumbLink={"Testimonials"} description={"CFI:Certificated Flight Instructor"} />
             <ServiceFive></ServiceFive>
-            {/* <TestimonialOne />
-            <TestimonialTwo />
-            <TestimonialThree />
-            <SubscribeTwo /> */}
         </main>
     )
 }

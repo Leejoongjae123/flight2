@@ -20,34 +20,29 @@ import Setting from '../../../public/icons/setting'
 const ourItems = [
   {
     id: 1,
-    title: "G1000 숙련도 (높이 선호됨)",
-    icon: <Activity height={"36"} width={"36"}/>,
+    title: "G1000 유경험자",
+    icon: <Activity height={"36"} width={"36"} />,
     desc: "G1000 숙련도 (높이 선호됨)"
   },
   {
     id: 2,
+    title: "초기 CFI 신청 자격",
+    icon: <Shield height={"36"} width={"36"} />,
+    desc: "초기 CFI 신청 자격"
+  },
+  {
+    id: 3,
     title: "CFII",
     icon: <Setting height={"36"} width={"36"} />,
     desc: "CFII"
   },
   {
-    id: 3,
+    id: 4,
     title: "MEI",
     icon: <GoodFirms height={"36"} width={"36"} />,
     desc: "MEI"
   },
-  {
-    id: 4,
-    title: "Dual Given",
-    icon: <Work height={"36"} width={"36"} />,
-    desc: "Dual Given"
-  },
-  {
-    id: 4,
-    title: "초기 CFI 신청 자격 (FAR 61.195h)",
-    icon: <Shield height={"36"} width={"36"} />,
-    desc: "초기 CFI 신청 자격 (FAR 61.195h)"
-  },
+
 
 ]
 const Solutions = () => {
@@ -64,7 +59,7 @@ const Solutions = () => {
             </SlideLeft>
           </div>
           <div className='mt-10 pt-14 lg:pt-0'>
-            <div className='grid sm:grid-cols-5 grid-cols-1 sm:gap-y-[72px] gap-y-10 [&>*:nth-child(2)>.icon]:text-[#5A5579] [&>*:nth-child(2)>.icon]:bg-[#5a55791a] [&>*:nth-child(3)>.icon]:text-[#FE2E79] [&>*:nth-child(3)>.icon]:bg-[#9a2e791a] [&>*:nth-child(4)>.icon]:text-[#009F96] [&>*:nth-child(5)>.icon]:bg-[#009f961a]'>
+            <div className='grid sm:grid-cols-4 grid-cols-1 sm:gap-y-[72px] gap-y-10 [&>*:nth-child(2)>.icon]:text-[#5A5579] [&>*:nth-child(2)>.icon]:bg-[#5a55791a] [&>*:nth-child(3)>.icon]:text-[#FE2E79] [&>*:nth-child(3)>.icon]:bg-[#9a2e791a] [&>*:nth-child(4)>.icon]:text-[#009F96] [&>*:nth-child(5)>.icon]:bg-[#009f961a]'>
               {
                 ourItems.map(({ desc, icon, id, title }) => <Card key={id} id={id} desc={desc} title={title} icon={icon} />)
               }
@@ -82,10 +77,10 @@ const Card = ({ id, icon, title, desc }) => {
   return (
     <SlideUp id={id}>
       <div className='flex flex-col items-center justify-center'>
-      <div className='bg-[rgba(162,46,254,0.10)] icon rounded-2xl w-[85px] h-[85px] mb-7.5 flex justify-center items-center text-purple'>
-      {icon}
-      </div>
-      <p className='text-center text-xl font-extrabold text-muted-foreground relative hover-underline after:bg-muted after:h-[1px]'>{title}</p>
+        <div className='bg-[rgba(162,46,254,0.10)] icon rounded-2xl w-[85px] h-[85px] mb-7.5 flex justify-center items-center text-purple'>
+          {icon}
+        </div>
+        <p className='text-center text-xl font-extrabold text-muted-foreground relative hover-underline after:bg-muted after:h-[1px]'>{title}</p>
       </div>
     </SlideUp>
   )

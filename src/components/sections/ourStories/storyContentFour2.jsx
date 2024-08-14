@@ -16,7 +16,7 @@ const StoryContentFour = () => {
 
     <SlideUp>
       <Title size={"5xl"}>
-        일반 과정
+        편입과정
       </Title>
       <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5">
         <li className="flex gap-x-5 ">
@@ -38,9 +38,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">거주</h3>
+            <h3 className="font-medium leading-tight">인증</h3>
             <p className="">
-              미국 영주권 취득 지원
+              국내 유일 UND 공식 인증 교육 플랫폼
             </p>
           </div>
         </li>
@@ -63,8 +63,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">경력</h3>
-            <p className="">훈련용 비행기 134대, 비행경력 충족</p>
+            <h3 className="font-medium leading-tight">조건</h3>
+            <p className="">국내외 대학교 2년 이상 수료생</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -86,9 +86,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">취업</h3>
-            <p className="">비행교관 취업 보장</p>
-            <p className="">미국 항공사(LCC) 취업 지원</p>
+            <h3 className="font-medium leading-tight">혜택</h3>
+            <p className="">SAT 면제, ELS 수료 조건부 입학 가능</p>
+            
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -110,8 +110,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">인증</h3>
-            <p className="">국내 유일 UND 공식 인증 업체</p>
+            <h3 className="font-medium leading-tight">학위</h3>
+            <p className="">미국 No.1 명문 항공대학교 4년제 학사 취득</p>
           </div>
         </li>
       </ol>

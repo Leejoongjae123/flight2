@@ -18,7 +18,7 @@ const About = () => {
         <PageTitle pageName={"UND 항공대학 소개"} breadcrumbLink={"About us"}/>
         {/* <StoryFive counter={false}/> */}
         <Mission/>
-        <TeamOne />
+        {/* <TeamOne /> */}
         {/* <TeamGrid/>
         <TestimonialTwo/>
         <FaqTwo/>

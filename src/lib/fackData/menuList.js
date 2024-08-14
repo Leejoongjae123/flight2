@@ -83,7 +83,7 @@ export const menuList = [
             {
                 id: 3,
                 path: "/introduction",
-                lable: "UND 항공대학 소개",
+                lable: "UND 항공대학교 소개",
                 tag: "",
                 // subDropdonwn: [
                 //     {
@@ -207,7 +207,7 @@ export const menuList = [
             {
                 id: 2,
                 path: "/militarycurriculum",
-                lable: "교과과정",
+                lable: "헬기 자가용 면장 취득과정",
                 tag: "",
             },
             {

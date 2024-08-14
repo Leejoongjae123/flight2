@@ -1,7 +1,7 @@
 export const blogData2 = [
     {
         id: 1,
-        title: "Piper Archer",
+        title: "Cessna172S",
         date: "25 January 2024",
         author: {
             author_img: "/images/aircraft/aircraft1.jpg",
@@ -14,7 +14,7 @@ export const blogData2 = [
     },
     {
         id: 2,
-        title: "Piper Seminole",
+        title: "Piper Archer",
         date: "26 January 2024",
         author: {
             author_img: "/images/blog/posts-author-img1-2.png",
@@ -23,11 +23,11 @@ export const blogData2 = [
             description: ""
         },
         category: ["Piper Seminole"],
-        thumb: "/images/aircraft/aircraft2.png",
+        thumb: "/images/aircraft/aircraft2.jpg",
     },
     {
         id: 3,
-        title: "Cessna 172S",
+        title: "Piper Seminole",
         date: "27 January 2024",
         author: {
             author_img: "/images/blog/posts-author-img1-1.png",
@@ -40,42 +40,42 @@ export const blogData2 = [
     },
     {
         id: 4,
-        title: "Piper and Cessna Training Devices",
+        title: "King air",
         date: "28 January 2024",
         author: {
-            author_img: "/images/blog/posts-author-img1-1.png",
+            author_img: "/images/blog/character4.jpg",
             author_name: "by William Shakespeare",
             social_link: [""],
             description: ""
         },
         category: ["Piper and Cessna Training Devices"],
-        thumb: "/images/blog/character4.png",
+        thumb: "/images/aircraft/aircraft4.jpg",
     },
     {
         id: 5,
-        title: "Untangling Social Media Services: What’s the Best Choice?",
+        title: "R44",
         date: "29 January 2024",
         author: {
-            author_img: "/images/blog/posts-author-img1-2.png",
+            author_img: "/images/blog/character5.jpg",
             author_name: "by Akira Toriyama",
             social_link: [""],
             description: ""
         },
         category: ["Affiliate Marketing"],
-        thumb: "/images/blog/blog-post3-5.png",
+        thumb: "/images/aircraft/aircraft5.jpg",
     },
     {
         id: 6,
-        title: "Creative Ways That Non-Profits Can Increase Donations Via Social Media During the Holidays.",
+        title: "Bell206",
         date: "30 January 2024",
         author: {
-            author_img: "/images/blog/posts-author-img1-1.png",
+            author_img: "/images/blog/character4.jpg",
             author_name: "by Gilbert Patten",
             social_link: [""],
             description: ""
         },
         category: ["Email Marketing"],
-        thumb: "/images/blog/blog-post3-6.png",
+        thumb: "/images/aircraft/aircraft6.jpg",
     },
     {
         id: 7,

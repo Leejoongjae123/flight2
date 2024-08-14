@@ -23,7 +23,7 @@ const ProvideOne = () => {
           <Button variant="secondary">Introduction</Button>
         </div>
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 justify-between'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 justify-between gap-x-20'>
           <div className=''>
             <SlideUp>
 
@@ -38,9 +38,9 @@ const ProvideOne = () => {
               </div>
               <div className='flex flex-col gap-6 xl:mt-10 mt-8 pb-12.5 w-full'>
                 <Card bgColor={"after:bg-green"} color={"text-green"} icon={<FiCheckSquare />} title={"선발 주체 : 대한민국 육군"} />
-                <Card bgColor={"after:bg-purple"} color={"text-purple"} icon={<GoGoal />} title={"목적 : 회전익 항공기 조종사 인원 선발,준사관 임관"} />
-                <Card bgColor={"after:bg-red"} color={"text-red"} icon={<FaPeopleGroup />} title={"규모 : 36명(2023년 1분기 기준"} />
-                <Card bgColor={"after:bg-black"} color={"text-black"} icon={<LuCalendarDays />} title={"횟수 : 매년 2회"} />
+                <Card bgColor={"after:bg-purple"} color={"text-purple"} icon={<GoGoal />} title={"목적 : 헬기 조종사 인원 선발"} />
+                <Card bgColor={"after:bg-red"} color={"text-red"} icon={<FaPeopleGroup />} title={"인원 : 36명(2023년 1분기 기준)"} />
+                <Card bgColor={"after:bg-black"} color={"text-black"} icon={<LuCalendarDays />} title={"선발 : 매년 2회"} />
               </div>
             </SlideUp>
           </div>
@@ -81,7 +81,7 @@ const ProvideOne = () => {
                   군필조건
                 </h3>
                 <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
-                  병역 미 필자, 예비역 및 현역(간부/병, 타군) 구분 없이 남/여 지원 가능
+                  병역 미필자, 예비역 및 현역(간부/병, 타군) 구분 없이 남/여 지원 가능
                 </p>
               </div>
 

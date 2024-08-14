@@ -18,25 +18,25 @@ export const servicesDataTwo = [
         id: 2,
         icon_1: <Image src="/images/companylogo/tway.png" height={60} width={60}/>,
         service_name: "티웨이항공 | 신입(부기장훈련요원)",
-        description: "국내 운송용 조종사(육상다발) 또는 사업용 조종사(육상 다발) 자격증명 소지자<br/>고정익 비행시간 총 250시간 이상인 자(후방석 비행시간 제외)<br/>국내 항공신체검사 1종 + 항공영어 자격 4급 이상 + 항공무선통신사 자격증 소지자<br/>JET 한정 자격 소지자<br/>B737형식 한정 자격 소지자 우대"
+        description: "국내 운송용 조종사(육상다발) 또는 사업용 조종사(육상 다발) 자격증명 소지자<br/>고정익 비행시간 총 250시간 이상인 자(후방석 비행시간 제외)<br/>국내 항공신체검사 1종 + 항공영어 자격 4급 이상 + 항공무선통신사 자격증 소지자<br/>JET 한정 자격 소지자 우대<br/>B737형식 한정 자격 소지자 우대"
     },
     {
         id: 3,
         icon_1: <Image src="/images/companylogo/airincheon.png" height={60} width={60}/>,
         service_name: "에어인천 | 신입조종사",
-        description: "총 비행시간 250시간 이상인 자 (후방석 또는 모의비행장치 비행시간 제외)<br/>운송용조종사 또는 사업용조종사 자격 증명소지자 (사업용조종사는 계기비행 및 다발형식 한정 자격증명 소지자)<br/>한국 조종사 영어자격 4급 이상 소지자"
+        description: "총 비행시간 250시간 이상인 자 (후방석 또는 모의비행장치 비행시간 제외)<br/>운송용조종사 또는 사업용조종사 자격 증명소지자 (사업용조종사는<br/> 계기비행 및 다발형식 한정 자격증명 소지자)<br/>EPTA 4급 이상 소지자"
     },
     {
         id: 4,
         icon_1: <Image src="/images/companylogo/airpremia.png" height={60} width={60}/>,
         service_name: "에어프레미아 | 신입 운항승무원/부기장",
-        description: "총 비행시간 300시간 이상인 자 (후방석, 회전익 비행시간 제외)<br/>국내 자격증 + 항공신체검사 1종 + 항공영어자격 4급 이상 + 항공무선통신사 소지자<br/>Jet Type Rating"
+        description: "총 비행시간 300시간 이상인 자 (후방석, 회전익 비행시간 제외)<br/>국내 자격증 + 항공신체검사 1종 + 항공영어자격 4급 이상 + 항공무선통신사<br/>Jet Type Rating 우대"
     },
     {
         id: 5,
         icon_1: <Image src="/images/companylogo/aerok.png" height={60} width={60}/>,
         service_name: "에어로케이항공 | 신입 부기장 훈련요원",
-        description: "총 비행시간 300시간 이상 소지자 (후방석, 회전익, 모의비행장치 비행시간 제외)<br/>국내 자격증 + 항공신체검사 1종 + 항공영어자격 4급 이상 + 항공무선통신사 소지자<br/>Jet Type Rating"
+        description: "총 비행시간 300시간 이상 소지자 (후방석, 회전익, 모의비행장치 비행시간 제외)<br/>국내 자격증 + 항공신체검사 1종 + 항공영어자격 4급 이상 + 항공무선통신사 <br/>Jet Type Rating 우대"
     },
     {
         id: 6,

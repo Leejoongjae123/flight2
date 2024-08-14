@@ -14,37 +14,25 @@ import SlideUp from '../animations/slideUp'
 const processData = [
   {
     id: 1,
-    title: "설립 (1961)",
-    desc: "UND 항공대학은 1961년에 설립되어, 당시부터 항공 교육의 중심지로 자리 잡았습니다.",
+    title: "학교 (1961)",
+    desc: "UND 항공대학교은 1961년에 설립되어, 당시부터 항공 교육의 중심지로 자리 잡았습니다.",
     Icon: Category
   },
   {
     id: 2,
-    title: "첫 번째 비행 프로그램 (1966)",
-    desc: "첫 번째 비행 프로그램을 시작하며, 학생들에게 실질적인 비행 경험을 제공하기 시작했습니다.",
-    Icon: Filter
-  },
-  {
-    id: 3,
-    title: "상업 비행 면허 과정 도입 (1970)",
-    desc: "상업 비행 면허 과정을 도입하여 학생들이 전문 조종사로서의 경력을 쌓을 수 있는 기회를 마련했습니다.",
-    Icon: Shield
-  },
-  {
-    id: 4,
-    title: "최고의 항공 교육 기관으로의 성장 (1980-1990)",
-    desc: "We monitor and analyze performance metrics, making data-driven adjustments to optimize your digital presence continually.",
+    title: "전미 최고의 항공 교육 기관으로의 성장 (1980-1990)",
+    desc: "우리는 성과 지표를 모니터링하고 분석하여, 데이터에 기반한 조정을 통해 디지털 존재감을 지속적으로 최적화합니다.",
     Icon: Analysis
   },
   {
-    id: 5,
-    title: "최첨단 시설 및 기술 도입 (2000년대)",
+    id: 3,
+    title: "전미 최첨단 시설, 커리큘럼 구축(2000년대)",
     desc: "최신 비행 시뮬레이터와 교육 장비를 도입하여 학생들에게 최상의 교육 환경을 제공하고 있습니다.",
     Icon: Paper
   },
   {
-    id: 6,
-    title: "글로벌 파트너십 확대 (현재)",
+    id: 4,
+    title: "전세계/글로벌 파트너쉽 확대(현재)",
     desc: "전 세계 여러 대학 및 항공사와의 협력을 통해, 학생들에게 국제적인 경험을 쌓을 수 있는 기회를 제공합니다.",
     Icon: User
   },

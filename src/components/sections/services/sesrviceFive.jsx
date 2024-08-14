@@ -16,9 +16,8 @@ const ServiceFive = () => {
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Jobs</Button>
             <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">비행교관 경력 후 취업</Title>
-            <p className='text-center my-5'>우리는 안전, 표준화 및 고객 서비스를 강조합니다.<br />
-              UND 항공우주학부는 팀워크를 바탕으로 한 관리 문화를 운영하며, 미세 관리 대신 팀워크에 중점을 둡니다.<br />
-              Phoenix-Mesa Gateway 공항에 위치해 있으며, UND 항공우주학부는 계속해서 성장하고 있습니다. UND 항공우주학부의 비행 교관들은 매월 140시간 이상의 비행 시간을 제공하며, 추가 근무를 원하는 경우 더 많은 시간을 일할 수 있는 기회를 제공합니다. 비행 시간은 과정에 따라 매월 60-80시간 정도 소요됩니다.<br />
+            <p className='text-center my-5'>
+              UNDAF는 계속해서 성장하고 있습니다. UNDAF의 비행 교관들은 매월 140시간 이상의 비행 시간을 제공하며, 추가 근무를 원하는 경우 더 많은 시간을 일할 수 있는 기회를 제공합니다. 비행 시간은 과정에 따라 매월 60-80시간 정도 소요됩니다.<br />
               항공 관련 지상 학교를 가르칠 수 있는 기회도 제공됩니다.</p>
           </div>
         </SlideUp>

@@ -34,8 +34,8 @@ export const servicesDataFive = [
     {
         id: 4,
         icon: [shap_4, icon_4_4],
-        service_name: "새로운 글래스 콕핏 함대",
-        description: "주 훈련 항공기는 Garmin 1000이 장착된 Piper Archers와 Cessna 172로, 몇 년밖에 되지 않았습니다."
+        service_name: "최신기종 교육용 항고기 보유",
+        description: "주 훈련 항공기는 Garmin 1000이 장착된 Piper Archers와 Piper Archers입니다."
     },
     {
         id: 5,
@@ -58,13 +58,13 @@ export const servicesDataFive = [
   {
     id: 6,
     icon: [shap_6, icon_4_6],
-    service_name: "컴퓨터화된 일정 및 기록 관리",
+    service_name: "비행, 교육 레코드 관리",
     description: "항공 정보 관리 시스템(AIMS)은 항공기, 학생, 비행 교관 및 비행과 학업 기록의 관리를 용이하게 하기 위해 설계되었습니다."
 },{
   id: 6,
   icon: [shap_6, icon_4_6],
   service_name: "기록 부서",
-  description: "UND 항공우주학부는 잘 유지되는 항공기로 유명합니다. 항공기는 FAA 승인 프로그램에서 유지 관리되며, 품질 통제는 UND의 Part 145 수리 스테이션에서 모니터링됩니다."
+  description: "UND 항공우주학부는 잘 유지되는 항공기로 유명합니다. 항공기는 FAA 승인 프로그램에서 유지 관리되며, 품질 통제는 UND의 Part 145 정비부에서 모니터링됩니다."
 },
 {
   id: 6,
@@ -76,12 +76,12 @@ export const servicesDataFive = [
   id: 6,
   icon: [shap_6, icon_4_6],
   service_name: "할인된 요금으로 MEI 교육 제공",
-  description: "자격이 있는 분들에게는 MEI 교육을 할인된 요금으로 제공받을 수 있습니다."
+  description: "자격이 있는 분들에게는 MEI 교육을 제공받을 수 있습니다."
 },
 {
   id: 6,
   icon: [shap_6, icon_4_6],
-  service_name: "경험을 즐기세요",
+  service_name: "다양한 경험",
   description: "미국 남서부에서의 삶의 혜택을 누리세요. Class B 공역에서의 비행 경험을 얻고 다양한 지형을 탐험할 수 있습니다. 피닉스 주변 지역, 주요 스포츠 이벤트, 쇼 및 연중 활동을 즐기실 수 있습니다."
 }
 ]

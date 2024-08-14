@@ -15,7 +15,7 @@ export const jobsData = [
         },
         location: {
             icon: <Location />,
-            location: "고정익 비행시간 총 1,000시간 이상인 자 (후방석 비행시간 제외), 국내 자격증명 (CPL, MEL, IR, 항공업 4등급 이상) 소지자"
+            location: "고정익 비행시간 총 1,000시간 이상인 자 (후방석 비행시간 제외), 국내 자격증명 (CPL, MEL, IR, EPTA 4등급 이상) 소지자"
         },
     },
     {

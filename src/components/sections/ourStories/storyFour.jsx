@@ -2,11 +2,14 @@
 import React, { useState } from 'react'
 import StoryContentFour from './storyContentFour'
 import StoryContentFour2 from './storyContentFour2'
+import StoryContentFour3 from './storyContentFour3'
+import StoryContentFour4 from './storyContentFour4'
+
 import Image from 'next/image'
 import ExperienceCounter from './experienceCounter'
 import SlideUp from '@/src/components/animations/slideUp'
 import Selections from '@/src/components/sections/selections'
-
+import { BsAlphabetUppercase } from "react-icons/bs";
 
 const StoryFour = () => {
   const [selection, setSelection] = useState('TYPE1')
@@ -21,7 +24,7 @@ const StoryFour = () => {
           <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
             <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
               <SlideUp>
-                <Image src={"/images/resource/strategy4-1.png"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
+                <Image src={"/images/process/process1.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
               {/* <div className='absolute w-full max-w-[420px] -bottom-[8%] left-1/2 -translate-x-1/2'>
                             <SlideUp>
@@ -39,7 +42,7 @@ const StoryFour = () => {
           <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
             <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
               <SlideUp>
-                <Image src={"/images/resource/study-img3-7.png"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
+                <Image src={"/images/process/process2.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
               {/* <div className='absolute w-full max-w-[420px] -bottom-[8%] left-1/2 -translate-x-1/2'>
                             <SlideUp>
@@ -53,21 +56,35 @@ const StoryFour = () => {
             </div>
           </div>
         </div>
+        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+              <SlideUp>
+                <Image src={"/images/process/process3.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
+              </SlideUp>
+            </div>
+            <div className='flex'>
+              <StoryContentFour3 />
+            </div>
+          </div>
+        </div>
+        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+              <SlideUp>
+                <Image src={"/images/process/process4.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
+              </SlideUp>
+            </div>
+            <div className='flex'>
+              <StoryContentFour4 />
+            </div>
+          </div>
+        </div>
       </div>
       <div className={selection === 'TYPE2' ? '' : 'hidden'}>
         <SlideUp>
           <section class="bg-white antialiased text-[#001F3F]">
             <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 ">
-              {/* <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-[#001F3F] sm:text-4xl dark:text-white">
-                  Designed for business teams like yours
-                </h2>
-                <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-                  Here we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic
-                  growth.
-                </p>
-              </div> */}
-
               <div class="p-4 rounded-lg sm:p-12 bg-gray-50 dark:bg-gray-800">
                 <div class="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
@@ -85,13 +102,16 @@ const StoryFour = () => {
                         입학지원
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공대학교 글로벌 패스웨이로 입학지원
+                        UND 항공대학교 글로벌 패스웨이를 통한 입학 지원
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        서류+인터뷰로 선발
+                        서류, 면접으로 선발
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        SAT 점수 공인영어점수로 대체 가능, 점수 미달시 ELS 교육으로 대체가능
+                        SAT 점수 공인영어점수로 대체 가능
+                      </p>
+                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
+                        미달 시 ELS 조건부 입학 가능
                       </p>
                     </div>
                   </div>
@@ -107,7 +127,7 @@ const StoryFour = () => {
 
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        합격
+                        입학허가
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         UND 항공대학 입학 허가서 수령
@@ -124,16 +144,13 @@ const StoryFour = () => {
                     </div>
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        지상학술
+                        선행학습
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         UND 학사적응 비행학술 준비교육(4개월)
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         전공 이론 / 실무교육
-                      </p>
-                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 1학년 학기 학점 인정
                       </p>
                     </div>
                   </div>
@@ -148,7 +165,7 @@ const StoryFour = () => {
                     </div>
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        UND진학
+                        UND 항공대학교 진학
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         전공 이론 / 실무 교육
@@ -168,16 +185,13 @@ const StoryFour = () => {
                     </div>
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        졸업
+                        졸업 후 진로
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공대학 4년제 학위 취득
+                        UND 항공 대학교 졸업
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        교관과정 후 교관 취업 가능
-                      </p>
-                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        졸업 후 3년까지 미국 내 지역 항공사 합법적 취업(OPT) 가능
+                        졸업 후 OPT 기간을 통한 미국 Regional 항공사 지원 가능
                       </p>
                     </div>
                   </div>
@@ -231,23 +245,20 @@ const StoryFour = () => {
                     </div>
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        입학
+                        입학지원
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공대학교 글로벌 패스웨이에서 선발 과정에 관한 홍보 및 행정업무 지원
+                        UND 항공대학교의 모든 한국인 입학은 UND 항공대학교 글로벌 패스웨이에서 독점 진행
+                      </p>
+                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
+                        입학 후에도 입교생의 행정, 비자업무 지원
                       </p>
                     </div>
                   </div>
 
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
                     <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
-                      <svg aria-hidden="true" class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15" />
-                      </svg>
-
-
-
-
+                      <BsAlphabetUppercase  className='text-blue-700 text-6xl'/>
                     </div>
 
                     <div>
@@ -258,49 +269,14 @@ const StoryFour = () => {
                         SAT 성적 제출 면제 (입학생 사전교육 이수 전제)
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        공인 영어성적 (TOEFL, 듀오링고, IELTS)
+                        공인 영어성적 (TOEFL IBT76, 듀오링고 110, IELS 6.0)
                       </p>
                     </div>
                   </div>
 
-                  <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
-                    <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
-                      <svg aria-hidden="true" class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2" />
-                      </svg>
 
 
-                    </div>
-                    <div>
-                      <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        장학금
-                      </h3>
-                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        장학금 지원
-                      </p>
 
-                    </div>
-                  </div>
-
-                  <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
-                    <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
-                      <svg aria-hidden="true" class="w-10 lg:w-12 h-10 lg:h-12 text-primary-600 dark:text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
-                      </svg>
-
-
-                    </div>
-                    <div>
-                      <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        UND 진학
-                      </h3>
-                      <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        영수증
-                      </p>
-
-
-                    </div>
-                  </div>
 
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
                     <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
@@ -310,16 +286,16 @@ const StoryFour = () => {
                     </div>
                     <div>
                       <h3 class="text-xl font-bold text-[#001F3F] sm:text-2xl dark:text-white">
-                        졸업
+                        졸업자 헤택
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공대학 4년제 학위 취득
+                        UND 항공대학교 비행 교관 취업 지원
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        교관과정 후 교관 취업 가능
+                        국내 항공사 전형 정보 제공 및 교육 지원
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        졸업 후 3년까지 미국 내 지역 항공사 합법적 취업(OPT) 가능
+                        UND 항공대학교-항공사 연계 패스웨이 프로그램 지원
                       </p>
                     </div>
                   </div>
@@ -327,20 +303,6 @@ const StoryFour = () => {
 
                 </div>
               </div>
-
-              {/* <div class="mt-8 text-center lg:mt-16">
-                <a href="#" title=""
-                  class="text-white inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                  role="button">
-                  Get a demo
-                  <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
-              </div> */}
             </div>
           </section>
         </SlideUp>

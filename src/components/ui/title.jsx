@@ -18,11 +18,18 @@ const Title = ({ children, size, className }) => {
 
     if (size === "7.5xl") {
         return (
-            <h1 className={cn(`font-extrabold text-muted-foreground xl:text-7.5xl md:text-5.5xl text-4.5xl lg:leading-[120%] leading-[130%] ${className}`)}>
+            <h1 className={cn(`font-extrabold text-muted-foreground xl:text-7.5xl md:text-5.5xl text-4xl lg:leading-[120%] leading-[130%] ${className}`)}>
                 {children}
             </h1>
         )
     }
+    if (size === "6xl") {
+      return (
+          <h1 className={cn(`font-extrabold text-muted-foreground xl:text-7.5xl md:text-4xl text-4xl lg:leading-[120%] leading-[130%] ${className}`)}>
+              {children}
+          </h1>
+      )
+  }
     if (size === "2xl") {
         return (
             <h5 className={cn(`font-extrabold text-muted-foreground lg:text-2xl md:text-xl text-xl md:leading-[140%] ${className}`)}>{children}</h5>

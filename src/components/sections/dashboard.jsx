@@ -32,16 +32,16 @@ const Dashboard = () => {
                     </div>
                     <div className='pt-[46px] grid grid-cols-2 max-w-[1160px] mx-auto pb-12.5 px-3 lg:px-0 gap-y-15'>
                         <SlideRight id={3}>
-                            <Card className="cols-span-1" icon={<FaBook />} title={"UND 패스웨이 준사관 커리큘럼"} desc={"현재 인적성 기출 문제집을 기준으로 맞춤형 인적성 강의 제공"} />
+                            <Card className="cols-span-1" icon={<FaBook />} title={"UND 항공대학교 글로벌 패스웨이 항공 준사관 커리큘럼"} desc={"현재 인적성 기출 문제집을 기준으로 맞춤형 인적성 강의 제공"} />
                         </SlideRight>
                         <SlideRight id={5}>
-                            <Card className="cols-span-1" icon={<HiUserGroup />} title={"스터디 그룹 배정"} desc={"정보 공유 및 동기 부여를 위한 스터디 그룹 배정(그룹인원 5~6명)"} />
+                            <Card className="cols-span-1" icon={<HiUserGroup />} title={"스터디 그룹 배정"} desc={"정보 공유 및 동기 부여를 위한 스터디 그룹 배정"} />
                         </SlideRight>
                         <SlideLeft id={5}>
                             <Card className="cols-span-1" icon={<FaCheck />} title={"토론 평가 준비"} desc={"2차 면접 시 그룹 토론 준비를 위한 모의 토론 평가 제공"}/>
                         </SlideLeft>
                         <SlideLeft id={5}>
-                            <Card className="cols-span-1" icon={<TbLicense />} title={"회전익 PPL 취득"} desc={"선진화된 FAA 인가 회전익 항공기 교육기관인 UND의 헬기조종사과정에 입과하여 타 경쟁 교육기관보다 경쟁력 있는 가격과 교육기간 제시"} />
+                            <Card className="cols-span-1" icon={<TbLicense />} title={"FAA 헬기 자가용 면장 취득"} desc={"선진화된 FAA 인가 회전익 항공기 교육기관인 UND의 헬기조종사과정에 입과하여 타 경쟁 교육기관보다 경쟁력 있는 가격과 교육기간"} />
                         </SlideLeft>
                     </div>
                 </div>

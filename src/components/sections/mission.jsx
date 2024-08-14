@@ -46,12 +46,12 @@ const Mission = () => {
             <SlideLeft>
               <div className='flex flex-col lg:pb-10 pb-5 justify-center items-center'>
                 <Button variant="secondary">Information</Button>
-                <Title size={"5xl"} className="pt-6">대학 정보</Title>
+                <Title size={"5xl"} className="pt-6">대학교 정보</Title>
               </div>
               <p className='font-semibold text-muted-foreground'>
-                UND에서 두 번째로 큰 학위 수여 대학인 UND 존 D. 오데가르드 항공대학은 북미에서 가장 큰 민간 항공기 사용사업체 중 하나입니다.
+                UND에서 두 번째로 큰 학위 수여 대학인 UND 존 D. 오데가르드 항공대학교는 북미에서 가장 큰 민간 항공기 사용사업체 중 하나입니다.
               </p>
-              <p className='text-muted-foreground pt-7.5'>UND 항공대학은 대학 항공 교육, 대기 연구, 우주 연구, 지구 시스템 과학 및 정책 연구에서의 우리의 성과로 전국적으로 호평을 받고 있는 항공 우주 학습을 위한 세계적으로 유명한 센터이다. 500명 이상의 교직원과 직원, 전 세계 2,100명 이상의 학생, 그리고 무수한 프로그램과 프로젝트를 가진 John D. Odegard School of Aerospace Sciences는 비행의 미래를 위한 속도를 설정하고 있다.</p>
+              <p className='text-muted-foreground pt-7.5'>UND 항공대학교는 대학 항공 교육, 대기 연구, 우주 연구, 지구 시스템 과학 및 정책 연구에서의 우리의 성과로 전국적으로 호평을 받고 있는 항공 우주 학습을 위한 세계적으로 유명한 센터이다. 500명 이상의 교직원과 직원, 전 세계 2,100명 이상의 학생, 그리고 무수한 프로그램과 프로젝트를 가진 John D. Odegard School of Aerospace Sciences는 비행의 미래를 위한 속도를 설정하고 있다.</p>
             </SlideLeft>
           </div>
           <div className='pt-3 lg:pt-0'>

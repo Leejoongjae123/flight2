@@ -16,7 +16,7 @@ const StoryContentFour = () => {
 
     <SlideUp>
       <Title size={"5xl"}>
-        입학/편입과정
+        입학과정
       </Title>
       {/* <p className='pt-5'>Since 2012, we've been pioneering innovative solutions, crafting unique narratives, and consistently delivering exceptional results. Join us in shaping the future of digital excellence!</p> */}
 
@@ -45,9 +45,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">학위</h3>
+            <h3 className="font-medium leading-tight">인증</h3>
             <p className="">
-              미국 No.1 명문 항공대학교 4년제 학사 취득
+              국내 유일 UND 공식 인증 교육 플랫폼
             </p>
           </div>
         </li>
@@ -70,8 +70,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">경력</h3>
-            <p className="">항공사 취업을 위한 비행경력 충족</p>
+            <h3 className="font-medium leading-tight">조건</h3>
+            <p className="">국내외 고등학교 졸업자, 예정자 가능</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -93,8 +93,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">취업</h3>
-            <p className="">미국,아시아권 항공사 취업 연계</p>
+            <h3 className="font-medium leading-tight">혜택</h3>
+            <p className="">SAT 면제, ELS 수료 조건 조건부 입학 가능</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -116,8 +116,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">인증</h3>
-            <p className="">국내 유일 UND 공식 인증 업체</p>
+            <h3 className="font-medium leading-tight">학위</h3>
+            <p className="">미국 No.1 명문 항공대학교 4년제 학사 취득</p>
           </div>
         </li>
       </ol>
