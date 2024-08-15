@@ -13,13 +13,37 @@ import {
 import { MdMenu } from 'react-icons/md';
 import MobileExtraInfo from './mobileExtraInfo';
 import { usePathname } from 'next/navigation';
+import { createClient } from '@/utils/supabase/client';
 
 const MobileMenu = ({ data }) => {
   const pathName = usePathname()
+  const [user, setUser] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const supabase = createClient();
   const [subDropDownActive, setSubDropDownActive] = useState(null)
   const [mainDropDownActive, setMainDropDownActive] = useState(null)
   const [open, setOpen] = useState(false)
+  const checkUser = async () => {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    setUser(user);
+  };
+  const signOut = async () => {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    console.log("signOut");
+    checkUser();
+  };
+
   useEffect(() => {
+    checkUser();
+    setIsLoggedIn(true);
+
+  }, []);
+
+  useEffect(() => {
+
     setMainDropDownActive(null)
     setOpen(false)
   }, [pathName])
@@ -34,7 +58,7 @@ const MobileMenu = ({ data }) => {
           <div className='overflow-y-auto overflow-x-hidden no-scrollbar h-full px-0 py-7.5'>
             <div className='flex justify-start mt-7'>
               <Link href={"/"}>
-                <Image src={"/images/logo-light.png"} width={179} height={53} alt='logo-white' className='w-full h-full' />
+                <Image src={"/images/logo/onlylogo.png"} width={60} height={30} alt='logo-white' className='' />
               </Link>
             </div>
             <ul className='pt-9 pb-8'>
@@ -107,9 +131,27 @@ const MobileMenu = ({ data }) => {
               }
             </ul>
             <div className='flex w-full justify-center items-center'>
-              <Button size="default" className="dark:text-white hover:text-white hover:border-white">
-                <Link href={"/login"}>Login</Link>
-              </Button>
+              {/* <Button size="default" className="dark:text-white hover:text-white hover:border-white">
+                <Link href={"/login"}>로그인</Link>
+              </Button> */}
+              {user ? (
+                <Button
+                  asChild
+                  size="sm"
+                  className="text-medium text-white"
+                  onClick={signOut}
+                >
+                  <p>로그아웃</p>
+                </Button>
+              ) : (
+                <Button
+                  asChild
+                  size="sm"
+                  className="text-medium text-white"
+                >
+                  <Link href={"/login"}>로그인</Link>
+                </Button>
+              )}
             </div>
 
             {/* <MobileExtraInfo /> */}
