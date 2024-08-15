@@ -54,17 +54,17 @@ const Mission = () => {
               <p className='text-muted-foreground pt-7.5'>UND 항공대학교는 대학 항공 교육, 대기 연구, 우주 연구, 지구 시스템 과학 및 정책 연구에서의 우리의 성과로 전국적으로 호평을 받고 있는 항공 우주 학습을 위한 세계적으로 유명한 센터이다. 500명 이상의 교직원과 직원, 전 세계 2,100명 이상의 학생, 그리고 무수한 프로그램과 프로젝트를 가진 John D. Odegard School of Aerospace Sciences는 비행의 미래를 위한 속도를 설정하고 있다.</p>
             </SlideLeft>
           </div>
-          <div className='pt-3 lg:pt-0'>
+          <div className='pt-3 lg:pt-0 mt-10'>
             <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-y-[72px] gap-y-10 gap-x-7.5
-                        [&>*:nth-child(2)>.icon]:text-[#5A5579] [&>*:nth-child(2)>.icon]:bg-[#5a55791a] 
-                        [&>*:nth-child(3)>.icon]:text-[#FE2E79] [&>*:nth-child(3)>.icon]:bg-[#9a2e791a] 
-                        [&>*:nth-child(4)>.icon]:text-[#009F96] [&>*:nth-child(4)>.icon]:bg-[#009f961a]
+                        [&>*:nth-child(1)>.icon]:text-[#5A5579] [&>*:nth-child(1)>.icon]:bg-[#5a55791a] 
+                        [&>*:nth-child(2)>.icon]:text-[#FE2E79] [&>*:nth-child(2)>.icon]:bg-[#9a2e791a] 
+                        [&>*:nth-child()>.icon]:text-[#009F96] [&>*:nth-child(3)>.icon]:bg-[#009f961a]
                         '>
-              
-                {
-                  ourItems.map(({ desc, icon, id, title }) => <Card key={id} id={id} desc={desc} title={title} icon={icon} />)
-                }
-              
+
+              {
+                ourItems.map(({ desc, icon, id, title }) => <Card key={id} id={id} desc={desc} title={title} icon={icon} />)
+              }
+
             </div>
           </div>
         </div>
@@ -77,13 +77,15 @@ export default Mission
 
 const Card = ({ id, icon, title, desc }) => {
   return (
-    
+
     <SlideUp id={id}>
-      <div className='bg-[rgba(162,46,254,0.10)] icon rounded-2xl p-[22px] w-[85px] h-[85px] mb-7.5 flex justify-center items-center text-purple '>
-        {icon}
+      <div className='flex flex-col justify-center items-center'>
+        <div className={`icon rounded-2xl p-[22px] w-[85px] h-[85px] mb-7.5 flex justify-center items-center ${id === 1 ? 'bg-[#5a55791a] text-[#5A5579]' : id === 2 ? 'bg-[#9a2e791a] text-[#FE2E79]' : id === 3 ? 'bg-[#009f961a] text-[#009F96]' : 'text-purple bg-[rgba(162,46,254,0.10)]'}`}>
+          {icon}
+        </div>
+        <Link href={"#"} className='text-xl font-extrabold text-muted-foreground relative hover-underline after:bg-muted after:h-[1px]'>{title}</Link>
+        <p className='pt-5 text-center'>{desc}</p>
       </div>
-      <Link href={"/service-details"} className='text-xl font-extrabold text-muted-foreground relative hover-underline after:bg-muted after:h-[1px]'>{title}</Link>
-      <p className='pt-5'>{desc}</p>
     </SlideUp>
   )
 }
