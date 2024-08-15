@@ -30,7 +30,7 @@ const Dashboard = () => {
                             
                         </SlideUp>
                     </div>
-                    <div className='pt-[46px] grid grid-cols-2 max-w-[1160px] mx-auto pb-12.5 px-3 lg:px-0 gap-y-15'>
+                    <div className='pt-[46px] grid  grid-cols-1 md:grid-cols-2  max-w-[1160px] mx-auto pb-12.5 px-3 lg:px-0 gap-y-5 items-center '>
                         <SlideRight id={3}>
                             <Card className="cols-span-1" icon={<FaBook />} title={"UND 항공대학교 글로벌 패스웨이 항공 준사관 커리큘럼"} desc={"현재 인적성 기출 문제집을 기준으로 맞춤형 인적성 강의 제공"} />
                         </SlideRight>
@@ -56,15 +56,15 @@ export default Dashboard
 // --------------- Card
 const Card = ({ icon, title, desc }) => {
     return (
-        <div className='flex items-center lg:gap-7 gap-4 pt-7 lg:pt-0'>
-            <div className='text-4xl lg:min-w-[85px] lg:min-h-[85px] min-w-16 min-h-16 w-32 h-32 lg:w-auto lg:h-auto rounded-full p-5 bg-primary flex justify-center items-center text-white'>
+        <div className='flex md:flex-row flex-col  items-center lg:gap-7 gap-4 pt-7 lg:pt-0 gap-y-5'>
+            <div className='text-4xl  lg:min-w-[85px] lg:min-h-[85px] min-w-10 min-h-10 w-16 h-16 lg:w-auto lg:h-auto rounded-full p-5 bg-primary flex justify-center items-center text-white'>
                 {icon}
             </div>
-            <div className='max-w-[450px]'>
+            <div className='max-w-[450px] gap-y-10'>
                 <Title size={"2xl"}>
-                    <Link href={"/service-details"} className='relative hover-underline after:bg-muted after:h-[1px] after:bottom-[1px]'>{title}</Link>
+                    <Link href={"/service-details"} className='relative hover-underline after:bg-muted after:h-[1px] after:bottom-[1px]'><p className='text-center md:text-left'>{title}</p></Link>
                 </Title>
-                <p>{desc}</p>
+                <p className='text-center md:text-left'>{desc}</p>
             </div>
         </div>
     )
