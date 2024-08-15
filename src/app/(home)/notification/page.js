@@ -17,6 +17,7 @@ import { Pagination } from "@nextui-org/react";
 import { Spinner } from "@nextui-org/spinner";
 import { createClient } from "@/utils/supabase/client";
 import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 const Author = () => {
   const [user, setUser] = useState(null);
@@ -28,12 +29,14 @@ const Author = () => {
   const [perPage, setPerPage] = useState(5);
   const [search, setSearch] = useState("");
 
+  const router = useRouter();
   const supabase = createClient();
 
   const fetchNotifications = async () => {
     let query = supabase
       .from("notification")
       .select("*", { count: "exact" })
+      .order("created_at", { ascending: false })
       .range((page - 1) * perPage, page * perPage - 1);
 
     if (search) {
@@ -47,14 +50,10 @@ const Author = () => {
     } else {
       setNotifications(data);
       setTotalNotifications(count);
-    setTotalPages(count > 0 ? Math.ceil(count / perPage) : 1);
+      setTotalPages(count > 0 ? Math.ceil(count / perPage) : 1);
     }
   };
-  console.log("totalNotifications:", totalNotifications);
-  console.log("notifications:", notifications);
-  console.log("totalPages:", totalPages);
-  console.log("page:", page);
-  console.log('search:', search)
+
   useEffect(() => {
     const getUser = async () => {
       const {
@@ -69,13 +68,9 @@ const Author = () => {
   }, [supabase, page, perPage, search]);
 
   const handleInputChange = (e) => {
-    console.log('123434')
+    console.log("123434");
     setSearch(e.target.value);
   };
-  
-
-
-  
 
   if (loading) {
     return (
@@ -83,6 +78,14 @@ const Author = () => {
         <Spinner></Spinner>
       </div>
     );
+  }
+
+  const handleDelete = async (id) => {
+    const { data, error } = await supabase.from("notification").delete().eq("id", id);
+    fetchNotifications();
+  }
+  const handleChange = async (id) => {
+    router.push(`/notification/modify/${id}`);
   }
   return (
     <main>
@@ -139,24 +142,39 @@ const Author = () => {
                       key={index}
                       className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] py-10 px-20 rounded-[30px]"
                     >
-                      <div className="grid grid-cols-[18%_1fr] items-center">
-                        <div>
-                          <Image
-                            src={"/images/blog/author-bg.jpg"}
-                            width={150}
-                            height={150}
-                            alt="author"
-                            className="rounded-full w-[150px] h-[150px] object-cover border-4 border-white"
-                          />
+                      <div className="flex flex-col md:flex-row items-center gap-x-10">
+                        <div className="">
+                          <Link
+                            href={`/notification/postings/${notification.id}`}
+                          >
+                            <Image
+                              src={notification.imageUrl || "/images/noimage/noimage.jpg"}
+                              width={300}
+                              height={300}
+                              alt="author"
+                              className="rounded-2xl object-cover border-4 border-white"
+                            />
+                          </Link>
                         </div>
-                        <div>
+                        <div className="w-full">
+                        <Link
+                            href={`/notification/postings/${notification.id}`}
+                          >
                           <Title size={"4xl"} className={"pb-3"}>
                             {notification.title}
                           </Title>
                           <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
                           <p className="mt-3">
-                            {notification.description.replace(/<[^>]+>/g, '')}
+                            {notification.description.replace(/<[^>]+>/g, "")}
                           </p>
+                          </Link>
+                          
+                          {user?.email === "fuzzily@naver.com" && (
+                            <div className="w-full flex justify-end gap-x-5">
+                              <Button className='bg-green-500 border-green-500 hover:text-green-500' onClick={() => handleChange(notification.id)}>수정</Button>
+                              <Button className='bg-red-500 border-red-500 hover:text-red-500' onClick={() => handleDelete(notification.id)}>삭제</Button>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>

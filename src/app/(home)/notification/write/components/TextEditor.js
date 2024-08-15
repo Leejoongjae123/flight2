@@ -1,15 +1,17 @@
-'use client'
+"use client";
 import React, { useState, useMemo, useRef } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import ImageResize from "quill-image-resize";
 import { createClient } from "@/utils/supabase/client"; // Supabase 클라이언트 가져오기
-
+import { Button } from "@/src/components/ui/button";
 // Quill에 ImageResize 모듈 추가
+import { useRouter } from "next/navigation";
 Quill.register("modules/imageResize", ImageResize);
 
-const TextEditor = () => {
+const TextEditor = ({ title, setTitle }) => {
   const supabase = createClient();
+  const router = useRouter();
   const [value, setValue] = useState("");
   const quillRef = useRef(null); // ReactQuill 인스턴스에 접근하기 위한 ref 생성
 
@@ -57,17 +59,18 @@ const TextEditor = () => {
     () => ({
       toolbar: {
         container: [
-          [{ header: "1" }, { header: "2" }, { font: [] }],
+          // [{ header: "1" }, { header: "2" }, { font: [] }],
           [{ size: [] }],
           ["bold", "italic", "underline", "strike", "blockquote"],
-          [
-            { list: "ordered" },
-            { list: "bullet" },
-            { indent: "-1" },
-            { indent: "+1" },
-          ],
+          // [
+          //   { list: "ordered" },
+          //   { list: "bullet" },
+          //   { indent: "-1" },
+          //   { indent: "+1" },
+          // ],
+          // [{ 'align': [] }],
           ["link", "image"],
-          ["clean"],
+          // ["clean"],
         ],
         handlers: {
           image: handleImageUpload, // 이미지 버튼을 클릭했을 때 실행될 핸들러 설정
@@ -98,7 +101,6 @@ const TextEditor = () => {
   ];
   const handleClick = async () => {
     const currentTime = new Date().toISOString();
-    const title = "그냥";
     const description = value;
 
     // description에서 첫 번째 imageUrl을 찾기
@@ -107,12 +109,20 @@ const TextEditor = () => {
 
     const { data, error } = await supabase
       .from("notification")
-      .insert([{ created_at: currentTime, title:title, description:description, imageUrl:imageUrl }]);
+      .insert([
+        {
+          created_at: currentTime,
+          title: title,
+          description: description,
+          imageUrl: imageUrl,
+        },
+      ]);
 
     if (error) {
       console.error("Error inserting notification:", error);
     } else {
       console.log("Notification inserted:", data);
+      router.push("/notification");
     }
   };
 
@@ -126,11 +136,13 @@ const TextEditor = () => {
         modules={modules}
         formats={formats}
       />
-      <div style={{ marginTop: "20px" }}>
+      {/* <div style={{ marginTop: "20px" }}>
         <h3>Editor Content:</h3>
         <div dangerouslySetInnerHTML={{ __html: value }} />
+      </div> */}
+      <div className="my-5">
+        <Button onClick={handleClick}>저장</Button>
       </div>
-      <button onClick={handleClick}>저장</button>
     </div>
   );
 };
