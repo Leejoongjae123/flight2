@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import ContactForm from "@/src/components/sections/contactForm";
+import ContactForm2 from "@/src/components/sections/contactForm2";
 import PageTitle from "@/src/components/sections/pageTitle";
 import SubscribeTwo from "@/src/components/sections/subscribes/subscribeTwo";
 import { createClient } from "@/utils/supabase/client";
@@ -37,7 +37,7 @@ const ContactUs = () => {
       <PageTitle pageName={"방문상담신청"} breadcrumbLink={"Contact"} />
       {user ? (
         <>
-          <ContactForm
+          <ContactForm2
             color={"text-white"}
             inputColor={
               "bg-transparent border-white border text-white placeholder:text-white"

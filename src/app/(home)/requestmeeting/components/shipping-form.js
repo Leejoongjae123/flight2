@@ -38,7 +38,7 @@ const ShippingForm = React.forwardRef(
             className="text-white"
             isRequired
             labelPlacement="outside"
-            placeholder="Enter your first name"
+            placeholder=""
             variant={variant}
           />
         </div>
@@ -67,21 +67,21 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">-</p>
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">-</p>
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
           </div>
@@ -92,7 +92,7 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">@</p>
@@ -100,7 +100,7 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
           </div>

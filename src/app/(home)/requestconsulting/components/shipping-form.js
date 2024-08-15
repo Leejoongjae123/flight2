@@ -16,21 +16,7 @@ const ShippingForm = React.forwardRef(
   ({ variant = "flat", className, hideTitle }, ref) => {
     return (
       <div className="flex flex-col gap-4 text-white">
-        <span className="relative text-white">설명회 일정</span>
-        <RadioGroup
-          orientation="horizontal"
-          classNames={{
-            base: cn(
-              "flex flex-row m-0 bg-content1 hover:bg-content2",
-              "cursor-pointer rounded-lg gap-4 p-2 border-2 border-transparent",
-              "data-[selected=true]:border-primary "
-            ),
-          }}
-          color="secondary"
-        >
-          <Radio value="buenos-aires">9월5일</Radio>
-          <Radio value="sydney">10월5일</Radio>
-        </RadioGroup>
+        
 
         <div className="flex flex-wrap items-center gap-4">
           <h1>이름/도시</h1>
@@ -38,7 +24,7 @@ const ShippingForm = React.forwardRef(
             className="text-white"
             isRequired
             labelPlacement="outside"
-            placeholder="Enter your first name"
+            placeholder="도시를 입력해주세요"
             variant={variant}
           />
         </div>
@@ -67,21 +53,21 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">-</p>
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">-</p>
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
           </div>
@@ -92,7 +78,7 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
             <p className="mx-3">@</p>
@@ -100,7 +86,7 @@ const ShippingForm = React.forwardRef(
             <Input
               isRequired
               labelPlacement="outside"
-              placeholder="Enter your city"
+              placeholder=""
               variant={variant}
             />
           </div>

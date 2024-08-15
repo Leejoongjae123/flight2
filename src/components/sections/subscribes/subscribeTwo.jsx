@@ -11,7 +11,7 @@ import {
 } from "@/src/components/ui/dialog"
 import Input from '@/src/components/ui/input'
 import SlideUp from '@/src/components/animations/slideUp'
-
+import Link from 'next/link'
 const SubscribeTwo = () => {
     return (
         <section className='lg:py-15 py-9'>
@@ -42,7 +42,7 @@ const Form = () => {
     return (
         <Dialog>
             <DialogTrigger>
-                <span className="group rounded-full px-[38px] py-[18px] border-2 border-primary font-bold max-h-12.5 bg-primary text-secondary-foreground dark:text-muted-foreground flex justify-center items-center gap-2.5 transition-all duration-500 hover:bg-transparent hover:text-primary-foreground"> 참가신청</span>
+                <Link href='/requestmeeting' className="group rounded-full px-[38px] py-[18px] border-2 border-primary font-bold max-h-12.5 bg-primary text-secondary-foreground dark:text-muted-foreground flex justify-center items-center gap-2.5 transition-all duration-500 hover:bg-transparent hover:text-primary-foreground"> 참가신청</Link>
             </DialogTrigger>
             <DialogContent className="max-w-[700px] p-0">
                 <div className='flex items-center justify-between py-6 border-b border-b-[#dee2e6]'>
