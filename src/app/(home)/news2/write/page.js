@@ -4,7 +4,7 @@ import NotificationWrite from "./components/NotificationWrite";
 function page() {
   return (
     <main>
-      <PageTitle pageName={"작성하기"} breadcrumbLink={"Author"} />
+      <PageTitle pageName={"항공NEWS 글쓰기"} breadcrumbLink={"Author"} />
       <NotificationWrite></NotificationWrite>
     </main>
   );

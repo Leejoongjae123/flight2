@@ -1,22 +1,21 @@
-"use client";
+'use client'
 import React, { useState, useMemo, useRef } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import ImageResize from "quill-image-resize";
 import { createClient } from "@/utils/supabase/client"; // Supabase 클라이언트 가져오기
 import { Button } from "@/src/components/ui/button";
-// Quill에 ImageResize 모듈 추가
 import { useRouter } from "next/navigation";
+// Quill에 ImageResize 모듈 추가
 Quill.register("modules/imageResize", ImageResize);
 
-const TextEditor = ({ title, setTitle }) => {
+const TextEditor = ({title, setTitle, description, setDescription, params}) => {
   const supabase = createClient();
   const router = useRouter();
-  const [value, setValue] = useState("");
   const quillRef = useRef(null); // ReactQuill 인스턴스에 접근하기 위한 ref 생성
 
   const handleChange = (content, delta, source, editor) => {
-    setValue(editor.getHTML());
+    setDescription(editor.getHTML());
   };
 
   const handleImageUpload = async () => {
@@ -101,7 +100,6 @@ const TextEditor = ({ title, setTitle }) => {
   ];
   const handleClick = async () => {
     const currentTime = new Date().toISOString();
-    const description = value;
 
     // description에서 첫 번째 imageUrl을 찾기
     const imgTagMatch = description.match(/<img[^>]+src="([^">]+)"/);
@@ -109,14 +107,8 @@ const TextEditor = ({ title, setTitle }) => {
 
     const { data, error } = await supabase
       .from("news")
-      .insert([
-        {
-          created_at: currentTime,
-          title: title,
-          description: description,
-          imageUrl: imageUrl,
-        },
-      ]);
+      .update({ created_at: currentTime, title: title, description: description, imageUrl: imageUrl })
+      .eq("id", params.id);
 
     if (error) {
       console.error("Error inserting notification:", error);
@@ -130,7 +122,7 @@ const TextEditor = ({ title, setTitle }) => {
     <div>
       <ReactQuill
         ref={quillRef} // ref 속성을 설정하여 ReactQuill 인스턴스에 접근할 수 있도록 합니다.
-        value={value}
+        value={description}
         onChange={handleChange}
         theme="snow"
         modules={modules}
@@ -141,8 +133,9 @@ const TextEditor = ({ title, setTitle }) => {
         <div dangerouslySetInnerHTML={{ __html: value }} />
       </div> */}
       <div className="my-5">
-        <Button onClick={handleClick}>저장</Button>
+      <Button className="bg-green-500 border-green-500 hover:text-green-500" onClick={handleClick}>수정</Button>
       </div>
+      
     </div>
   );
 };

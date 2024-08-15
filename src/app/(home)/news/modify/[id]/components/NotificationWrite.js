@@ -1,14 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { createClient } from "@/utils/supabase/client";
 import dynamic from 'next/dynamic';
 
 const TextEditor = dynamic(() => import('./TextEditor'), { ssr: false });
-function NotificationWrite() {
+function NotificationWrite({params}) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
   const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
   const supabase = createClient();
   const handleImageUpload = async (event) => {
     const file = event.target.files[0];
@@ -20,24 +21,31 @@ function NotificationWrite() {
     }
   };
 
-  // const handleUploadToSupabase = async () => {
-  //   if (!selectedImage) return;
-  //   console.log(selectedImage);
-  //   const { data, error } = await supabase.storage
-  //     .from("images") // 'images' 버킷을 사용
-  //     .upload(`images/${Date.now()}`, selectedImage);
+  const fetchNotification = async () => {
+    const { data, error } = await supabase
+      .from("news")
+      .select("*")
+      .eq("id", params.id)
+      .single();
 
-  //   if (error) {
-  //     console.error("Error uploading image:", error);
-  //     return;
-  //   }
+    if (error) {
+      console.error("Error fetching notification:", error);
+    } else {
+      setTitle(data.title);
+      setDescription(data.description);
+      // You might want to set other states here if needed
+    }
+  };
 
-  //   console.log("Image uploaded successfully:", data);
-  //   // 업로드가 완료되면 미리보기 URL 업데이트 (필요에 따라)
-  //   const publicUrl = supabase.storage.from("images").getPublicUrl(data.path)
-  //     .data.publicUrl;
-  //   setImagePreviewUrl(publicUrl);
-  // };
+  useEffect(() => {
+    fetchNotification();
+  }, [params.id]);
+
+
+
+  
+
+
   return (
     <div className="flex flex-col gap-4 w-full justify-center items-center">
       <div className="w-[60vw]">
@@ -67,12 +75,8 @@ function NotificationWrite() {
         >
           내용
         </label>
-        <TextEditor title={title} setTitle={setTitle}/>
-        
+        <TextEditor title={title} setTitle={setTitle} description={description} setDescription={setDescription} params={params}/>
       </div>
-
-
-      
     </div>
   );
 }
