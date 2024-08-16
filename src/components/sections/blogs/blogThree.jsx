@@ -7,7 +7,7 @@ import CardTwo from './cardTwo'
 
 const BlogTwo = () => {
   return (
-    <section className='lg:py-15 py-9'>
+    <section className='py-5'>
       <div className='max-w-[1350px] mx-auto px-[15px]'>
         <SlideUp>
           <div className='flex flex-col items-center'>
