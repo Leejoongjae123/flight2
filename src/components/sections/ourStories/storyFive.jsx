@@ -16,18 +16,8 @@ const StoryFive = ({ counter }) => {
                 {/* <div className='relative pt-7 pb-6 xl:pb-0 px-2.5 after:absolute after:z-[-1] after:left-0 after:top-0 after:bg-[#2e4dfe0d] after:w-full after:h-[calc(100%-100px)] after:rounded-[50px]'> */}
                 <div className='relative pb-6 xl:pb-0 px-2.5 after:absolute after:z-[-1] after:left-0 after:top-0 after:bg-[#2e4dfe0d] after:w-full h-full after:rounded-[50px]'>
                     <div className='flex lg:flex-row flex-col justify-center 2xl:gap-[144px] xl:gap-20 lg:gap-10 gap-5'>
-                        {/* <div className=' max-w-[534px] relative '>
-                            <div className='relative rounded-lg overflow-hidden'>
-                                <Image src={"/images/resource/president.jpg"} width={510} height={670} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-3xl relative z-[1]' />
-                            </div>
-                            <div className='absolute top-7'>
-                                <Image src={"/images/shapes/our-story5-1.png"} width={138} height={140} alt='bg' />
-                            </div>
-                            <div className='absolute -right-9 -top-12'>
-                                <Image src={"/images/shapes/our-story5-3.png"} width={366} height={307} alt='bg' className='w-full z-[1]' />
-                            </div>
-                        </div> */}
-                        <div className='max-w-[683px] mt-8 h-full'>
+
+                        <div className='max-w-[780px] mt-8 h-full'>
                             {pathname==='/about-us2/'?(<StoryContentOne />):(<StoryContentTwo />)}
                             
                             

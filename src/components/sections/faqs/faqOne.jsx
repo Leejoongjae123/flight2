@@ -22,7 +22,7 @@ const FaqOne = () => {
             <p className='pt-7.5 pb-10 font-semibold text-center max-w-[679px]'>UND 항공대학 글로벌 패스웨이 최신 항공 정보 안내를 확인하세요</p>
           </div>
         </SlideUp>
-        <div className='max-w-[871px] mx-auto'>
+        <div className='max-w-[1350px] mx-auto'>
           <Accordion type="single" defaultValue="one" collapsible>
             {
               faqData.map(({ ans, id, question }) => {
