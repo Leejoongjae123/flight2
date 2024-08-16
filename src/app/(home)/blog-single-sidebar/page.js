@@ -2,10 +2,7 @@ import React from 'react'
 import BlogArtical from '@/src/components/sections/blogs/blogArtical'
 import PageTitle from '@/src/components/sections/pageTitle'
 
-export const metadata = {
-    title: "NextPro | Blog-Single",
-    description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-};
+
 
 const BlogSingle = () => {
     return (

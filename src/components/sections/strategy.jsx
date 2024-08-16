@@ -21,9 +21,18 @@ const Strategy = () => {
           <div className='pt-5 lg:pt-0'>
             <SlideLeft>
 
-              <Title size={"5xl"} className="lg:max-w-[642px] max-w-full pt-6">학교 졸업시까지 300시간의 타임빌딩을 할 수 있습니다.</Title>
-              <p className='pt-7.5 font-semibold text-muted-foreground'>추가적으로 교관과정을 통해 미국 리저널 항공사 요구사항인 1,000~1,500시간을 충족하실 수 있습니다.</p>
-              <p className='pt-7.5  font-medium'> UND 항공대학교 글로벌 패스웨이 수료생은 국내 전공과정 선행학습을 통해 입학/편입 전 비행 관련 학과 지식을 습득할 수 있습니다.</p>
+              <Title size={"5xl"} className="lg:max-w-[642px] max-w-full pt-6">UND 항공대학교 졸업(FAA CPL 사업용 면장 취득)시점까지 총 300시간의 비행 훈련 시간을 확보를 할 수 있음</Title>
+              <p className='pt-7.5 font-semibold text-muted-foreground'>그리고 비행훈련교관 과정연계등으로, 국내 또는 미국 항공사 요구, 1,000hr~1,500hr 비행 시간의
+                비행 시간을 충족(Satisfy Time Building)이 가능하도록 1년 중 비행 가능 일수를 고려한 비행 훈련 전용
+                Training Center 투자 및 운영
+              </p>
+              <p className='pt-7.5  font-medium'> 피닉스 애리조나주
+                최신형 훈련용 항공기 운영(134대/비행기 기령 평균 2년)
+                비행 훈련 안전성 확보와 가동률을 높이기 위한 24시간 정비 시스템 가동
+                UND 항공대학교 글로벌 패스웨이는 미국 현지 대학 전공 과정의 국내 선행 학습을 통한 입학/편입 전 항공
+                분야 전공 관련 학과 예비 지식을 UND 항공대학교의 교재, 표준 커리큘럼, 현지 교수 화상 강의 등을 접목시켜
+                효과적인 1:1 맞춤형 교육을 실시.
+              </p>
 
             </SlideLeft>
           </div>

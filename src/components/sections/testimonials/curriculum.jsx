@@ -24,7 +24,7 @@ const Curriculum = () => {
         <SlideUp>
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Curriculum</Button>
-            <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">항공운항학과 커리큘럼</Title>
+            <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">UND항공대학교 학과별 커리큘럼</Title>
           </div>
         </SlideUp>
         <SlideUp>

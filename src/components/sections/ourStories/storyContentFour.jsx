@@ -16,15 +16,8 @@ const StoryContentFour = () => {
 
     <SlideUp>
       <Title size={"5xl"}>
-        입학과정
+        입학 과정
       </Title>
-      {/* <p className='pt-5'>Since 2012, we've been pioneering innovative solutions, crafting unique narratives, and consistently delivering exceptional results. Join us in shaping the future of digital excellence!</p> */}
-
-      {/* <div className='flex md:flex-row flex-col gap-6 2xl:mt-12.5 xl:mt-14 mt-8'>
-                <Card bgColor={"after:bg-green"} color={"text-green"} icon={<Category />} title={"Innovative Approach"} />
-                <Card bgColor={"after:bg-purple"} color={"text-purple"} icon={<Filter />} title={"Client-Centric Approach"} />
-                <Card bgColor={"after:bg-red"} color={"text-red"} icon={<Shield />} title={"Results-Driven Focus"} />
-            </div> */}
       <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5 text-lg">
         <li className="flex gap-x-5 ">
           <span className="flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
@@ -47,7 +40,7 @@ const StoryContentFour = () => {
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">인증</h3>
             <p className="">
-              국내 유일 UND 공식 인증 교육 플랫폼
+              국내 유일 UND 항공대학교 공식인증 항공교육 플랫폼
             </p>
           </div>
         </li>
@@ -70,8 +63,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">조건</h3>
-            <p className="">국내외 고등학교 졸업자, 예정자 가능</p>
+            <h3 className="font-medium leading-tight">자격</h3>
+            <p className="">국내외 고등학교 졸업자 및 졸업예정자 또는 동등 이상의 자격 소지자</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -93,8 +86,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">혜택</h3>
-            <p className="">SAT 면제, ELS 수료 조건 조건부 입학 가능</p>
+            <h3 className="font-medium leading-tight">특전</h3>
+            <p className="">SAT 일괄 면제 - 협의 완료</p>
+            <p className="">영어-ELS 미국 현지 수료 조건으로 입학 가능</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -117,7 +111,7 @@ const StoryContentFour = () => {
           </span>
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">학위</h3>
-            <p className="">미국 No.1 명문 항공대학교 4년제 학사 취득</p>
+            <p className="">전미 Top1 주립 명문 항공대학교 4년제 학사학위 취득</p>
           </div>
         </li>
       </ol>

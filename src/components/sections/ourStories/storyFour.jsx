@@ -16,66 +16,59 @@ const StoryFour = () => {
 
   return (
     <section className='justify-center items flex flex-col'>
-      <div className='block'>
+      <div className='w-full'>
         <Selections selection={selection} setSelection={setSelection}></Selections>
       </div>
-      <div className={selection === 'TYPE1' ? '' : 'hidden'}>
-        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
-            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+      <div className={`${selection === 'TYPE1' ? '' : 'hidden'} flex flex-col justify-center items-center`}>
+        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process1.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
-              {/* <div className='absolute w-full max-w-[420px] -bottom-[8%] left-1/2 -translate-x-1/2'>
-                            <SlideUp>
-                                <ExperienceCounter />
-                            </SlideUp>
-                        </div> */}
             </div>
-            {/* <div className='lg:max-w-[52%] max-w-full mt-12 lg:mt-0'> */}
-            <div className='flex'>
+            <div className='col-span-2 pl-10'>
               <StoryContentFour />
             </div>
           </div>
         </div>
-        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
-            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+        <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
+        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process2.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
-              {/* <div className='absolute w-full max-w-[420px] -bottom-[8%] left-1/2 -translate-x-1/2'>
-                            <SlideUp>
-                                <ExperienceCounter />
-                            </SlideUp>
-                        </div> */}
             </div>
-            {/* <div className='lg:max-w-[52%] max-w-full mt-12 lg:mt-0'> */}
-            <div className='flex'>
+            <div className='col-span-2 pl-10'>
               <StoryContentFour2 />
             </div>
           </div>
         </div>
-        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
-            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+        <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
+
+        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process3.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
             </div>
-            <div className='flex'>
+            <div className='col-span-2 pl-10'>
               <StoryContentFour3 />
             </div>
           </div>
         </div>
-        <div className='max-w-[1350px] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='flex lg:flex-row flex-col justify-between items-center gap-5 lg:pb-14 pb-0'>
-            <div className='lg:max-w-[48%] max-w-full relative mx-auto lg:ml-0'>
+        <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
+
+        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+            <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
-                <Image src={"/images/process/process4.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
+                <Image src={"/images/process/process4.jpg"} width={500} height={250} alt='stroy background' className='rounded-[30px] ' />
               </SlideUp>
             </div>
-            <div className='flex'>
+            <div className='col-span-2 pl-10'>
               <StoryContentFour4 />
             </div>
           </div>
@@ -258,7 +251,7 @@ const StoryFour = () => {
 
                   <div class="flex flex-col items-start gap-4 sm:gap-5 sm:flex-row">
                     <div class="bg-gray-100 dark:bg-gray-700 rounded-full w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center shrink-0">
-                      <BsAlphabetUppercase  className='text-blue-700 text-6xl'/>
+                      <BsAlphabetUppercase className='text-blue-700 text-6xl' />
                     </div>
 
                     <div>

@@ -9,14 +9,11 @@ import ProvideOne from '@/src/components/sections/provides/provideOne'
 import ServiceTwo from '@/src/components/sections/services/serviceTwo'
 import Solutions from '@/src/components/sections/solutions'
 import Curriculum from '@/src/components/sections/testimonials/curriculum'
-export const metadata = {
-    title: "NextPro | Services",
-    description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-  };
+
 const Services = () => {
     return (
         <main>
-            <PageTitle pageName={"항공운항학과 커리큘럼"} breadcrumbLink={"Services"}/>
+            <PageTitle pageName={"UND항공대학교 학과별 커리큘럼"} breadcrumbLink={"Services"}/>
             <Curriculum></Curriculum>
 
             {/* <StoryFour/>

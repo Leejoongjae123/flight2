@@ -18,6 +18,12 @@ import FooterOne from '@/src/components/sections/footers/footerOne'
 import FaqTwo from '@/src/components/sections/faqs/faqTwo'
 import FaqOne from '@/src/components/sections/faqs/faqOne'
 import Open from '@/src/components/sections/Open'
+
+const metadata = {
+  title: '글로벌 패스웨이',
+  description: '글로벌 패스웨이',
+}
+
 const Home = () => {
   return (
     <>

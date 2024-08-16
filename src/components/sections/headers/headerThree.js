@@ -120,7 +120,7 @@ const HeaderThree = () => {
                               >
                                 <Link
                                   href={path}
-                                  className="font-semibold leading-[22px] flex items-center gap-1 text-black relative transition-all duration-500 group-hover:text-[#E2E7FF]"
+                                  className="font-semibold leading-[22px] flex items-center gap-1 text-black relative transition-all duration-500 group-hover:text-[#E2E7FF] whitespace-nowrap"
                                 >
                                   {lable}
                                   <span className="group-hover:rotate-180 transition-all duration-500">

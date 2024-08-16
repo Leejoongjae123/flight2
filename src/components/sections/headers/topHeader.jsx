@@ -54,7 +54,7 @@ const TopHeader = ({ color, bgColor, darkBg }) => {
                 
                 <SocialIcons2 color={color} />
                 {/* <SocialIcons color={color} /> */}
-                <Link className='text-white' href="https://airlinepilot.training"><span className='multiline-hover'>UND재단 홈페이지</span> </Link>
+                <Link className='text-white' href="https://airlinepilot.training"><span className='multiline-hover'>UND 항공대학교 재단 홈페이지</span> </Link>
               </div>
 
             </div>

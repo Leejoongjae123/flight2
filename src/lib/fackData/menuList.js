@@ -71,13 +71,13 @@ export const menuList = [
             {
                 id: 1,
                 path: "/about-us1",
-                lable: "이사장 인사말",
+                lable: "재단이사장 인사말",
                 tag: ""
             },
             {
                 id: 2,
                 path: "/about-us2",
-                lable: "원장 인사말",
+                lable: "대표원장 인사말",
                 tag: "",
             },
             {
@@ -85,32 +85,11 @@ export const menuList = [
                 path: "/introduction",
                 lable: "UND 항공대학교 소개",
                 tag: "",
-                // subDropdonwn: [
-                //     {
-                //         id: 1,
-                //         path: "/team",
-                //         lable: "Our Team",
-                //         tag: "",
-                //     },
-                //     {
-                //         id: 2,
-                //         path: "/team-carousel",
-                //         lable: "Team Carousel",
-                //         tag: "",
-                //     },
-                //     {
-                //         id: 3,
-                //         path: "/team-details",
-                //         lable: "Team Details",
-                //         tag: "",
-                //     },
-
-                // ]
             },
             {
                 id: 4,
                 path: "/academy",
-                lable: "비행교육원",
+                lable: "글로벌 패스웨이",
                 tag: "",
                 // subDropdonwn: [
                 //     {
@@ -142,7 +121,7 @@ export const menuList = [
     {
         id: 3,
         path: "#",
-        lable: "UND과정",
+        lable: "학사과정",
         dropDown: [
             {
                 id: 1,
@@ -153,7 +132,7 @@ export const menuList = [
             {
                 id: 2,
                 path: "/prestudy",
-                lable: "입학생 사전교육",
+                lable: "UND항공대학교 입학/편입전 선행교육",
                 tag: "",
             },
             {

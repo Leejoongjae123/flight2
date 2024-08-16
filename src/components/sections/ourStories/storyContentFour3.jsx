@@ -40,7 +40,7 @@ const StoryContentFour = () => {
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">인증</h3>
             <p className="">
-              국내 유일 UND 공식 인증 교육 플랫폼
+              한국내 유일 UND 항공대학교 공식 인증 항공 교육 플랫폼
             </p>
           </div>
         </li>
@@ -63,8 +63,8 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">조건</h3>
-            <p className="">FAA CPL 면장 전환 가능자, 소지자</p>
+            <h3 className="font-medium leading-tight">자격</h3>
+            <p className="">FAA 사업용 조종사 CPL 면장 취득자 ▷ 국내외 항공사 미취업자 포함</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -86,12 +86,12 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">혜택</h3>
-            <p className="">과정 수료 후 교관 입사 전형 후 UND 교관 취업</p>
-            
+            <h3 className="font-medium leading-tight">특전</h3>
+            <p className="">교관과정 이수 ▷UND항공대학교 자격전형 ▷ UND 항공대학교 비행교관 정식취업(비행교관 급여 35$/hr)</p>
+
           </div>
         </li>
-        
+
       </ol>
 
     </SlideUp >

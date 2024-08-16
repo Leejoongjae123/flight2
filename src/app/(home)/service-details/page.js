@@ -3,10 +3,7 @@ import ContactForm from '@/src/components/sections/contactForm'
 import PageTitle from '@/src/components/sections/pageTitle'
 import ServiceArtical from '@/src/components/sections/services/serviceArtical'
 
-export const metadata = {
-  title: "NextPro | Service-Details",
-  description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-};
+
 
 const ServicesDetails = () => {
   return (

@@ -14,14 +14,11 @@ import { blogData } from '@/src/lib/fackData/blogData'
 import BlogThree from '@/src/components/sections/blogs/blogThree'
 
 
-export const metadata = {
-    title: "NextPro | Services",
-    description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-  };
+
 const Services = () => {
     return (
         <main>
-            <PageTitle pageName={"비행교육원"} breadcrumbLink={"Services"}/>
+            <PageTitle pageName={"글로벌 패스웨이"} breadcrumbLink={"Services"}/>
             <WorkProcess />
             <BlogThree />
             {/* <StoryFour/>

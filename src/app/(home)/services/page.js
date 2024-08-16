@@ -9,10 +9,7 @@ import ProvideOne from '@/src/components/sections/provides/provideOne'
 import ServiceTwo from '@/src/components/sections/services/serviceTwo'
 import Solutions from '@/src/components/sections/solutions'
 
-export const metadata = {
-    title: "NextPro | Services",
-    description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-  };
+
 const Services = () => {
     return (
         <main>

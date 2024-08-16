@@ -23,6 +23,7 @@ const MobileMenu = ({ data }) => {
   const [subDropDownActive, setSubDropDownActive] = useState(null)
   const [mainDropDownActive, setMainDropDownActive] = useState(null)
   const [open, setOpen] = useState(false)
+  
   const checkUser = async () => {
     const {
       data: { user },
@@ -131,9 +132,6 @@ const MobileMenu = ({ data }) => {
               }
             </ul>
             <div className='flex w-full justify-center items-center'>
-              {/* <Button size="default" className="dark:text-white hover:text-white hover:border-white">
-                <Link href={"/login"}>로그인</Link>
-              </Button> */}
               {user ? (
                 <Button
                   asChild

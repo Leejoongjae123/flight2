@@ -41,8 +41,8 @@ const Selections = ({selection, setSelection}) => {
   }
 
   return (
-    <section className='mb-10'>
-      <div className='max-w-[1350px] mx-auto px-[15px]'>
+    <section className='mb-10 justify-center items-center w-full'>
+      <div className='w-[60vw] mx-auto px-[15px]'>
         <SlideUp>
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Process</Button>

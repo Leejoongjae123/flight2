@@ -40,28 +40,47 @@ const processData = [
 ]
 const WorkProcess = () => {
   return (
-    <section className='lg:pb-15 pb-9 lg:pt-[178px] pt-20'>
+    <section className='lg:pb-15 pb-9'>
       <div className='max-w-[1350px] mx-auto px-[15px]'>
-        <div className='grid xl:grid-cols-[605px_642px] lg:grid-cols-[500px_auto] grid-cols-1 gap-x-10 justify-between items-start'>
-          <SlideUp>
-            <div className='bg-accent rounded-[30px] w-full relative'>
-              <div className='absolute left-0 lg:-top-[138px] md:-top-20 -top-14 max-w-[200px] md:max-w-full animate-up-down'>
-                <Image src={"/images/shapes/rocket1-1.png"} width={330} height={412} className='w-full' alt="rocket" />
-              </div>
-              <div className=''>
-                <Image src={"/images/shapes/process1-2.png"} width={582} height={658} className='w-full' alt="laptop" />
-              </div>
-              <div className='absolute right-0 -bottom-48 lg:block hidden animate-left-right'>
-                <Image src={"/images/shapes/process1-1.png"} width={330} height={412} alt="bord" />
-              </div>
-            </div>
-          </SlideUp>
-          <div className='pt-12 lg:pt-0'>
+        <div className='flex justify-center items-center flex-col'>
+
+          <div className='pt-12 lg:pt-0 flex flex-col gap-10'>
             <SlideUp>
-              <Button variant="secondary">Our Process</Button>
-              <Title size={"5xl"} className="max-w-[642px] pt-6">University of North Dakota 항공대학 소개 및 연혁</Title>
-              <p>University of North Dakota (UND) 항공대학은 세계적으로 유명한 항공 교육 기관으로, 학생들에게 뛰어난 교육과 실습 기회를 제공합니다. 항공학 분야에서의 혁신과 연구를 선도하며, 학생들이 안전하고 전문적인 조종사로 성장할 수 있도록 지원합니다. 또한, 항공과 관련된 다양한 프로그램을 통해 학생들이 다양한 경로로 진출할 수 있도록 돕고 있습니다.
-              </p>
+              <div className='flex flex-col justify-center items-center'>
+                <Button variant="secondary">Our Story</Button>
+                <Title size={"5xl"} className="max-w-[642px] pt-6">글로벌 패스웨이 소개              </Title>
+                <div className='flex justify-center'>
+                  <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>국내 유일 UND항공대학교 인증 교육 플렛폼</span> </li>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>항공 유학 선행 교육, 항공분야 전문교육기관</span> </li>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>UND항공대학교 공식 교재 및 커리큘럼 도입</span> </li>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>UND항공대학교 현직 교수진 화상강의 실시</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </SlideUp>
+            <SlideUp>
+              <div className='flex flex-col justify-center items-center'>
+                <Title size={"5xl"} className="max-w-[1080x] pt-6">UND 글로벌 패스웨이 교수진              </Title>
+                <div className='flex justify-center'>
+                  <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>한국항공대학교 항공운항학과 졸업</span> </li>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>도미유학/FAA 사업용 면장 보유</span> </li>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>진에어, 티웨이 부기장 출신</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </SlideUp>
+            <SlideUp>
+              <div className='flex flex-col justify-center items-center'>
+                <Title size={"5xl"} className="max-w-[1080px] pt-6">현직 대한항공 B-737 기장 특강              </Title>
+                <div className='flex justify-center'>
+                  <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
+                    <li className=' flex items-center gap-2.5 text-2xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>특강 기장님의 특강 과목과 날짜는 매 특강마다 유동적으로 변경                    </span> </li>
+                    
+                  </ul>
+                </div>
+              </div>
             </SlideUp>
             <ul className='pt-12.5'>
               {

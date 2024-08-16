@@ -16,7 +16,7 @@ const StoryContentFour = () => {
 
     <SlideUp>
       <Title size={"5xl"}>
-        편입과정
+        편입 과정
       </Title>
       <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5">
         <li className="flex gap-x-5 ">
@@ -40,7 +40,7 @@ const StoryContentFour = () => {
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">인증</h3>
             <p className="">
-              국내 유일 UND 공식 인증 교육 플랫폼
+              국내 유일 UND 항공대학교 공식인증 항공교육 플랫폼
             </p>
           </div>
         </li>
@@ -63,8 +63,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">조건</h3>
-            <p className="">국내외 대학교 2년 이상 수료생</p>
+            <h3 className="font-medium leading-tight">자격</h3>
+            <p className="">국내외 4년제 대학교 2년 이상 수료자</p>
+            <p className="">국내외 2년제 전문대학 졸업자</p>
           </div>
         </li>
         <li className="flex gap-x-5 ">
@@ -86,8 +87,9 @@ const StoryContentFour = () => {
             </svg>
           </span>
           <div className="flex flex-col gap-y-1">
-            <h3 className="font-medium leading-tight">혜택</h3>
-            <p className="">SAT 면제, ELS 수료 조건부 입학 가능</p>
+            <h3 className="font-medium leading-tight">특전</h3>
+            <p className="">SAT 일괄 면제 - 협의 완료</p>
+            <p className="">영어-ELS 미국 현지 수료 조건으로 입학 가능</p>
             
           </div>
         </li>
@@ -111,7 +113,7 @@ const StoryContentFour = () => {
           </span>
           <div className="flex flex-col gap-y-1">
             <h3 className="font-medium leading-tight">학위</h3>
-            <p className="">미국 No.1 명문 항공대학교 4년제 학사 취득</p>
+            <p className="">미국 Top1 주립 명문 항공대학교 4년제 학사 학위 취득</p>
           </div>
         </li>
       </ol>
