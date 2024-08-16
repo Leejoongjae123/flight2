@@ -6,10 +6,6 @@ import PageTitle from '@/src/components/sections/pageTitle'
 import SubscribeTwo from '@/src/components/sections/subscribes/subscribeTwo'
 const ContactMap = dynamic(() => import('@/src/components/sections/map'), { ssr: false })
 
-export  = {
-  title: "NextPro | Contact-Us",
-  description: "NextPro is a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing",
-};
 
 const ContactUs = () => {
   return (
