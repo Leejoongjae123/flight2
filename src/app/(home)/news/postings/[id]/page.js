@@ -19,8 +19,7 @@ import PageTitle from "@/src/components/sections/pageTitle";
 import { Button } from "@/src/components/ui/button";
 import SlideUp from "@/src/components/animations/slideUp";
 import Input from "@/src/components/ui/input";
-import {Spinner} from "@nextui-org/spinner";
-
+import { Spinner } from "@nextui-org/spinner";
 
 export default function BlogArtical() {
   const params = useParams();
@@ -69,62 +68,144 @@ export default function BlogArtical() {
       {user && isComplete ? (
         <>
           <PageTitle pageName={"공지사항"} breadcrumbLink={"Author"} />
-          <div className="">
-            <div className="max-w-[1350px] mx-auto px-[15px]">
-              <SlideUp>
-                <div className="flex flex-col items-center"></div>
-              </SlideUp>
-              <SlideUp>
-                <div className="max-w-[1080px] mx-auto lg:px-12.5">
-                  <div className="">
-                    <Title
-                      size={"5xl"}
-                      className={
-                        "flex flex-col justify-center lg:text-5xl md:text-4.5xl text-3xl my-5"
-                      }
-                    >
-                      {data.title}
-                    </Title>
 
-                    <div className="flex md:flex-row flex-col md:items-center justify-between">
-                      <div className="flex sm:flex-row flex-col sm:items-center sm:gap-7 gap-3 mt-2.5 w-full">
-                        <div className="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-center gap-x-10 gap-y-5 w-full">
-                          <div className="w-full flex gap-x-10">
-                            <p href={"#"} className="text-xl font-semibold">
-                              관리자
-                            </p>
-                            <p className="text-xl font-semibold relative after:absolute after:-left-[15px] after:top-1/2 after:-translate-y-1/2 after:bg-secondary after:w-[6px] after:h-[6px] after:rounded-full ml-4 sm:ml-0">
-                              {new Date(data.created_at).toLocaleString(
-                                "ko-KR",
-                                {
-                                  year: "numeric",
-                                  month: "2-digit",
-                                  day: "2-digit",
-                                  hour: "2-digit",
-                                  minute: "2-digit",
-                                  second: "2-digit",
-                                }
-                              )}
-                            </p>
-                          </div>
-                          <div>
-                            <Button variant="outline"><Link href="/notification">목록으로</Link></Button>
-                          </div>
-                        </div>
-                      </div>
+          <main class="py-8 lg:py-16 bg-white dark:bg-gray-900 antialiased">
+            <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+              <div
+                id="share-twitter"
+                role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+              >
+                Share on Twitter
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <div
+                id="share-facebook"
+                role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+              >
+                Share on Facebook
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <div
+                id="share-reddit"
+                role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+              >
+                Share on Reddit
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <div
+                id="share-linkedin"
+                role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+              >
+                Share on LinkedIn
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <article class="mx-auto w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header class="mb-4 lg:mb-6 not-format">
+                  <div className="flex justify-between items-center">
+                  <h1 class="mb-4 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+                    {data.title}
+                  </h1>
+                  <div><Link href={"/notification"} className="w-25 h-15">목록으로</Link></div>
+                  </div>
+                  
+                  <div class="flex justify-between items-center py-4 border-t border-b border-gray-200 dark:border-gray-700">
+                    <div class="flex justify-between items-center mr-4 text-medium w-full">
+                      <div>작성자 : {data.creator}</div>
+                      <div>작성일 : {new Date(data.created_at).toLocaleDateString()}</div>                      
                     </div>
                   </div>
-                  <hr className="my-5 border-2 border-gray-300" />
-                  <div className="my-10 flex justify-center items-center w-full">
-                    <div
-                      className="w-full"
-                      dangerouslySetInnerHTML={{ __html: data.description }}
-                    />
+                </header>
+                <div dangerouslySetInnerHTML={{ __html: data.description }} />
+              </article>
+              {/* <aside
+                class="hidden xl:block xl:w-80"
+                aria-labelledby="sidebar-label"
+              >
+                <h3 id="sidebar-label" class="sr-only">
+                  Sidebar
+                </h3>
+                <div class="p-5 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 divide-y divide-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:divide-gray-700">
+                  <h4 class="mb-4 text-sm font-bold text-gray-900 uppercase dark:text-white">
+                    Latest news
+                  </h4>
+                  <div class="flex items-center py-4">
+                    <a href="#" class="shrink-0">
+                      <img
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png"
+                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
+                        alt="Image 1"
+                      />
+                    </a>
+                    <a href="#">
+                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
+                        SaaS can help speed up Cybersecurity projects
+                      </h5>
+                    </a>
+                  </div>
+                  <div class="flex items-center py-4">
+                    <a href="#" class="shrink-0">
+                      <img
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png"
+                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
+                        alt="Image 2"
+                      />
+                    </a>
+                    <a href="#">
+                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
+                        Crunching large datasets made fast: Flowbite Library
+                      </h5>
+                    </a>
+                  </div>
+                  <div class="flex items-center py-4">
+                    <a href="#" class="shrink-0">
+                      <img
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-3.png"
+                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
+                        alt="Image 2"
+                      />
+                    </a>
+                    <a href="#">
+                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
+                        Here’s how to make a react app with Flowbite Blocks
+                      </h5>
+                    </a>
+                  </div>
+                  <div class="flex items-center py-4">
+                    <a href="#" class="shrink-0">
+                      <img
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png"
+                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
+                        alt="Image 3"
+                      />
+                    </a>
+                    <a href="#">
+                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
+                        AI meets IoT: What is the artificial intelligence
+                      </h5>
+                    </a>
+                  </div>
+                  <div class="flex items-center pt-4">
+                    <a href="#" class="shrink-0">
+                      <img
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png"
+                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
+                        alt="Image 2"
+                      />
+                    </a>
+                    <a href="#">
+                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
+                        How to create a basic application with Flowbite
+                      </h5>
+                    </a>
                   </div>
                 </div>
-              </SlideUp>
+              </aside> */}
             </div>
-          </div>
+          </main>
         </>
       ) : (
         <>
