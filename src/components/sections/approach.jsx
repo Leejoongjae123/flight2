@@ -57,11 +57,14 @@ const Approach = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const { data, error } = await supabase.from('news').select('*').limit(5)
+      const { data, error } = await supabase.from('news').select('*').order('created_at', { ascending: false }).limit(5)
       if (error) {
         console.error(error)
       } else {
         setNews(data)
+        if (data.length > 0) {
+          setTab(data[0].id)
+        }
       }
     }
     fetchNews()
@@ -79,7 +82,7 @@ const Approach = () => {
           </div>
         </SlideUp>
         <div className='lg:pt-20 pt-8'>
-          <Tabs onValueChange={onTabChange} defaultValue="development" >
+          <Tabs onValueChange={onTabChange} value={tab}>
             <TabsList className="bg-transparent justify-between lg:flex-nowrap flex-wrap xl:gap-5 gap-2 w-full">
               {
                 news.map(({ id, title }) => {
