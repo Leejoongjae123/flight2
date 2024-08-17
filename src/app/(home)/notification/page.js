@@ -214,59 +214,61 @@ const Author = () => {
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                       {notifications.map((notification, index) => (
                         <article className="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                          <Link
-                            href={`/notification/postings/${notification.id}`}
-                          >                            <img
-                              className="mb-5 rounded-lg"
-                              src={
-                                notification.imageUrl ||
-                                "/images/noimage/noimage.jpg"
-                              }
-                              alt="office laptop working"
-                            />
-                          </Link>
-                          <span className="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">
-                            공지사항
-                          </span>
-                          <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">{notification.title}</a>
-                          </h2>
-                          <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
-                            {notification.description.replace(/<[^>]+>/g, "")}
-                          </p>
-                          <div className="flex items-center space-x-4">
-                            <Image
-                              className="w-8 h-8 rounded-full"
-                              src="/images/logo/onlylogo.png"
-                              alt="Jese Leos avatar"
-                              width={10}
-                              height={10}
-                            />
-                            <div className="font-medium dark:text-white">
-                              <div>관리자</div>
-                              <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                                {new Date(notification.created_at).toLocaleDateString()}
-                              </div>
+                        <div className="relative h-48 mb-5">
+                          <Image
+                            fill
+                            className="rounded-lg object-cover"
+                            src={
+                              notification.imageUrl ||
+                              "/images/noimage/noimage.jpg"
+                            }
+                            alt="office laptop working"
+                          />
+                        </div>
+
+                        <span className="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">
+                          공지사항
+                        </span>
+                        <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          <a href={`/notification/postings/${notification.id}`}>{notification.title}</a>
+                        </h2>
+                        <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+                          {notification.description.replace(/<[^>]+>/g, "")}
+                        </p>
+                        <div className="flex items-center space-x-4">
+                          <Image
+                            className="w-8 h-8 rounded-full"
+                            src="/images/logo/onlylogo.png"
+                            alt="Jese Leos avatar"
+                            width={10}
+                            height={10}
+                          />
+                          <div className="font-medium dark:text-white">
+                            <div>관리자</div>
+                            <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
+                              {new Date(
+                                notification.created_at
+                              ).toLocaleDateString()}
                             </div>
                           </div>
-                          {user?.email === "fuzzily@naver.com" && (
-                            <div className="w-full flex justify-center gap-x-5 my-5">
-                              <Button
-                                className="bg-green-500 border-green-500 hover:text-green-500 w-10 h-10"
-                                onClick={() => handleChange(notification.id)}
-                                
-                              >
-                                수정
-                              </Button>
-                              <Button
-                                className="bg-red-500 border-red-500 hover:text-red-500 w-10 h-10"
-                                onClick={() => handleDelete(notification.id)}
-                              >
-                                삭제
-                              </Button>
-                            </div>
-                          )}
-                        </article>
+                        </div>
+                        {user?.email === "fuzzily@naver.com" && (
+                          <div className="w-full flex justify-center gap-x-5 my-5">
+                            <Button
+                              className="bg-green-500 border-green-500 hover:text-green-500 w-10 h-10"
+                              onClick={() => handleChange(notification.id)}
+                            >
+                              수정
+                            </Button>
+                            <Button
+                              className="bg-red-500 border-red-500 hover:text-red-500 w-10 h-10"
+                              onClick={() => handleDelete(notification.id)}
+                            >
+                              삭제
+                            </Button>
+                          </div>
+                        )}
+                      </article>
                       ))}
                     </div>
                   </div>

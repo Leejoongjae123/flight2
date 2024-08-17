@@ -226,22 +226,23 @@ const Author = () => {
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                       {notifications.map((notification, index) => (
                         <article className="p-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                          <Link
-                            href={`/news/postings/${notification.id}`}
-                          >                            <img
-                              className="mb-5 rounded-lg"
+                          <div className="relative h-48 mb-5">
+                            <Image
+                              fill
+                              className="rounded-lg object-cover"
                               src={
                                 notification.imageUrl ||
                                 "/images/noimage/noimage.jpg"
                               }
                               alt="office laptop working"
                             />
-                          </Link>
+                          </div>
+
                           <span className="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-200 dark:text-purple-900">
                             공지사항
                           </span>
                           <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">{notification.title}</a>
+                            <a href={`/news/postings/${notification.id}`}>{notification.title}</a>
                           </h2>
                           <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
                             {notification.description.replace(/<[^>]+>/g, "")}
