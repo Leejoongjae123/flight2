@@ -11,9 +11,29 @@ import {
 import { cn } from "./cn";
 import countries from "./countries";
 import { RadioGroup, Radio } from "@nextui-org/react";
+import { useEffect, useState } from "react";
+import { createClient } from "@/utils/supabase/client";
 
-const ShippingForm = React.forwardRef(
-  ({ variant = "flat", className, hideTitle }, ref) => {
+export default function ShippingForm({ variant = "flat" }) {
+
+    const supabase = createClient();
+    const [schedules, setSchedules] = useState([]);
+
+    useEffect(() => {
+      const fetchSchedules = async () => {
+        const { data, error } = await supabase
+          .from('schedule')
+          .select('*');
+
+        if (error) {
+          console.error('Error fetching schedules:', error);
+        } else {
+          setSchedules(data);
+        }
+      };
+
+      fetchSchedules();
+    }, [supabase]);
     return (
       <div className="flex flex-col gap-4 text-white">
         <span className="relative text-white">설명회 일정</span>
@@ -28,8 +48,9 @@ const ShippingForm = React.forwardRef(
           }}
           color="secondary"
         >
-          <Radio value="buenos-aires">9월5일</Radio>
-          <Radio value="sydney">10월5일</Radio>
+        {schedules.map((schedule) => (
+          <Radio value={schedule.id}>{schedule.date}</Radio>
+        ))} 
         </RadioGroup>
 
         <div className="flex flex-wrap items-center gap-4">
@@ -171,8 +192,3 @@ const ShippingForm = React.forwardRef(
       </div>
     );
   }
-);
-
-ShippingForm.displayName = "ShippingForm";
-
-export default ShippingForm;

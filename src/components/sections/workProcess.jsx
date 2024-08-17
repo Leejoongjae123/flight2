@@ -47,7 +47,7 @@ const WorkProcess = () => {
 
           <div className='pt-12 lg:pt-0 gap-10 my-10'>
             <div className='grid grid-cols-3 gap-x-10'>
-              <div className='col-span-1 flex flex-col justify-start items-center bg-accent lg:px-7.5 px-5 pt-7.5 pb-[90px] rounded-2.5xl group h-full'>
+              <div className='col-span-1 flex flex-col justify-start items-center bg-accent lg:px-7.5 px-5 pt-7.5 rounded-2.5xl group h-full'>
                 <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 소개              </Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>

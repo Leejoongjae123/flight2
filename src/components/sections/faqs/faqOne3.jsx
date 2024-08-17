@@ -1,7 +1,8 @@
+'use client'
 import { Button } from '@/src/components/ui/button'
 import Title from '@/src/components/ui/title'
 import { faqData2 } from '@/src/lib/fackData/faqData2'
-import React from 'react'
+import {useState, useEffect} from 'react'
 import {
   Accordion,
   AccordionContent,
@@ -9,8 +10,27 @@ import {
   AccordionTrigger,
 } from "@/src/components/ui/accordion"
 import SlideUp from '@/src/components/animations/slideUp'
+import {createClient} from '@/utils/supabase/client'
 
 const FaqOne = () => {
+  const supabase = createClient()
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    const fetchFaqs = async () => {
+      const { data, error } = await supabase
+        .from('FAQ')
+        .select('*');
+
+      if (error) {
+        console.error('Error fetching FAQs:', error);
+      } else {
+        setFaqs(data);
+      }
+    };
+
+    fetchFaqs();
+  }, []);
   return (
     <section className='lg:py-15 py-9'>
       <div className='max-w-[1350px] mx-auto px-[15px]'>
@@ -34,13 +54,13 @@ const FaqOne = () => {
         <div className='max-w-[871px] mx-auto'>
           <Accordion type="single" defaultValue="one" collapsible>
             {
-              faqData2.map(({ ans, id, question }) => {
+              faqs.map(({ answer, id, question }) => {
                 return (
                   <SlideUp key={id} id={id}>
                     <AccordionItem  value={id} className='mb-2.5 bg-gray rounded-[15px] border-none'>
                       <AccordionTrigger className="font-semibold border-none lg:px-7.5 px-4 lg:py-7.5 py-4 text-left [&[data-state=open]]:text-primary-foreground [&[data-state=closed]]:text-muted-foreground">{question}</AccordionTrigger>
                       <AccordionContent className="lg:px-7.5 px-4 text-muted-foreground">
-                        {ans}
+                        {answer}
                       </AccordionContent>
                     </AccordionItem>
                   </SlideUp>

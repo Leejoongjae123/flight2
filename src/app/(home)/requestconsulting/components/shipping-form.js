@@ -24,7 +24,7 @@ const ShippingForm = React.forwardRef(
             className="text-white"
             isRequired
             labelPlacement="outside"
-            placeholder="도시를 입력해주세요"
+            placeholder=""
             variant={variant}
           />
         </div>
