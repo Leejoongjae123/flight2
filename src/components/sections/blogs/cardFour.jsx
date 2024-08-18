@@ -16,9 +16,6 @@ const CardTwo = ({ id, title, date, thumb, author, category }) => {
                         <Image src={thumb} fill sizes='(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw' style={{ width: "100%" }} alt='thumb' className='group-hover:scale-110 transition-all duration-700' />
                     </div>
                     <div className='absolute z-10 bottom-5 px-5'>
-                        <Title size={"2xl"}>
-                            <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>{title}</Link>
-                        </Title>
                         {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>
                             <p className='text-base font-semibold text-white relative after:absolute after:-left-[15px] after:top-1/2 after:-translate-y-1/2 after:bg-secondary after:w-[6px] after:h-[6px] after:rounded-full'>{date}</p>
