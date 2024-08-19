@@ -142,7 +142,7 @@ const Author = () => {
                             {news.title}
                           </Title>
                           <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                          <p className="mt-3">
+                          <p className="mt-3 line-clamp-4">
                             {news.description.replace(/<[^>]+>/g, "")}
                           </p>
                         </div>

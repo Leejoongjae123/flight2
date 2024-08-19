@@ -53,7 +53,7 @@ const TopHeader = ({ color, bgColor, darkBg }) => {
               <div className='hidden  md:flex md:gap-x-3 md:items-center '>
                 
                 <SocialIcons2 color={color} />
-                {/* <SocialIcons color={color} /> */}
+                <SocialIcons color={color} />
                 <Link className='text-white' href="https://airlinepilot.training"><span className='multiline-hover'>UND 항공대학교 재단 홈페이지</span> </Link>
               </div>
 

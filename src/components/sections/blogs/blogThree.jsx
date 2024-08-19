@@ -31,8 +31,8 @@ const BlogTwo = () => {
       <div className='max-w-[1350px] mx-auto px-[15px] w-full'>
         <SlideUp>
           <div className='flex flex-col items-center'>
-            <Button variant="secondary">Our Site</Button>
-            <Title size={"5xl"} className="pt-6 text-center max-w-[898px]">공항 전경</Title>
+            <Button variant="secondary">Our Place</Button>
+            <Title size={"5xl"} className="pt-6 text-center max-w-[898px]">본교 캠퍼스 공항 전경</Title>
           </div>
         </SlideUp>
 

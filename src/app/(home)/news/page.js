@@ -147,80 +147,12 @@ const Author = () => {
                     }
                     onChange={handleInputChange}
                   />
-                  {/* <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                  placeholder=""
-                  required=""
-                  onChange={handleInputChange}
-                /> */}
-
                   <span className="absolute right-6 top-1/2 -translate-y-1/2">
                     <FiSearch className="text-[#7C848C] text-2xl" />
                   </span>
                 </div>
               </SlideUp>
               <SlideLeft>
-                {/* <div className="flex flex-col gap-y-10 mt-10">
-                  {notifications.map((notification, index) => (
-                    <div
-                      key={index}
-                      className="bg-destructive dark:bg-[rgba(46,77,254,0.05)] p-10 md:p-20 rounded-[30px]"
-                    >
-                      <div className="flex flex-col md:flex-row items-center gap-x-10 gap-y-10">
-                        <div className="">
-                          <Link
-                            href={`/notification/postings/${notification.id}`}
-                          >
-                            <Image
-                              src={
-                                notification.imageUrl ||
-                                "/images/noimage/noimage.jpg"
-                              }
-                              width={300}
-                              height={300}
-                              alt="author"
-                              className="rounded-2xl object-cover border-4 border-white"
-                            />
-                          </Link>
-                        </div>
-                        <div className="w-full gap-y-5">
-                          <Link
-                            href={`/notification/postings/${notification.id}`}
-                          >
-                            <Title size={"4xl"} className={"pb-3"}>
-                              {notification.title}
-                            </Title>
-                            <hr className="text-[rgb(224,224,224)] dark:text-[rgb(114,114,114)]" />
-                            <p className="mt-3">
-                              {notification.description.replace(/<[^>]+>/g, "")}
-                            </p>
-                          </Link>
-
-                          {user?.email === "fuzzily@naver.com" && (
-                            <div className="w-full flex justify-center md:justify-end gap-x-5 my-5">
-                              <Button
-                                className="bg-green-500 border-green-500 hover:text-green-500"
-                                onClick={() => handleChange(notification.id)}
-                              >
-                                수정
-                              </Button>
-                              <Button
-                                className="bg-red-500 border-red-500 hover:text-red-500"
-                                onClick={() => handleDelete(notification.id)}
-                              >
-                                삭제
-                              </Button>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div> */}
-
                 <section className="bg-white dark:bg-gray-900">
                   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -244,7 +176,7 @@ const Author = () => {
                           <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href={`/news/postings/${notification.id}`}>{notification.title}</a>
                           </h2>
-                          <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+                          <p className="mb-4 font-light text-gray-500 dark:text-gray-400 line-clamp-4">
                             {notification.description.replace(/<[^>]+>/g, "")}
                           </p>
                           <div className="flex items-center space-x-4">
