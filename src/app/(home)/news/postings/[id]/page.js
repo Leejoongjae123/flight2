@@ -20,13 +20,15 @@ import { Button } from "@/src/components/ui/button";
 import SlideUp from "@/src/components/animations/slideUp";
 import Input from "@/src/components/ui/input";
 import { Spinner } from "@nextui-org/spinner";
+import next from "next";
 
 export default function BlogArtical() {
   const params = useParams();
   const [data, setData] = useState(null);
   const [user, setUser] = useState(null);
   const [isComplete, setIsComplete] = useState(false);
-
+  const [prevId, setPrevId] = useState(null);
+  const [nextId, setNextId] = useState(null);
   const supabase = createClient();
   useEffect(() => {
     const getUser = async () => {
@@ -35,6 +37,7 @@ export default function BlogArtical() {
       } = await supabase.auth.getUser();
       setUser(user);
     };
+
     const fetchNotification = async () => {
       const { data, error } = await supabase
         .from("news")
@@ -47,13 +50,45 @@ export default function BlogArtical() {
       } else {
         setData(data);
         setIsComplete(true);
+
+        // 이전 데이터 가져오기
+        const { data: prevData, error: prevError } = await supabase
+          .from("news")
+          .select("id")
+          .lt("created_at", data.created_at)
+          .order("created_at", { ascending: false })
+          .limit(1)
+          .single();
+
+        if (prevError) {
+          console.error("Error fetching previous notification:", prevError);
+        } else if (prevData) {
+          setPrevId(prevData.id);
+        }
+
+        // 다음 데이터 가져오기
+        const { data: nextData, error: nextError } = await supabase
+          .from("news")
+          .select("id")
+          .gt("created_at", data.created_at)
+          .order("created_at", { ascending: true })
+          .limit(1)
+          .single();
+
+        if (nextError) {
+          console.error("Error fetching next notification:", nextError);
+        } else if (nextData) {
+          setNextId(nextData.id);
+        }
       }
     };
 
-    fetchNotification();
-
     getUser();
-  }, []);
+    fetchNotification();
+  }, []); // params.id가 변경될 때마다 useEffect 실행
+
+  console.log("prevId", prevId);
+  console.log("nextId", nextId);
 
   if (!isComplete) {
     return (
@@ -67,143 +102,95 @@ export default function BlogArtical() {
     <main>
       {user && isComplete ? (
         <>
-          <PageTitle pageName={"공지사항"} breadcrumbLink={"Author"} />
+          <PageTitle pageName={"항공NEWS"} breadcrumbLink={"Author"} />
 
-          <main class="py-8 lg:py-16 bg-white dark:bg-gray-900 antialiased">
-            <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+          <main className="py-8 lg:py-16 bg-white dark:bg-gray-900 antialiased">
+            <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
               <div
                 id="share-twitter"
                 role="tooltip"
-                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+                className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 Share on Twitter
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
               <div
                 id="share-facebook"
                 role="tooltip"
-                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+                className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 Share on Facebook
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
               <div
                 id="share-reddit"
                 role="tooltip"
-                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+                className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 Share on Reddit
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
               <div
                 id="share-linkedin"
                 role="tooltip"
-                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+                className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 Share on LinkedIn
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
-              <article class="mx-auto w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-                <header class="mb-4 lg:mb-6 not-format">
-                  <div className="flex justify-between items-center">
-                  <h1 class="mb-4 text-2xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
-                    {data.title}
-                  </h1>
-                  <div><Link href={"/notification"} className="w-25 h-15">목록으로</Link></div>
+              <article className="mx-auto w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header className="mb-4 lg:mb-6 not-format">
+                  <div className="flex justify-between items-center my-7">
+                    <div>
+                      <h1 className="text-2xl font-extrabold leading-tight text-gray-900 lg:text-4xl dark:text-white">
+                        {data.title}
+                      </h1>
+                    </div>
+
+                    <div>
+                      <Link
+                        href={"/notification"}
+                        className="inline-flex border border-gray-300 items-center gap-2 py-3 px-5 text-lg font-medium transition-transform transform hover:scale-110 rounded-md hover:text-muted-foreground "
+                      >
+                        목록으로
+                      </Link>
+                    </div>
                   </div>
-                  
-                  <div class="flex justify-between items-center py-4 border-t border-b border-gray-200 dark:border-gray-700">
-                    <div class="flex justify-between items-center mr-4 text-medium w-full">
+
+                  <div className="flex justify-between items-center py-4 border-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="flex justify-between items-center mr-4 text-medium w-full">
                       <div>작성자 : {data.creator}</div>
-                      <div>작성일 : {new Date(data.created_at).toLocaleDateString()}</div>                      
+                      <div>
+                        작성일 :{" "}
+                        {new Date(data.created_at).toLocaleDateString()}
+                      </div>
                     </div>
                   </div>
                 </header>
                 <div dangerouslySetInnerHTML={{ __html: data.description }} />
-              </article>
-              {/* <aside
-                class="hidden xl:block xl:w-80"
-                aria-labelledby="sidebar-label"
-              >
-                <h3 id="sidebar-label" class="sr-only">
-                  Sidebar
-                </h3>
-                <div class="p-5 mb-6 font-medium text-gray-500 bg-white rounded-lg border border-gray-200 divide-y divide-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:divide-gray-700">
-                  <h4 class="mb-4 text-sm font-bold text-gray-900 uppercase dark:text-white">
-                    Latest news
-                  </h4>
-                  <div class="flex items-center py-4">
-                    <a href="#" class="shrink-0">
-                      <img
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png"
-                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
-                        alt="Image 1"
-                      />
-                    </a>
-                    <a href="#">
-                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
-                        SaaS can help speed up Cybersecurity projects
-                      </h5>
-                    </a>
-                  </div>
-                  <div class="flex items-center py-4">
-                    <a href="#" class="shrink-0">
-                      <img
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png"
-                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
-                        alt="Image 2"
-                      />
-                    </a>
-                    <a href="#">
-                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
-                        Crunching large datasets made fast: Flowbite Library
-                      </h5>
-                    </a>
-                  </div>
-                  <div class="flex items-center py-4">
-                    <a href="#" class="shrink-0">
-                      <img
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-3.png"
-                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
-                        alt="Image 2"
-                      />
-                    </a>
-                    <a href="#">
-                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
-                        Here’s how to make a react app with Flowbite Blocks
-                      </h5>
-                    </a>
-                  </div>
-                  <div class="flex items-center py-4">
-                    <a href="#" class="shrink-0">
-                      <img
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png"
-                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
-                        alt="Image 3"
-                      />
-                    </a>
-                    <a href="#">
-                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
-                        AI meets IoT: What is the artificial intelligence
-                      </h5>
-                    </a>
-                  </div>
-                  <div class="flex items-center pt-4">
-                    <a href="#" class="shrink-0">
-                      <img
-                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png"
-                        class="mr-4 w-12 max-w-full h-12 rounded-lg"
-                        alt="Image 2"
-                      />
-                    </a>
-                    <a href="#">
-                      <h5 class="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">
-                        How to create a basic application with Flowbite
-                      </h5>
-                    </a>
-                  </div>
+                <div className="flex items-center justify-between mt-8">
+                  {prevId && (
+                    <Link
+                      href={`/news/postings/${prevId}`}
+                      className="inline-flex border border-gray-300 items-center gap-2 py-3 px-5 text-lg font-medium transition-transform transform hover:scale-110 rounded-md hover:text-muted-foreground"
+                      prefetch={false}
+                    >
+                      <ArrowLeftIcon className="w-4 h-4" />
+                      <span>Previous</span>
+                    </Link>
+                  )}
+                  {nextId && (
+                    <Link
+                      href={`/news/postings/${nextId}`}
+                      className="inline-flex border border-gray-300 items-center gap-2 py-3 px-5 text-lg font-medium transition-transform transform hover:scale-110 rounded-md hover:text-muted-foreground "
+                      prefetch={false}
+                    >
+                      <span>Next</span>
+                      <ArrowRightIcon className="w-4 h-4" />
+                    </Link>
+                  )}
                 </div>
-              </aside> */}
+              </article>
             </div>
           </main>
         </>
@@ -221,5 +208,44 @@ export default function BlogArtical() {
         </>
       )}
     </main>
+  );
+}
+function ArrowLeftIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
+    </svg>
+  );
+}
+
+function ArrowRightIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
   );
 }
