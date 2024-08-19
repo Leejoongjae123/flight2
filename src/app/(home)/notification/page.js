@@ -232,7 +232,7 @@ const Author = () => {
                         <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                           <a href={`/notification/postings/${notification.id}`}>{notification.title}</a>
                         </h2>
-                        <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+                        <p className="mb-4 font-light text-gray-500 dark:text-gray-400 line-clamp-4">
                           {notification.description.replace(/<[^>]+>/g, "")}
                         </p>
                         <div className="flex items-center space-x-4">
