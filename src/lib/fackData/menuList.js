@@ -159,7 +159,7 @@ export const menuList = [
             {
                 id: 1,
                 path: "/companyjob1",
-                lable: "졸업 직후 국내항공사 취업",
+                lable: "졸업 후 국내 항공사 취업",
                 tag: ""
             },
             {
@@ -180,7 +180,7 @@ export const menuList = [
             {
                 id: 1,
                 path: "/militaryintro",
-                lable: "회전익 항공기 준사관 소개",
+                lable: "육군 항공 준사관 소개",
                 tag: ""
             },
             {

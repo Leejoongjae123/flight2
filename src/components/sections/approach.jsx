@@ -78,7 +78,7 @@ const Approach = () => {
         <SlideUp>
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Our News</Button>
-            <Title size={"5xl"} className="max-w-[872px] pt-6 text-center">UND 항공대학 글로벌 패스웨이 <br/> <Highlight>주요 뉴스</Highlight></Title>
+            <Title size={"5xl"} className="max-w-[872px] pt-6 text-center">UND 항공대학 글로벌 패스웨이 <br /> <Highlight>주요 뉴스</Highlight></Title>
           </div>
         </SlideUp>
         <div className='lg:pt-20 pt-8'>
@@ -105,22 +105,18 @@ const Approach = () => {
                 return (
                   <TabsContent key={id} value={id} className={"lg:pt-7.5 md:pt-[110px] sm:pt-[190px] pt-[360px]"}>
                     <SlideUp>
-                      <div className='flex lg:flex-row flex-col justify-between bg-[#F4F6FF] dark:bg-[#1c242b] py-7.5 rounded-[30px]'>
+                      <div className='flex lg:flex-row flex-col justify-between bg-[#F4F6FF] dark:bg-[#1c242b] py-7.5 rounded-[30px] gap-x-10'>
                         <div className='lg:pl-[86px] pl-7.5 pr-7.5 lg:pr-0 w-full'>
                           <div className='flex flex-col justify-between h-full'>
                             <p className='pt-5 pb-7.5 line-clamp-4'>{description.replace(/<[^>]+>/g, "")}</p>
                             <div className='flex justify-center items-center'>
-                            <Button asChild variant='outline'>
-                              <Link href={"/services"}> 더보기 </Link>
-                            </Button>
+                              <Button asChild variant='outline'>
+                                <Link href={"/news/postings/" + id}> 더보기 </Link>
+                              </Button>
                             </div>
-                            
                           </div>
-
-
                         </div>
-                        <div className='relative pr-7.5 pl-7.5 lg:pl-0 lg:max-w-[540px] w-full pt-7.5 lg:pt-0' style={{ height: '25vh' }}>
-
+                        <div className='relative w-1/3 mr-10'>=
                           <Image src={imageUrl} alt='bg' fill className='rounded-2.5xl object-cover' />
                         </div>
                       </div>

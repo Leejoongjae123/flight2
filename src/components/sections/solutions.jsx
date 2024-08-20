@@ -26,7 +26,7 @@ const ourItems = [
   },
   {
     id: 2,
-    title: "초기 CFI 신청 자격",
+    title: "CFI",
     icon: <Shield height={"36"} width={"36"} />,
     desc: "초기 CFI 신청 자격"
   },

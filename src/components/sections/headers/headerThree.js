@@ -74,29 +74,14 @@ const HeaderThree = () => {
                 <span className="border-t border-[#FFFFFF26] block [.header-pinned_&]:hidden"></span>
                 <div className={`flex justify-between items-center`}>
                   <div className="py-5 flex items-center gap-8 ">
-                    {/* <Offcanvas>
-                      <OffcanvasTrigger>
-                        <div className={`flex flex-col gap-2.5 cursor-pointer`}>
-                          <span className='h-[4px] w-10 bg-white rounded-lg block'></span>
-                          <span className='h-[4px] w-10 bg-white rounded-lg block'></span>
-                          <span className='h-[4px] w-5 bg-white rounded-lg block'></span>
-                        </div>
-                      </OffcanvasTrigger>
-                      <OffcanvasOverlay />
-                      <OffcanvasContent side={"left"} className="top-0">
-                        <OffcanvasClose />
-                        <HeaderShortInfo />
-                      </OffcanvasContent>
-                    </Offcanvas> */}
-
                     <Link href={"/"}>
                       <Image
                         src={"/images/logo-light2.png"}
-                        width={300}
-                        height={150}
+                        width={150}
+                        height={100}
                         alt="logo-white"
                         unoptimized="true"
-                        className={`w-[50vw] md:w-[20vw] h-full block dark:hidden`}
+                        className={`w-[50vw] md:w-[12vw] h-full block dark:hidden`}
                       />
                       <Image
                         src={"/images/logo-next.png"}

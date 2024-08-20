@@ -81,7 +81,7 @@ const ProvideOne = () => {
                   군필조건
                 </h3>
                 <p className="mt-1 text-base font-normal text-gray-500 dark:text-gray-400">
-                  병역 미필자, 예비역 및 현역(간부/병, 타군) 구분 없이 남/여 지원 가능
+                  병역 미필자, 예비역 및 현역(간부/병, 타군) 구분 없이 남/여지원 가능
                 </p>
               </div>
 
