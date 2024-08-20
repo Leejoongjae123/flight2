@@ -11,7 +11,7 @@ import TeamOne from '@/src/components/sections/teams/teamOne'
 const About = () => {
   return (
     <main>
-        <PageTitle pageName={"UND 항공대학 소개"} breadcrumbLink={"About us"}/>
+        <PageTitle pageName={"UND 항공대학교 소개"} breadcrumbLink={"About us"}/>
         {/* <StoryFive counter={false}/> */}
         <Mission/>
         {/* <TeamOne /> */}

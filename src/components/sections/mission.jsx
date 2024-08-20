@@ -21,7 +21,7 @@ const ourItems = [
     id: 2,
     title: "미션",
     icon: <Shield height={"36"} width={"36"} />,
-    desc: "우리 대학, 우리 주 및 국제 사회를 위해 항공 우주 및 관련 과학 분야에서 최고 품질의 교육, 연구 및 서비스를 만들고 보존하고 제공하기 위해 리더로서 협력한다."
+    desc: "우리 대학교 우리 주 및 국제 사회를 위해 항공 우주 및 관련 과학 분야에서 최고 품질의 교육, 연구 및 서비스를 만들고 보존하고 제공하기 위해 리더로서 협력한다."
   },
   {
     id: 3,
@@ -47,13 +47,13 @@ const Mission = () => {
             <SlideLeft>
               <div className='flex flex-col lg:pb-10 pb-5 justify-center items-center'>
                 <Button variant="secondary">Information</Button>
-                <Title size={"5xl"} className="pt-6">대학교 소개</Title>
+                <Title size={"5xl"} className="pt-6">UND 항공대학교 소개</Title>
               </div>
               <div className='flex justify-center'>
                 <ul className='flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
                   <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>미국내 1위 항공대학교(전미 – 주립대 부분)</span> </li>
-                  <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>항공 운항학과, 항공 관제사학과 전 세계 1위 (134대)</span> </li>
-                  <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>훈련용 항공기 보유 – 전 세계 1위</span> </li>
+                  <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>항공 운항학과, 항공 관제사학과 전 세계 1위</span> </li>
+                  <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>훈련용 항공기 보유 – 전 세계 1위(134대)</span> </li>
                   <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>한국항공대학교 교환학생 프로그램 진행중</span> </li>
                   <li className=' flex items-center gap-2.5 text-xl font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>대한항공 신입조종사 위탁교육 Pathway 협약(2017년)</span> </li>
                 </ul>

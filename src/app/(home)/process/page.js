@@ -13,7 +13,7 @@ import Solutions from "@/src/components/sections/solutions";
 const Services = () => {
   return (
     <main>
-      <PageTitle pageName={"대학과정"} breadcrumbLink={"Services"} />
+      <PageTitle pageName={"UND 항공대학교 과정"} breadcrumbLink={"Services"} />
       <StoryFour />
       {/* <ServiceTwo/> */}
       {/* <Approach/> */}

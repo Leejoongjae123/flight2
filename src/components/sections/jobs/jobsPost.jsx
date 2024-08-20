@@ -12,7 +12,7 @@ const JobsPost = () => {
         <SlideUp>
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Jobs</Button>
-            <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">졸업 직후 국내항공사 취업</Title>
+            <Title size={"5xl"} className="max-w-[869px] pt-6 text-center">졸업후 국내 항공사 취업</Title>
           </div>
         </SlideUp>
 

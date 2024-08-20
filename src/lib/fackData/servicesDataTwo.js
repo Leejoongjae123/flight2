@@ -24,7 +24,7 @@ export const servicesDataTwo = [
         id: 3,
         icon_1: <Image src="/images/companylogo/airincheon.png" height={100} width={100}/>,
         service_name: "에어인천 | 신입조종사",
-        description: "총 비행시간 250시간 이상인 자 (후방석 또는 모의비행장치 비행시간 제외)<br/>운송용조종사 또는 사업용조종사 자격 증명소지자 (사업용조종사는<br/> 계기비행 및 다발형식 한정 자격증명 소지자)<br/>EPTA 4급 이상 소지자"
+        description: "총 비행시간 250시간 이상인 자 (후방석 또는 모의비행장치 비행시간 제외)<br/>운송용조종사 또는 사업용조종사 자격 증명소지자 또는 EPTA 4급 이상 소지자"
     },
     {
         id: 4,
