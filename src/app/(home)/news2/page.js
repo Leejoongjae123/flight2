@@ -88,15 +88,15 @@ const Author = () => {
                     size={"5xl"}
                     className="lg:max-w-[817px] max-w-full pt-6 text-center"
                   >
-                    항공 뉴스
+                    항공NEWS
                   </Title>
                   <div className="flex items-center justify-center gap-x-10">
                     <p className="pt-7.5 pb-10 font-semibold text-center w-full">
                       급변하는 항공 산업, 최신 트렌드를 따라가지 못하면 뒤처질
-                      수 있습니다. 저희 유학원이 제공하는 항공 교육 최신 소식을
+                      수 있습니다. 우리 유학원이 제공하는 항공 교육 최신 소식을
                       통해 전 세계에서 가장 앞서가는 교육을 받을 수 있습니다.
-                      지금 바로 유학원에 문의하시고, 글로벌 파일럿으로 성장할
-                      기회를 놓치지 마세요!
+                      지금 바로 UND 항공대학교 글로벌 패스웨이에 문의하시고,
+                      글로벌 파일럿으로 성장할 기회를 놓치지 마세요!
                     </p>
                     {user?.email === "fuzzily@naver.com" ? (
                       <Button>

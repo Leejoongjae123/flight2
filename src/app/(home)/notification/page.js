@@ -125,7 +125,7 @@ const Author = () => {
                   </Title>
                   <div className="flex items-center justify-center gap-x-10">
                     <p className="pt-7.5 pb-10 font-semibold text-center w-full">
-                      항공학과 입학 설명회가 곧 열립니다! 이번 설명회에서는 입학
+                      UND 항공대학교 글로벌 패스웨이 입학설명회가 곧 열립니다! 이번 설명회에서는 입학
                       절차, 학비, 장학금, 취업 전망 등 궁금한 모든 내용을
                       다룹니다. 항공학과 진학을 꿈꾸는 여러분의 많은 참여
                       부탁드립니다.
