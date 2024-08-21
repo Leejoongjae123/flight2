@@ -38,8 +38,8 @@ const ServiceFive = () => {
                 return (
                   <SlideUp key={id} id={id}>
                     <div className='lg:mt-7.5 mt-5 p-[22px] flex group rounded-[15px] items-center justify-center'>
-                      <div className='w-12 h-12 rounded-full flex justify-center items-center bg-[rgba(109,231,104,0.5)] icon'>
-                        <span className='transition-all duration-500 group-hover:scale-90'><FaCheck className="text-green-700" /></span>
+                      <div className='w-12 h-12 rounded-full flex justify-center items-center bg-accent icon'>
+                        <span className='transition-all duration-500 group-hover:scale-90'><FaCheck className="text-muted-foreground" /></span>
                       </div>
                       <div className='flex flex-col w-4/5 pl-5'>
                         <p className='text-xl font-extrabold text-muted-foreground'>{service_name}</p>
@@ -61,37 +61,37 @@ const ServiceFive = () => {
               </div>
               <div className="flex flex-col items-center justify-center gap-6 w-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       1
                     </div>
                     <p className="text-center">UNDAF 교관 채용 지원서 작성 및 전형</p>
                   </div>
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       2
                     </div>
                     <p className="text-center">UNDAF 교관 임용 (교관 임용 후 최소 1년간 의무 근무 조건) 교관 임용후 ~ 1,500시간(1년 소요)</p>
                   </div>
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       3
                     </div>
                     <p className="text-center">교관 비행 시간(Daul Given Time) 포함 1,500시간 타임빌딩</p>
                   </div>
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       4
                     </div>
                     <p className="text-center">PRE ATP 취득 (1,500시간 이후 취득 가능)</p>
                   </div>
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       5
                     </div>
                     <p className="text-center">REGIONAL 항공사 취업 지원</p>
                   </div>
-                  <div className="bg-accent rounded-lg p-6 flex flex-col items-center justify-center gap-5">
+                  <div className="bg-accent shadow-md rounded-lg p-6 flex flex-col items-center justify-center gap-5">
                     <div className="bg-white text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       6
                     </div>

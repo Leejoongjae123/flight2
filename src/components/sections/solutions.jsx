@@ -17,29 +17,33 @@ import { MdMilitaryTech } from "react-icons/md";
 import Activity from '../../../public/icons/activity'
 import Work from '../../../public/icons/work'
 import Setting from '../../../public/icons/setting'
+import { FcCollaboration } from "react-icons/fc";
+import { FcViewDetails } from "react-icons/fc";
+import { FcPackage } from "react-icons/fc";
+import { FcInspection } from "react-icons/fc";
 const ourItems = [
   {
     id: 1,
     title: "G1000 유경험자",
-    icon: <Activity height={"36"} width={"36"} />,
+    icon: <FcCollaboration  className='w-10 h-10' />,
     desc: "G1000 숙련도 (높이 선호됨)"
   },
   {
     id: 2,
     title: "CFI",
-    icon: <Shield height={"36"} width={"36"} />,
+    icon: <FcViewDetails className='w-10 h-10'/>,
     desc: "초기 CFI 신청 자격"
   },
   {
     id: 3,
     title: "CFII",
-    icon: <Setting height={"36"} width={"36"} />,
+    icon: <FcPackage className='w-10 h-10'/>,
     desc: "CFII"
   },
   {
     id: 4,
     title: "MEI",
-    icon: <GoodFirms height={"36"} width={"36"} />,
+    icon: <FcInspection className='w-10 h-10'/>,
     desc: "MEI"
   },
 
@@ -59,7 +63,7 @@ const Solutions = () => {
             </SlideLeft>
           </div>
           <div className='mt-10 pt-14 lg:pt-0'>
-            <div className='grid sm:grid-cols-4 grid-cols-1 sm:gap-y-[72px] gap-y-10 [&>*:nth-child(2)>.icon]:text-[#5A5579] [&>*:nth-child(2)>.icon]:bg-[#5a55791a] [&>*:nth-child(3)>.icon]:text-[#FE2E79] [&>*:nth-child(3)>.icon]:bg-[#9a2e791a] [&>*:nth-child(4)>.icon]:text-[#009F96] [&>*:nth-child(5)>.icon]:bg-[#009f961a]'>
+            <div className='grid sm:grid-cols-4 grid-cols-1 sm:gap-y-[72px] gap-y-10  '>
               {
                 ourItems.map(({ desc, icon, id, title }) => <Card key={id} id={id} desc={desc} title={title} icon={icon} />)
               }
@@ -77,7 +81,7 @@ const Card = ({ id, icon, title, desc }) => {
   return (
     <SlideUp id={id}>
       <div className='flex flex-col items-center justify-center'>
-        <div className='bg-[rgba(162,46,254,0.10)] icon rounded-2xl w-[85px] h-[85px] mb-7.5 flex justify-center items-center text-purple'>
+        <div className='bg-accent icon rounded-2xl w-[85px] h-[85px] mb-7.5 flex justify-center items-center text-purple'>
           {icon}
         </div>
         <p className='text-center text-xl font-extrabold text-muted-foreground relative hover-underline after:bg-muted after:h-[1px]'>{title}</p>
