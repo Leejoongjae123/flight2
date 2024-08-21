@@ -10,7 +10,7 @@ import Analysis from '../../../public/icons/analysis'
 import Paper from '../../../public/icons/paper'
 import User from '../../../public/icons/user'
 import SlideUp from '../animations/slideUp'
-
+import { FaCheckCircle } from "react-icons/fa";
 const processData = [
   {
     id: 1,
@@ -48,13 +48,13 @@ const WorkProcess = () => {
           <div className='pt-12 lg:pt-0 gap-10 my-10'>
             <div className='grid grid-cols-3 gap-x-10'>
               <div className='col-span-1 flex flex-col justify-start items-center bg-accent lg:px-7.5 px-5 pt-7.5 rounded-2.5xl group h-full'>
-                <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 소개              </Title>
+                <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 소개</Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>국내 유일 UND항공대학교 인증 교육 플렛폼</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>항공 유학 선행 교육, 항공분야 전문교육기관</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>UND항공대학교 공식 교재 및 커리큘럼 도입</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>UND항공대학교 현직 교수진 화상강의 실시</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>국내 유일 UND항공대학교 인증 교육 플렛폼</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>항공 유학 선행 교육, 항공분야 전문교육기관</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 공식 교재 및 커리큘럼 도입</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 현직 교수진 화상강의 실시</span> </li>
                   </ul>
                 </div>
               </div>
@@ -63,9 +63,9 @@ const WorkProcess = () => {
                 <Title className="text-2xl font-bold pt-6">UND 글로벌 패스웨이 교수진              </Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>한국항공대학교 항공운항학과 졸업</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-2' /> <span>도미유학/FAA 사업용 면장 보유</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-3' /> <span>진에어, 티웨이 부기장 출신</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>한국항공대학교 항공운항학과 졸업</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>도미유학/FAA 사업용 면장 보유</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>진에어, 티웨이 부기장 출신</span> </li>
                   </ul>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const WorkProcess = () => {
                 <Title  className="text-2xl font-bold pt-6">현직 대한항공 B-737 기장 특강              </Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
-                    <li className='flex items-center gap-2.5 text-muted-foreground font-bold'> <Image src={"/images/shapes/check-icon-blue.svg"} width={20} height={20} alt='img-1' /> <span>특강 기장님의 특강 과목과 날짜는 매 특강마다 유동적으로 변경                    </span> </li>
+                    <li className='flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>특강 기장님의 특강 과목과 날짜는 매 특강마다 유동적으로 변경                    </span> </li>
                   </ul>
                 </div>
               </div>

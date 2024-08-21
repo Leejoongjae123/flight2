@@ -7,7 +7,7 @@ import { servicesDataTwo } from '@/src/lib/fackData/servicesDataTwo'
 import Image from 'next/image'
 const ServiceTwo = () => {
     return (
-        <section className='lg:pt-[120px] pt-16 lg:pb-15 pb-9'>
+        <section className='lg:pb-15 pb-9'>
             <div className='max-w-[1350px] mx-auto px-[15px]'>
                 <SlideUp>
                     <div className='flex flex-col items-center gap-y-10'>
@@ -21,13 +21,6 @@ const ServiceTwo = () => {
                 <div className='lg:pt-7.5 pt-2'>
                     <SlideUp>
                         <div className='grid xl:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 gap-x-10
-                    [&>*:nth-child(2)>.icon]:bg-[#32A5521A] [&>*:nth-child(2)>.icon]:text-green 
-                    [&>*:nth-child(3)>.icon]:bg-[#A22EFE1A] [&>*:nth-child(3)>.icon]:text-purple
-                    [&>*:nth-child(4)>.icon]:bg-[#5A55791A] [&>*:nth-child(4)>.icon]:text-[#5A5579]
-                    [&>*:nth-child(5)>.icon]:bg-[#FF00001A] [&>*:nth-child(5)>.icon]:text-[#FF0000]
-                    [&>*:nth-child(6)>.icon]:bg-[#00A3FF1A] [&>*:nth-child(6)>.icon]:text-[#00A3FF]
-                    [&>*:nth-child(7)>.icon]:bg-[#FF00991A] [&>*:nth-child(7)>.icon]:text-[#FF0099]
-                    [&>*:nth-child(8)>.icon]:bg-[#009F961A] [&>*:nth-child(8)>.icon]:text-[#009F96]
                     '>
                             {
                                 servicesDataTwo.slice(0,6).map(({ id, description, icon_1, service_name }) => {
