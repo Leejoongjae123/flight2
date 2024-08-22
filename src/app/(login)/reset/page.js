@@ -19,8 +19,9 @@ export default function Component({searchParams}) {
   const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [password1, setPassword1] = useState("");
   const [password2, setPassword2] = useState("");
+  const [error, setError] = useState("비밀번호 변경에 성공하였습니다.");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+  
   const supabase = createClient();
   const router = useRouter();
 
@@ -45,10 +46,8 @@ export default function Component({searchParams}) {
         });
 
         if (error) {
-          return router.push(
-            "/reset?message=Unable to reste Password. Try again!"
-          );
-        }
+          setError("비밀번호 변경에 실패하였습니다. 다시 시도해주세요.")
+        };
         onOpen()
       }
     } else {
@@ -66,7 +65,7 @@ export default function Component({searchParams}) {
             <>
               <ModalHeader className="flex flex-col gap-1">완료</ModalHeader>
               <ModalBody>
-                <p>비밀번호 변경에 성공하였습니다.</p>
+                <p>{error}</p>
               </ModalBody>
               <ModalFooter>
                 <Button
