@@ -14,7 +14,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
-export default function Component() {
+export default function Component({searchParams}) {
   const [isVisible, setIsVisible] = useState(false);
   const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [password1, setPassword1] = useState("");
