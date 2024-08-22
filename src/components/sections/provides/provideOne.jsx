@@ -14,6 +14,8 @@ import { GoGoal } from "react-icons/go";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { LuCalendarDays } from "react-icons/lu";
 import { FiCheckSquare } from "react-icons/fi";
+import { FaCheckCircle } from "react-icons/fa";
+
 const ProvideOne = () => {
   return (
     <section className='lg:py-15 py-9'>
@@ -23,7 +25,7 @@ const ProvideOne = () => {
           <Button variant="secondary">Introduction</Button>
         </div>
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 justify-center w-full  p-10'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 justify-center w-full'>
           <div className='flex flex-col justify-center items-center'>
             <SlideUp>
 
@@ -36,12 +38,55 @@ const ProvideOne = () => {
                   회전익 항공기 조종 준사관
                 </p>
               </div>
-              <div className='flex flex-col gap-6 xl:mt-10 mt-8 pb-12.5 w-full'>
+              {/* <div className='flex flex-col gap-6 xl:mt-10 mt-8 pb-12.5 w-full'>
                 <Card bgColor={"after:bg-accent"} color={"text-muted-foreground"} icon={<FiCheckSquare />} title={"선발 주체 : 대한민국 육군"} />
                 <Card bgColor={"after:bg-accent"} color={"text-purple"} icon={<GoGoal />} title={"목적 : 헬기 조종사 인원 선발"} />
                 <Card bgColor={"after:bg-accent"} color={"text-red"} icon={<FaPeopleGroup />} title={"인원 : 36명(2023년 1분기 기준)"} />
                 <Card bgColor={"after:bg-accent"} color={"text-muted-foreground"} icon={<LuCalendarDays />} title={"선발 : 매년 2회"} />
-              </div>
+              </div> */}
+              <ol className="text-gray-500 border-s border-gray-200 flex  flex-col my-10 gap-y-5 text-lg">
+                <li className="flex gap-x-5 ">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                    <FaCheckCircle className='text-blue-600 w-20 h-20' />
+                  </span>
+                  <div className="flex flex-col gap-y-1">
+                    <h3 className="leading-tight font-bold">선발주체</h3>
+                    <p className="">
+                      대한민국 육군
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-x-5 ">
+                  <span className="flex items-center justify-center w-8 h-8  rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                    <FaCheckCircle className='text-blue-600 w-20 h-20' />
+
+                  </span>
+                  <div className="flex flex-col gap-y-1">
+                    <h3 className="font-bold leading-tight">목적</h3>
+                    <p className="">헬기 조종사 인원 선발</p>
+                  </div>
+                </li>
+                <li className="flex gap-x-5 ">
+                  <span className="flex items-center justify-center w-8 h-8  rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                    <FaCheckCircle className='text-blue-600 w-20 h-20' />
+
+                  </span>
+                  <div className="flex flex-col gap-y-1">
+                    <h3 className="font-bold leading-tight">인원</h3>
+                    <p className="">36명(2023년 1분기 기준)</p>
+                  </div>
+                </li>
+                <li className="flex gap-x-5 ">
+                  <span className="flex items-center justify-center w-8 h-8  rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                    <FaCheckCircle className='text-blue-600 w-20 h-20' />
+
+                  </span>
+                  <div className="flex flex-col gap-y-1">
+                    <h3 className="font-bold leading-tight">선발</h3>
+                    <p className="">매년 2회</p>
+                  </div>
+                </li>
+              </ol>
             </SlideUp>
           </div>
           <div className='h-full'>
@@ -49,15 +94,15 @@ const ProvideOne = () => {
           </div>
         </div>
         <section className="bg-white dark:bg-gray-900 w-full">
-          <div className="mx-auto p-10">
+          <div className="mx-auto md:p-10">
             <div className="text-center">
-              <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+              <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white my-5">
                 시험응시 자격 요건
               </h2>
             </div>
 
             <div
-              className="w-full p-15 mx-auto mt-8 space-y-5 border border-gray-100 rounded-lg bg-[rgba(46,77,254,0.05)] ">
+              className="md:w-[50vw] w-full p-10 md:p-15 mx-auto mt-8 space-y-5 border border-gray-100 rounded-lg bg-[rgba(46,77,254,0.05)] ">
               <div className="pb-5 border-b border-gray-200 ">
                 <h3 className="text-2xl font-semibold text-gray-900">
                   연령 제한

@@ -7,21 +7,21 @@ import Link from 'next/link'
 import SlideLeft from '../animations/slideLeft'
 const Strategy = () => {
   return (
-    <section className='lg:py-15 py-9 flex justify-center items-center flex-col'>
+    <section className='lg:py-10 flex justify-center items-center flex-col'>
       <Button className="my-10" variant="secondary">Our Strategy</Button>
       <div className='max-w-[1350px] mx-auto px-[15px]'>
         <div className='grid xl:grid-cols-[auto_642px] lg:grid-cols-[auto_530px] grid-cols-1 xl:gap-15 gap-5'>
           <div className='relative'>
-            <div className='flex justify-center pr-12.5 lg:pr-0'>
-              <Image src="/images/curriculum/curriculum2.png" width={626} height={551} alt="bg" className='rounded-[30px] dark:hidden' />
-              <Image src="/images/curriculum/curriculum2.png" width={626} height={551} alt="bg" className='rounded-[30px] hidden dark:block' />
+            <div className='relative justify-center pr-12.5 lg:pr-0 w-[90vw] h-[50vh] md:w-[30vw] md:h-[30vw]'>
+              <Image src="/images/curriculum/curriculum2.png" fill alt="bg" className='rounded-[30px] ' />
+              {/* <Image src="/images/curriculum/curriculum2.png" fill alt="bg" className='rounded-[30px] ' /> */}
             </div>
 
           </div>
-          <div className='pt-5 lg:pt-0'>
+          <div className=''>
             <SlideLeft>
 
-              <Title size={"5xl"} className="lg:max-w-[642px] max-w-full pt-6">UND 항공대학교 졸업<br />
+              <Title className=" text-2xl md:text-4xl">UND 항공대학교 졸업<br />
                 (FAA CPL 사업용 면장 취득)시점까지<br />
                 총 300시간의 비행 훈련 시간을<br />
                 확보를 할 수 있음</Title>
