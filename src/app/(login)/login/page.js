@@ -46,7 +46,7 @@ function SignInComponent() {
             href="/"
             className="flex items-center mb-6 text-2xl font-semibold text-white"
           >
-            UND 글로벌 항공대학교 패스웨이
+            UND 항공대학교 글로벌 패스웨이
           </a>
           <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800">
             <div className="p-6 space-y-4 md:space-y-6 lg:space-y-8 sm:p-8">
