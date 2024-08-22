@@ -51,10 +51,10 @@ const WorkProcess = () => {
                 <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 소개</Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>국내 유일 UND항공대학교 인증 교육 플렛폼</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>항공 유학 선행 교육, 항공분야 전문교육기관</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 공식 교재 및 커리큘럼 도입</span> </li>
-                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 현직 교수진 화상강의 실시</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>국내 유일 UND항공대학교 인증<br/>교육 플랫폼</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>항공 유학 선행 교육,<br/>항공분야 전문교육기관</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 공식 교재 및<br/> 커리큘럼 도입</span> </li>
+                    <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>UND항공대학교 현직 교수진<br/> 화상강의 실시</span> </li>
                   </ul>
                 </div>
               </div>

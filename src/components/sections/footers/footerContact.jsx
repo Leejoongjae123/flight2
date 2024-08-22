@@ -7,7 +7,7 @@ import React from 'react'
 const FooterContact = ({ bgColor, color, white_logo }) => {
   return (
     <div className='grid lg:grid-cols-[30%_70%] items-center gap-8'>
-      <div className='flex items-center justify-start gap-x-5'>
+      <div className='flex flex-col md:flex-row items-center justify-start gap-x-5'>
         <Image src={"/images/logo-light2.png"} width={200} height={100} alt='logo-white'  />
         <Image src={"/images/logo3.png"} width={200} height={100} alt='logo-white'  />
         {/* <p className=' text-lg'>UND글로벌패스웨이</p> */}

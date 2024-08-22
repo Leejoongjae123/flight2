@@ -20,55 +20,55 @@ const StoryFour = () => {
         <Selections selection={selection} setSelection={setSelection}></Selections>
       </div>
       <div className={`${selection === 'TYPE1' ? '' : 'hidden'} flex flex-col justify-center items-center`}>
-        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+        <div className='w-[90vw] md:w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='flex flex-col md:grid md:grid-cols-3 justify-between items-center gap-5 pb-0 '>
             <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process1.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
             </div>
-            <div className='col-span-2 pl-10'>
+            <div className='col-span-2 md:pl-10'>
               <StoryContentFour />
             </div>
           </div>
         </div>
         <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
-        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+        <div className='w-[90vw] md:w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+          <div className='flex flex-col md:grid md:grid-cols-3 justify-between items-center gap-5 pb-0 '>
             <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process2.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
             </div>
-            <div className='col-span-2 pl-10'>
+            <div className='col-span-2 md:pl-10'>
               <StoryContentFour2 />
             </div>
           </div>
         </div>
         <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
 
-        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
-            <div className='col-span-1 relative mx-auto lg:ml-0'>
+        <div className='w-[90vw] md:w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+        <div className='flex flex-col md:grid md:grid-cols-3 justify-between items-center gap-5 pb-0 '>
+        <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process3.jpg"} width={500} height={250} sizes='(max-width:1024px) 100vw, 50vw' alt='stroy background' className='rounded-[30px]' />
               </SlideUp>
             </div>
-            <div className='col-span-2 pl-10'>
+            <div className='col-span-2 md:pl-10'>
               <StoryContentFour3 />
             </div>
           </div>
         </div>
         <hr className='w-[60vw] my-10 border-0.5 border-gray-300' />
 
-        <div className='w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
-          <div className='grid grid-cols-3 justify-between items-center gap-5 lg:pb-14 pb-0'>
+        <div className='w-[90vw] md:w-[60vw] mx-auto px-[15px] overflow-x-hidden overflow-y-clip flex justify-center'>
+        <div className='flex flex-col md:grid md:grid-cols-3 justify-between items-center gap-5 pb-0 '>
             <div className='col-span-1 relative mx-auto lg:ml-0'>
               <SlideUp>
                 <Image src={"/images/process/process4.jpg"} width={500} height={250} alt='stroy background' className='rounded-[30px] ' />
               </SlideUp>
             </div>
-            <div className='col-span-2 pl-10'>
+            <div className='col-span-2 md:pl-10'>
               <StoryContentFour4 />
             </div>
           </div>
