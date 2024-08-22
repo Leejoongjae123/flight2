@@ -5,12 +5,23 @@ import { Button, Input, Checkbox, Link, Divider } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter } from "next/navigation";
-
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 export default function Component() {
   const [isVisible, setIsVisible] = React.useState(false);
   const [isConfirmVisible, setIsConfirmVisible] = React.useState(false);
   const [password1, setPassword1] = useState("");
   const [password2, setPassword2] = useState("");
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const supabase = createClient();
   const router = useRouter();
 
@@ -39,7 +50,7 @@ export default function Component() {
             "/reset?message=Unable to reste Password. Try again!"
           );
         }
-        router.push("/?login=success");
+        onOpen()
       }
     } else {
       setError("비밀번호가 다릅니다.");
@@ -50,6 +61,30 @@ export default function Component() {
 
   return (
     <section class="flex justify-center items-center bg-[url('/images/aircraft/login.png')] bg-no-repeat bg-cover bg-center bg-gray-700 bg-blend-multiply bg-opacity-60 h-screen">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">완료</ModalHeader>
+              <ModalBody>
+                <p>비밀번호 변경에 성공하였습니다.</p>
+              </ModalBody>
+              <ModalFooter>
+                <Button
+                  color="danger"
+                  variant="light"
+                  onPress={() => {
+                    onClose();
+                    router.push("/");
+                  }}
+                >
+                  Close
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen pt:mt-0">
         <a
           href="/"
