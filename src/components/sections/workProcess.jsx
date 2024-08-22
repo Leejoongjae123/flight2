@@ -46,7 +46,7 @@ const WorkProcess = () => {
         <Button variant="secondary">Our Story</Button>
 
           <div className='pt-12 lg:pt-0 gap-10 my-10'>
-            <div className='grid grid-cols-3 gap-x-10'>
+            <div className='grid gri-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 '>
               <div className='col-span-1 flex flex-col justify-start items-center bg-accent lg:px-7.5 px-5 pt-7.5 rounded-2.5xl group h-full'>
                 <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 소개</Title>
                 <div className='flex justify-center'>
