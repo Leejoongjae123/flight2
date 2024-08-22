@@ -15,7 +15,7 @@ const BlogTwo = () => {
         <SlideUp>
           <div className='flex flex-col items-center'>
             <Button variant="secondary">Our Introduction</Button>
-            <Title size={"5xl"} className="pt-6 text-center max-w-[898px]">UND 항공대학 글로벌 패스웨이 혜택</Title>
+            <Title size={"5xl"} className="pt-6 text-center max-w-[898px]">UND 항공대학교 글로벌 패스웨이 혜택</Title>
           </div>
         </SlideUp>
 

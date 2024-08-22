@@ -123,7 +123,7 @@ const StoryFour = () => {
                         입학허가
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공대학 입학 허가서 수령
+                        UND 항공대학교 입학 허가서 수령
                       </p>
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const StoryFour = () => {
                         졸업 후 진로
                       </h3>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
-                        UND 항공 대학교 졸업
+                        UND 항공대학교 졸업
                       </p>
                       <p class="mt-2 text-base font-normal text-gray-500 sm:text-lg dark:text-gray-400">
                         졸업 후 OPT 기간을 통한 미국 Regional 항공사 지원 가능

@@ -18,9 +18,9 @@ const StoryContentOne = () => {
           <p className='font-bold text-muted-foreground mt-6'>
             안녕하세요.<br />
             UND 항공대학교 글로벌 패스웨이의 대표원장 김원섭입니다.<br />
-            저희 UND 글로벌 패스웨이에 오신 것을 진심으로 환영합니다. <br />
+            저희 UND 항공대학교 글로벌 패스웨이에 오신 것을 진심으로 환영합니다. <br />
             UND는 뛰어난 교육과 다양한 프로그램으로 세계적으로 인정받는 대학교입니다. <br />
-            저희는 UND와의 국내 최초 MOU를 체결하여, 수준 높은 교육을 통해 미래의 조종사 인재들을 모집하고 있습니다.
+            저희는 UND와의 국내 최초 MOA를 체결하여, 수준 높은 교육을 통해 미래의 조종사 인재들을 모집하고 있습니다.
           </p>
 
           <p className='mt-7.5 font-bold'>
