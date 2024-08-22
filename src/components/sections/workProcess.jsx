@@ -60,7 +60,7 @@ const WorkProcess = () => {
               </div>
 
               <div className='col-span-1 flex flex-col justify-start items-center bg-accent lg:px-7.5 px-5 pt-7.5 pb-[90px] rounded-2.5xl group h-full'>
-                <Title className="text-2xl font-bold pt-6">UND 글로벌 패스웨이 교수진              </Title>
+                <Title className="text-2xl font-bold pt-6">글로벌 패스웨이 교수진              </Title>
                 <div className='flex justify-center'>
                   <ul className='py-12.5 flex flex-col gap-2.5 gap-y-5 text-muted-foreground'>
                     <li className=' flex items-center gap-2.5 text-muted-foreground font-bold'> <FaCheckCircle className='w-7 h-7 text-blue-600 mx-3' /> <span>한국항공대학교 항공운항학과 졸업</span> </li>

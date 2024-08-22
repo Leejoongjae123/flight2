@@ -95,7 +95,7 @@ const ServiceFive = () => {
                     <div className="bg-accent text-muted-foreground rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold">
                       6
                     </div>
-                    <p className="text-center">REGOINAL 항공사 취업 성공</p>
+                    <p className="text-center">REGIONAL 항공사 취업 성공</p>
                   </div>
                 </div>
               </div>

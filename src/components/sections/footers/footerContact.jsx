@@ -9,6 +9,7 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
     <div className='grid lg:grid-cols-[30%_70%] items-center gap-8'>
       <div className='flex items-center justify-start gap-x-5'>
         <Image src={"/images/logo-light2.png"} width={200} height={100} alt='logo-white'  />
+        <Image src={"/images/logo3.png"} width={200} height={100} alt='logo-white'  />
         {/* <p className=' text-lg'>UND글로벌패스웨이</p> */}
       </div>
       <div className='flex md:flex-row flex-col justify-end gap-4'>

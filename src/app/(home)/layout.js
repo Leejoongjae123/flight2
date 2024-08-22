@@ -4,9 +4,9 @@ import dynamic from "next/dynamic";
 import { ThemeProvider } from "@/src/contextApi/themeProvider";
 import CountryProvider from "@/src/contextApi/countryProvider";
 import ScrollCircle from "@/src/components/ui/scrollCircle";
-const CustomCursor = dynamic(() => import("@/src/components/ui/customCursor"), {
-  ssr: false,
-});
+// const CustomCursor = dynamic(() => import("@/src/components/ui/customCursor"), {
+//   ssr: false,
+// });
 const Setting = dynamic(() => import("@/src/components/ui/setting"), {
   ssr: false,
 });
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
 
             {/* <Setting /> */}
             <ScrollCircle />
-            <CustomCursor />
+            {/* <CustomCursor /> */}
           </CountryProvider>
         </ThemeProvider>
       </body>
