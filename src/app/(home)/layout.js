@@ -47,6 +47,9 @@ export const metadata = {
       },
     ],
   },
+  other: {
+    "naver-site-verification": "5380a3dec672e5ad81b436de345765ed756fe076",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -18,7 +18,6 @@ import FooterOne from "@/src/components/sections/footers/footerOne";
 import FaqTwo from "@/src/components/sections/faqs/faqTwo";
 import FaqOne from "@/src/components/sections/faqs/faqOne";
 import Open from "@/src/components/sections/UnderConstruction";
-import Head from "next/head";
 
 // const metadata = {
 //   title: '글로벌 패스웨이',
