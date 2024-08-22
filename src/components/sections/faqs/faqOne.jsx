@@ -46,7 +46,7 @@ const FaqOne = () => {
             {
               notifications.map(({ description, id, title }) => {
                 return (
-                  <SlideUp key={id} id={id}>
+                  // <SlideUp key={id} id={id}>
                     <AccordionItem value={id} className='mb-2.5 bg-gray rounded-[15px] border-none'>
                       <AccordionTrigger className="font-semibold border-none lg:px-7.5 px-4 lg:py-7.5 py-4 text-left [&[data-state=open]]:text-primary-foreground [&[data-state=closed]]:text-muted-foreground">{title}</AccordionTrigger>
                       <AccordionContent className="lg:px-7.5 px-4 text-muted-foreground">
@@ -61,7 +61,7 @@ const FaqOne = () => {
 
 
                     </AccordionItem>
-                  </SlideUp>
+                  // </SlideUp>
                 )
               })
             }
