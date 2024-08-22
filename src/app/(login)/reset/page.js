@@ -35,12 +35,12 @@ export default function Component({searchParams}) {
         setError("6자리 이상 비밀번호를 입력하세요");
       } else {
         console.log(searchParams.code);
-        const response = supabaseClient.auth.exchangeCodeForSession(
+        const response = supabase.auth.exchangeCodeForSession(
           searchParams.code
         );
         console.log(response);
 
-        const { data, error } = await supabaseClient.auth.updateUser({
+        const { data, error } = await supabase.auth.updateUser({
           password: password2,
         });
 
