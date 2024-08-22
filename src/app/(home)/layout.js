@@ -40,7 +40,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "/images/ogimage.png",
+        url: "https://ryvztctnyfofbtcawcle.supabase.co/storage/v1/object/public/images/images/ogimage.png",
         width: 800,
         height: 600,
         alt: "OG Image",
