@@ -35,23 +35,7 @@ const Faq = () => {
   return (
     <main>
       <PageTitle pageName={"FAQ"} breadcrumbLink={"Faq"} />
-
-      {user ? (
-        <>
-          <FaqOne3 />
-        </>
-      ) : (
-        <>
-          <div className="flex flex-col items-center justify-center gap-y-10">
-            <h2 className="text-3xl font-bold text-center">
-              로그인 후 이용해주세요
-            </h2>
-            <Button asChild size="xl" className="">
-              <Link href={"/login"}>Login</Link>
-            </Button>
-          </div>
-        </>
-      )}
+      <FaqOne3 />
     </main>
   );
 };

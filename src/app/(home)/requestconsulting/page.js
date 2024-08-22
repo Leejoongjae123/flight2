@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import ContactForm2 from "@/src/components/sections/contactForm2";
@@ -35,28 +35,13 @@ const ContactUs = () => {
   return (
     <main>
       <PageTitle pageName={"방문상담신청"} breadcrumbLink={"Contact"} />
-      {user ? (
-        <>
-          <ContactForm2
-            color={"text-white"}
-            inputColor={
-              "bg-transparent border-white border text-white placeholder:text-white"
-            }
-          />
-          <div className="lg:pt-15 pt-9"></div>
-        </>
-      ) : (
-        <>
-          <div className="flex flex-col items-center justify-center gap-y-10">
-            <h2 className="text-3xl font-bold text-center">
-              로그인 후 이용해주세요
-            </h2>
-            <Button asChild size="xl" className="">
-              <Link href={"/login"}>Login</Link>
-            </Button>
-          </div>
-        </>
-      )}
+      <ContactForm2
+        color={"text-white"}
+        inputColor={
+          "bg-transparent border-white border text-white placeholder:text-white"
+        }
+      />
+      <div className="lg:pt-15 pt-9"></div>
     </main>
   );
 };
