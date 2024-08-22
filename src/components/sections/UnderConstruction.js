@@ -20,7 +20,7 @@ export default function UnderConstruction() {
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className="flex flex-col gap-1 text-4xl font-bold text-center p-20">
+            <ModalHeader className="flex flex-col gap-1 text-4xl font-bold text-center my-20">
               UNDER CONSTRUCTION
             </ModalHeader>
             {/* <ModalBody>
