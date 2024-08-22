@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import {Input, Checkbox, Link, Divider } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import { createClient } from "@/utils/supabase/client";
-import { useRouter } from "next/navigation";
 import {
   Modal,
   ModalContent,
@@ -16,8 +15,8 @@ import {
 } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 export default function Component() {
-  const [isVisible, setIsVisible] = React.useState(false);
-  const [isConfirmVisible, setIsConfirmVisible] = React.useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [password1, setPassword1] = useState("");
   const [password2, setPassword2] = useState("");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
