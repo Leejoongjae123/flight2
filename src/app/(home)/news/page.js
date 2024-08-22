@@ -26,7 +26,7 @@ const Author = () => {
   const [totalNotifications, setTotalNotifications] = useState(0);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const [perPage, setPerPage] = useState(5);
+  const [perPage, setPerPage] = useState(6);
   const [search, setSearch] = useState("");
 
   const router = useRouter();
