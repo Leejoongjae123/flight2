@@ -45,7 +45,8 @@ const ContactForm = ({ color, inputColor }) => {
       if (error) {
         console.error('Error fetching schedules:', error);
       } else {
-        setSchedules(data);
+        const sortedData = data.sort((a, b) => parseInt(a.date.slice(0, 2)) - parseInt(b.date.slice(0, 2)));
+        setSchedules(sortedData);
       }
     };
 
