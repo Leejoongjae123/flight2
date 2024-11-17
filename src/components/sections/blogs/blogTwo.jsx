@@ -34,7 +34,7 @@ const BlogTwo = () => {
                 </div>
                 <div className='absolute z-10 bottom-5 px-5'>
                   <Title size={"2xl"}>
-                    <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>UND 항공대학 4년제<br/>학사학위 취득</Link>
+                    <span className='multiline-hover text-white transition-all duration-500'>UND 항공대학 4년제<br/>학사학위 취득</span>
                   </Title>
                   {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>
@@ -55,7 +55,7 @@ const BlogTwo = () => {
                 </div>
                 <div className='absolute z-10 bottom-5 px-5'>
                   <Title size={"2xl"}>
-                    <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>이론과 실무 능력을 갖춘<br/>사업용 조종사 양성</Link>
+                    <span className='multiline-hover text-white transition-all duration-500'>이론과 실무 능력을 갖춘<br/>사업용 조종사 양성</span>
                   </Title>
                   {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>
@@ -76,7 +76,7 @@ const BlogTwo = () => {
                 </div>
                 <div className='absolute z-10 bottom-5 px-5'>
                   <Title size={"2xl"}>
-                    <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>SAT 면제, ELS 조건부<br/>입학가능</Link>
+                    <span className='multiline-hover text-white transition-all duration-500'>SAT 면제, ELS 조건부<br/>입학가능</span>
                   </Title>
                   {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>
@@ -97,7 +97,7 @@ const BlogTwo = () => {
                 </div>
                 <div className='absolute z-10 bottom-5 px-5'>
                   <Title size={"2xl"}>
-                    <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>국내외 항공사와<br/>취업 연계과정 진행</Link>
+                    <span className='multiline-hover text-white transition-all duration-500'>국내외 항공사와<br/>취업 연계과정 진행</span>
                   </Title>
                   {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>

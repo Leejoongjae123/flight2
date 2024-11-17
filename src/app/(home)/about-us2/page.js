@@ -14,7 +14,7 @@ const About = () => {
   return (
     <main>
         <PageTitle pageName={"UND 항공대학교 대표원장 인사말"} breadcrumbLink={"About us"}/>
-        <UnderConstruction/>
+        {/* <UnderConstruction/> */}
         <StoryFive counter={false}/>
         {/* <Mission/>
         <TeamGrid/>

@@ -55,26 +55,26 @@ UND항공대학교에서의 성공적 전공 과목 이수를 위한 전공 예�
 체계적, 효율적으로 교육.
 </p>
                     <ol className='list-decimal list-inside pt-[15px] ml-5 text-lg gap-y-2 flex flex-col'>
-                      <li>1.항공정의(Aviation Definitions)</li>
-                      <li>2.항공기의 구조(Aircraft Construction)</li>
-                      <li>3.항공기 시스템1(Aircraft Systems 1)</li>
-                      <li>4.항공기 시스템2(Aircraft Systems 2)</li>
-                      <li>5.항공기 시스템3(Aircraft Systems 3)</li>
-                      <li>6.비행 역학1(Aerodynamics of Flight1)</li>
-                      <li>7.비행 역학2(Aerodynamics of Flight2)</li>
-                      <li>8.무게와 균형(Weight and balance)</li>
-                      <li>9.항공 기상 1(Aviation Weather1)</li>
-                      <li>10.항공 기상 2(Aviation Weather2)</li>
-                      <li>11.항공 기상 업무(Aviation Weather Services)</li>
-                      <li>12.비행 성능(Aircraft Performance)</li>
-                      <li>13.공역(Airspace), 항공고시보(NOTAM)</li>
-                      <li>14.항법 1(Navigation 1)</li>
-                      <li>15.항법 2(Navigation 2)</li>
-                      <li>16.무선 통신(Radio Communication)</li>
-                      <li>17.항공 차트(Aeronautical Chart)</li>
-                      <li>18.인적 요소(Human Factors)</li>
-                      <li>19.공항 인프라(Airport Sign, marking, Lightings</li>
-                      <li>20.파일럿 메뉴얼(Pilot Operating Handbook)</li>
+                      <li>항공정의(Aviation Definitions)</li>
+                      <li>항공기의 구조(Aircraft Construction)</li>
+                      <li>항공기 시스템1(Aircraft Systems 1)</li>
+                      <li>항공기 시스템2(Aircraft Systems 2)</li>
+                      <li>항공기 시스템3(Aircraft Systems 3)</li>
+                      <li>비행 역학1(Aerodynamics of Flight1)</li>
+                      <li>비행 역학2(Aerodynamics of Flight2)</li>
+                      <li>무게와 균형(Weight and balance)</li>
+                      <li>항공 기상 1(Aviation Weather1)</li>
+                      <li>항공 기상 2(Aviation Weather2)</li>
+                      <li>항공 기상 업무(Aviation Weather Services)</li>
+                      <li>비행 성능(Aircraft Performance)</li>
+                      <li>공역(Airspace), 항공고시보(NOTAM)</li>
+                      <li>항법 1(Navigation 1)</li>
+                      <li>항법 2(Navigation 2)</li>
+                      <li>무선 통신(Radio Communication)</li>
+                      <li>항공 차트(Aeronautical Chart)</li>
+                      <li>인적 요소(Human Factors)</li>
+                      <li>공항 인프라(Airport Sign, marking, Lightings</li>
+                      <li>파일럿 메뉴얼(Pilot Operating Handbook)</li>
                     </ol>
                   </div>
                   {/* <hr className='lg:mt-12.5 mt-6 lg:pb-15 pb-6 text-[#B0C2E2]' />

@@ -141,12 +141,12 @@ export const menuList = [
               lable: "항공운항학과 커리큘럼",
               tag: "",
           },
-          {
-            id: 4,
-            path: "/scholarship",
-            lable: "UND 장학금 안내",
-            tag: "",
-        },
+        //   {
+        //     id: 4,
+        //     path: "/scholarship",
+        //     lable: "UND 장학금 안내",
+        //     tag: "",
+        // },
 
         ],
         megaMenu: false

@@ -17,7 +17,7 @@ const CardTwo = ({ id, title, date, thumb, author, category }) => {
                     </div>
                     <div className='absolute z-10 bottom-5 px-5'>
                         <Title size={"2xl"}>
-                            <Link href={"/blog-single-sidebar"} className='multiline-hover text-white transition-all duration-500'>{title}</Link>
+                            <span className='multiline-hover text-white transition-all duration-500'>{title}</span>
                         </Title>
                         {/* <div className='flex items-center gap-7.5 pt-6'>
                             <Link href={"/author"} className='text-base font-semibold text-white hover:text-primary-foreground transition-all duration-500'> {author.author_name}</Link>
