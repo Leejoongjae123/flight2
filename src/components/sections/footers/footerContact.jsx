@@ -20,7 +20,7 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
           <div className={cn(`${color}`)}>
 
             <p><span className='font-semibold'>주소:</span>서울시 강남구 테헤란로 8길 40 (역삼동, 알티넷 빌딩)</p>
-            <p> <span className='font-semibold'>이메일:</span> <Link href={"mailto:fuzzily@naver.com"} className='relative hover-underline after:h-[1px] after:bg-muted'> fuzzily@naver.com</Link> </p>
+            <p> <span className='font-semibold'>이메일:</span> <Link href={"mailto:pilot@undglobal.co.kr"} className='relative hover-underline after:h-[1px] after:bg-muted'> pilot@undglobal.co.kr</Link> </p>
             <p> <span className='font-semibold'>전화:</span> <Link href={"tal:02-6011-3888"} className='relative hover-underline after:h-[1px] after:bg-muted'> 02-6011-3888</Link> </p>
             <p> <span className='font-semibold'>카카오톡:</span> <Link target='_blank' href={"url:http://pf.kakao.com/_xcxmxhyG"} className='relative hover-underline after:h-[1px] after:bg-muted'>@UND항공대학글로벌패스웨이</Link> </p>
 

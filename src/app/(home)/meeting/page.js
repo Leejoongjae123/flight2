@@ -75,9 +75,9 @@ const Faq = () => {
                       <h3 className="text-lg text-muted-foreground  font-bold  md:text-xl lg:text-2xl">
                         매달 첫째주, 목요일 오후 1시 시행
                       </h3>
-                      <p className="text-gray-500 md:text-base lg:text-lg">
+                      {/* <p className="text-gray-500 md:text-base lg:text-lg">
                         올해 일정 : {scheduleDates}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                   <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
